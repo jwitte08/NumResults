@@ -1,0 +1,32 @@
+
+\documentclass[oneside,a4paper]{article}
+\usepackage{multirow} % similar to multicolumn
+\usepackage{colortbl} % define a row color
+\newcommand{\myrowcolor}{\rowcolor[gray]{0.925}}
+\usepackage{booktabs} % \toprule, \midrule and \bottomrule for tables
+\begin{document}
+\begin{table}[htbp]
+\centering
+
+\caption{generated from /home/jwitte/Workspace/phd\_thesis\_bb/numerical\_tests/Laplace\_likwid/flops/simlap/latex/megaflops\_REF3\_ACP\_AVP.csv}
+\begin{tabular}{ccccccc}
+\toprule % header
+Variant & \multicolumn{3}{c}{ACP} & \multicolumn{3}{c}{AVP} \\
+\cmidrule(lr){1-1} \cmidrule(lr){2-4} \cmidrule(lr){5-7}
+Degree & 3 & 7 & 15 & 3 & 7 & 15 \\
+\cmidrule(lr){1-7}
+Sections & TOTAL & TOTAL & TOTAL & TOTAL & TOTAL & TOTAL \\
+\midrule % body
+\myrowcolor
+mf vmult & 59 & 545 & 5819 & 59 & 545 & 5819 \\
+tpss step & 74 & 763 & 9176 & 229 & 3235 & 48629 \\
+\myrowcolor
+tpss correction & 13 & 205 & 3256 & 168 & 2677 & 42709 \\
+tpss residual & 60 & 551 & 5869 & 60 & 551 & 5869 \\
+\myrowcolor
+tpss compute & 37 & 206 & 1143 & 163 & 866 & 5013 \\
+\bottomrule
+\end{tabular}
+
+\end{table}
+\end{document}

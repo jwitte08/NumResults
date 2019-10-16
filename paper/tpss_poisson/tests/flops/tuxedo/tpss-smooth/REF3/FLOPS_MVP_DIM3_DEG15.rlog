@@ -1,0 +1,57 @@
+ ... constructed mesh hierarchy (3D) with 4 multigrid levels!
+
+  Geometry:                                  [0.00, 1.00]^3        
+
+     level:         n_cells:       
+     0              8              
+     1              64             
+     2              512            
+     3              4096           
+
+Git - deal.II version:                       3cefc6a        
+Git - deal.II branch:                        chebyshev_timing        
+Git - ExaDG version:                         90b1561        
+Git - ExaDG branch:                          likwid_fpcount        
+
+Floating point precision:                    double        
+Vectorization length:                        4        
+MultithreadInfo::n_cores:                    4        
+MultithreadInfo::n_threads:                  1        
+MPI - number of mpi processes:               1        
+Number of experimental loops:                1        
+Number of warmup loops:                      0        
+
+  Matrix-free parallel scheme:               none        
+
+  Schwarz operator:                          Multiplicative, Vertex-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            1.0000e+00
+  Patch-wise damping factor:                 1.0000e+00
+  Manual coloring:                           true
+  Number of quad points (surrogate):         5
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+  Symmetrize Schwarz operator:               false
+
+  Finite element:                            FE_DGQ<3>(15)        
+
+     level:         n_dofs:        
+     0              32768          
+     1              262144         
+     2              2097152        
+     3              16777216       
+
+tested matrix-free vmult ... 
+
+tested tpss smooth ... 
+
+Miscellaneous information on level 3:
+  Number of degrees of freedom:              16777216        
+  Number of cells:                           4096        
+  Number of macro cells:                     1024        
+  Number of interior macro faces:            2880        
+  Number of boundary macro faces:            384        
+  Number of physical subdomains:             3375        
+  Number of macro subdomains:                882        
+
+============================================================
