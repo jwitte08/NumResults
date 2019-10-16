@@ -1,0 +1,305 @@
+domain: B[(0.5 0.5); 0.88]
+B[(0.5 0.5); 0.88]
+mesh: uniformly refining 5 to 1280
+uniformly refining 5 to 1280
+
+  Finite element:                            FE_DGQ<2>(7)        
+
+     level:         n_dofs:        
+     1              1280           
+     2              5120           
+     3              20480          
+     4              81920          
+
+  Looping over system levels:                2,...,16        
+
+  lower DoF limit:                           100000        
+  upper DoF limit:                           100000000        
+  Iterative solver:                          CG        
+  > Reduction:                               1.000e-08    
+  > Maximum number of iterations:            100        
+  Preconditioner:                            multigrid        
+
+  Matrix-free parallel scheme of tasks:      none        
+
+  Multigrid Smoother (Pre&Post):             Schwarz        
+  Schwarz operator:                          Multiplicative, Cell-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            1.0000e+00
+  Patch-wise damping factor:                 6.5000e-01
+  Manual coloring:                           true
+  Number of quad points (surrogate):         8
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+  Symmetrize Schwarz operator:               false
+
+  Coarse-Grid Solver:                        Accurate Chebyshev smoother        
+  > Polynomial degree:                       t.b.c.        
+  > Guaranteed reduction/Accuracy:           1.000e-08    
+  > Schwarz operator:                        Additive, Cell-Patch operator        
+
+ ... set up linear system & multigrid!
+
+ Solve linear system ... 
+
+ ... done! 
+
+  Average reduction:                         0.595213        
+  Fractional steps:                          35.5039        
+  Iteration steps:                           36        
+
+  Calls: 
+  [Sys] [MF::Operator] vmult:                          36        
+  [MGmax] [MF::Operator] vmult:                        324        
+  [MGmax] Pre-smooth:                                  36        
+  [MGmax] Post-smooth:                                 36        
+  [MGmax] [SchwarzPrecond] Update residuals:           108        
+  [MGmax] [SchwarzPrecond] Apply inverses:             36        
+
+ .. finished cycle 2
+domain: B[(0.5 0.5); 0.88]
+B[(0.5 0.5); 0.88]
+mesh: uniformly refining 5 to 5120
+uniformly refining 5 to 5120
+
+  Finite element:                            FE_DGQ<2>(7)        
+
+     level:         n_dofs:        
+     1              1280           
+     2              5120           
+     3              20480          
+     4              81920          
+     5              327680         
+
+  Looping over system levels:                2,...,16        
+
+  lower DoF limit:                           100000        
+  upper DoF limit:                           100000000        
+  Iterative solver:                          CG        
+  > Reduction:                               1.000e-08    
+  > Maximum number of iterations:            100        
+  Preconditioner:                            multigrid        
+
+  Matrix-free parallel scheme of tasks:      none        
+
+  Multigrid Smoother (Pre&Post):             Schwarz        
+  Schwarz operator:                          Multiplicative, Cell-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            1.0000e+00
+  Patch-wise damping factor:                 6.5000e-01
+  Manual coloring:                           true
+  Number of quad points (surrogate):         8
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+  Symmetrize Schwarz operator:               false
+
+  Coarse-Grid Solver:                        Accurate Chebyshev smoother        
+  > Polynomial degree:                       t.b.c.        
+  > Guaranteed reduction/Accuracy:           1.000e-08    
+  > Schwarz operator:                        Additive, Cell-Patch operator        
+
+ ... set up linear system & multigrid!
+
+ Solve linear system ... 
+
+ ... done! 
+
+  Average reduction:                         0.598897        
+  Fractional steps:                          35.9311        
+  Iteration steps:                           36        
+
+  Calls: 
+  [Sys] [MF::Operator] vmult:                          36        
+  [MGmax] [MF::Operator] vmult:                        324        
+  [MGmax] Pre-smooth:                                  36        
+  [MGmax] Post-smooth:                                 36        
+  [MGmax] [SchwarzPrecond] Update residuals:           108        
+  [MGmax] [SchwarzPrecond] Apply inverses:             36        
+
+ .. finished cycle 3
+domain: B[(0.5 0.5); 0.88]
+B[(0.5 0.5); 0.88]
+mesh: uniformly refining 5 to 20480
+uniformly refining 5 to 20480
+
+  Finite element:                            FE_DGQ<2>(7)        
+
+     level:         n_dofs:        
+     1              1280           
+     2              5120           
+     3              20480          
+     4              81920          
+     5              327680         
+     6              1310720        
+
+  Looping over system levels:                2,...,16        
+
+  lower DoF limit:                           100000        
+  upper DoF limit:                           100000000        
+  Iterative solver:                          CG        
+  > Reduction:                               1.000e-08    
+  > Maximum number of iterations:            100        
+  Preconditioner:                            multigrid        
+
+  Matrix-free parallel scheme of tasks:      none        
+
+  Multigrid Smoother (Pre&Post):             Schwarz        
+  Schwarz operator:                          Multiplicative, Cell-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            1.0000e+00
+  Patch-wise damping factor:                 6.5000e-01
+  Manual coloring:                           true
+  Number of quad points (surrogate):         8
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+  Symmetrize Schwarz operator:               false
+
+  Coarse-Grid Solver:                        Accurate Chebyshev smoother        
+  > Polynomial degree:                       t.b.c.        
+  > Guaranteed reduction/Accuracy:           1.000e-08    
+  > Schwarz operator:                        Additive, Cell-Patch operator        
+
+ ... set up linear system & multigrid!
+
+ Solve linear system ... 
+
+ ... done! 
+
+  Average reduction:                         0.598535        
+  Fractional steps:                          35.8889        
+  Iteration steps:                           36        
+
+  Calls: 
+  [Sys] [MF::Operator] vmult:                          36        
+  [MGmax] [MF::Operator] vmult:                        324        
+  [MGmax] Pre-smooth:                                  36        
+  [MGmax] Post-smooth:                                 36        
+  [MGmax] [SchwarzPrecond] Update residuals:           108        
+  [MGmax] [SchwarzPrecond] Apply inverses:             36        
+
+ .. finished cycle 4
+domain: B[(0.5 0.5); 0.88]
+B[(0.5 0.5); 0.88]
+mesh: uniformly refining 5 to 81920
+uniformly refining 5 to 81920
+
+  Finite element:                            FE_DGQ<2>(7)        
+
+     level:         n_dofs:        
+     1              1280           
+     2              5120           
+     3              20480          
+     4              81920          
+     5              327680         
+     6              1310720        
+     7              5242880        
+
+  Looping over system levels:                2,...,16        
+
+  lower DoF limit:                           100000        
+  upper DoF limit:                           100000000        
+  Iterative solver:                          CG        
+  > Reduction:                               1.000e-08    
+  > Maximum number of iterations:            100        
+  Preconditioner:                            multigrid        
+
+  Matrix-free parallel scheme of tasks:      none        
+
+  Multigrid Smoother (Pre&Post):             Schwarz        
+  Schwarz operator:                          Multiplicative, Cell-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            1.0000e+00
+  Patch-wise damping factor:                 6.5000e-01
+  Manual coloring:                           true
+  Number of quad points (surrogate):         8
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+  Symmetrize Schwarz operator:               false
+
+  Coarse-Grid Solver:                        Accurate Chebyshev smoother        
+  > Polynomial degree:                       t.b.c.        
+  > Guaranteed reduction/Accuracy:           1.000e-08    
+  > Schwarz operator:                        Additive, Cell-Patch operator        
+
+ ... set up linear system & multigrid!
+
+ Solve linear system ... 
+
+ ... done! 
+
+  Average reduction:                         0.597641        
+  Fractional steps:                          35.7846        
+  Iteration steps:                           36        
+
+  Calls: 
+  [Sys] [MF::Operator] vmult:                          36        
+  [MGmax] [MF::Operator] vmult:                        324        
+  [MGmax] Pre-smooth:                                  36        
+  [MGmax] Post-smooth:                                 36        
+  [MGmax] [SchwarzPrecond] Update residuals:           108        
+  [MGmax] [SchwarzPrecond] Apply inverses:             36        
+
+ .. finished cycle 5
+domain: B[(0.5 0.5); 0.88]
+B[(0.5 0.5); 0.88]
+mesh: uniformly refining 5 to 327680
+uniformly refining 5 to 327680
+
+  Finite element:                            FE_DGQ<2>(7)        
+
+     level:         n_dofs:        
+     1              1280           
+     2              5120           
+     3              20480          
+     4              81920          
+     5              327680         
+     6              1310720        
+     7              5242880        
+     8              20971520       
+
+  Looping over system levels:                2,...,16        
+
+  lower DoF limit:                           100000        
+  upper DoF limit:                           100000000        
+  Iterative solver:                          CG        
+  > Reduction:                               1.000e-08    
+  > Maximum number of iterations:            100        
+  Preconditioner:                            multigrid        
+
+  Matrix-free parallel scheme of tasks:      none        
+
+  Multigrid Smoother (Pre&Post):             Schwarz        
+  Schwarz operator:                          Multiplicative, Cell-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            1.0000e+00
+  Patch-wise damping factor:                 6.5000e-01
+  Manual coloring:                           true
+  Number of quad points (surrogate):         8
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+  Symmetrize Schwarz operator:               false
+
+  Coarse-Grid Solver:                        Accurate Chebyshev smoother        
+  > Polynomial degree:                       t.b.c.        
+  > Guaranteed reduction/Accuracy:           1.000e-08    
+  > Schwarz operator:                        Additive, Cell-Patch operator        
+
+ ... set up linear system & multigrid!
+
+ Solve linear system ... 
+
+ ... done! 
+
+  Average reduction:                         0.603447        
+  Fractional steps:                          36.4695        
+  Iteration steps:                           37        
+
+  Calls: 
+  [Sys] [MF::Operator] vmult:                          37        
+  [MGmax] [MF::Operator] vmult:                        333        
+  [MGmax] Pre-smooth:                                  37        
+  [MGmax] Post-smooth:                                 37        
+  [MGmax] [SchwarzPrecond] Update residuals:           111        
+  [MGmax] [SchwarzPrecond] Apply inverses:             37        
+
+ .. finished cycle 6

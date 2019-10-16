@@ -1,0 +1,71 @@
+WARN: Event FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE not found for current architecture
+WARN: Event FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE not found for current architecture
+ ... constructed mesh hierarchy (3D) with 4 multigrid levels!
+
+  Geometry:                                  [0.00, 1.00]^3        
+
+     level:         n_cells:       
+     0              8              
+     1              64             
+     2              512            
+     3              4096           
+
+  Finite element:                            FE_DGQ<3>(15)        
+
+     level:         n_dofs:        
+     0              32768          
+     1              262144         
+     2              2097152        
+     3              16777216       
+
+  Looping over system levels:                3        
+
+  Iterative solver:                          CG        
+  > Reduction:                               1.000e-08    
+  > Maximum number of iterations:            111        
+
+  Matrix-free parallel scheme of tasks:      none        
+
+  Multigrid Smoother (Pre&Post):             Schwarz        
+  Schwarz operator:                          Additive, Vertex-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            1.5000e-01
+  Patch-wise damping factor:                 1.0000e+00
+  Manual coloring:                           true
+  Number of quad points (surrogate):         16
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+
+  Coarse-Grid Solver:                        Accurate Chebyshev smoother        
+  > Polynomial degree:                       t.b.c.        
+  > Guaranteed reduction/Accuracy:           1.000e-04     
+  > Schwarz operator:                        Additive, Cell-Patch operator        
+
+ ... set up linear system & multigrid!
+
+ Solve linear system ... 
+
+ ... done! 
+
+  Average reduction:                         0.612243        
+  Fractional steps:                          37.5963        
+  Iteration steps:                           38        
+
+  Calls: 
+  [Sys] [MF::Operator] vmult:                          38        
+  [MGmax] [MF::Operator] vmult:                        114        
+  [MGmax] Pre-smooth:                                  38        
+  [MGmax] Post-smooth:                                 38        
+  [MGmax] [SchwarzPrecond] Update residuals:           0        
+  [MGmax] [SchwarzPrecond] Apply inverses:             76        
+
+Miscellaneous information on level 3:
+  Number of degrees of freedom:              16777216        
+  Number of cells:                           4096        
+  Number of macro cells:                     1024        
+  Number of interior macro faces:            2880        
+  Number of boundary macro faces:            384        
+  Number of physical subdomains:             3375        
+  Number of macro subdomains:                846        
+
+============================================================

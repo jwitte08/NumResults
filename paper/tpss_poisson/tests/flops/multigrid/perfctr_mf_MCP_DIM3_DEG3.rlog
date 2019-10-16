@@ -1,0 +1,56 @@
+WARN: Event FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE not found for current architecture
+WARN: Event FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE not found for current architecture
+ ... constructed mesh hierarchy (3D) with 4 multigrid levels!
+
+  Geometry:                                  [0.00, 1.00]^3        
+
+     level:         n_cells:       
+     0              8              
+     1              64             
+     2              512            
+     3              4096           
+
+Git - deal.II version:                       5d42231c15        
+Git - deal.II branch:                        chebyshev_timing        
+Git - ExaDG version:                         579a72e9        
+Git - ExaDG branch:                          likwid_fpcount        
+
+Floating point precision:                    double        
+Vectorization length:                        4        
+MultithreadInfo::n_cores:                    4        
+MultithreadInfo::n_threads:                  1        
+MPI - number of mpi processes:               1        
+Number of experimental loops:                1        
+Number of warmup loops:                      0        
+
+  Matrix-free parallel scheme:               none        
+
+  Schwarz operator:                          Additive, Vertex-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            1.5000e-01
+  Patch-wise damping factor:                 1.0000e+00
+  Manual coloring:                           true
+  Number of quad points (surrogate):         5
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+
+  Finite element:                            FE_DGQ<3>(7)        
+
+     level:         n_dofs:        
+     0              4096           
+     1              32768          
+     2              262144         
+     3              2097152        
+
+tested tpss smooth ... 
+
+Miscellaneous information on level 3:
+  Number of degrees of freedom:              2097152        
+  Number of cells:                           4096        
+  Number of macro cells:                     1024        
+  Number of interior macro faces:            2880        
+  Number of boundary macro faces:            384        
+  Number of physical subdomains:             3375        
+  Number of macro subdomains:                846        
+
+============================================================

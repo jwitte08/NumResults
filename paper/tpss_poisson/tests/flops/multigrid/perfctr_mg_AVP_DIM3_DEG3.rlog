@@ -1,0 +1,24 @@
+WARN: Event FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE not found for current architecture
+WARN: Event FP_ARITH_INST_RETIRED_512B_PACKED_DOUBLE not found for current architecture
+ ... constructed mesh hierarchy (3D) with 4 multigrid levels!
+
+  Geometry:                                  [0.00, 1.00]^3        
+
+     level:         n_cells:       
+     0              8              
+     1              64             
+     2              512            
+     3              4096           
+
+ ... set up linear system & multigrid!
+
+Miscellaneous information on level 3:
+  Number of degrees of freedom:              262144        
+  Number of cells:                           4096        
+  Number of macro cells:                     1024        
+  Number of interior macro faces:            2880        
+  Number of boundary macro faces:            384        
+  Number of physical subdomains:             3375        
+  Number of macro subdomains:                846        
+
+============================================================

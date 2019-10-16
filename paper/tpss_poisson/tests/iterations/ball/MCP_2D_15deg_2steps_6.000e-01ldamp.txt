@@ -1,0 +1,9 @@
+outer damping factor:                             1        
+local damping factor:                             0.6        
+total damping factor:                             0.6        
+n_levels n_cells  n_dofs  n_colors    error_L2     n_iter  reduction  t_solve  
+       3     320    81920        4 3.324e-08     - 26.8633 5.037e-01 1.274e+01 
+       4    1280   327680        4 3.360e-08 -0.02 27.4183 5.108e-01 1.867e+01 
+       5    5120  1310720        4 2.938e-08  0.19 27.6122 5.132e-01 4.409e+01 
+       6   20480  5242880        4 2.074e-08  0.50 28.8912 5.286e-01 1.421e+02 
+       7   81920 20971520        4 3.645e-08 -0.81 27.9043 5.168e-01 5.251e+02 

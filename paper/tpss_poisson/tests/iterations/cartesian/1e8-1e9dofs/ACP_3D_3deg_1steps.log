@@ -1,0 +1,58 @@
+domain: (0, 1) x (0, 1) x (0, 1)
+mesh: 128 x 128 x 128
+
+  Finite element:                            FE_DGQ<3>(3)        
+
+     level:         n_dofs:        
+     1              512            
+     2              4096           
+     3              32768          
+     4              262144         
+     5              2097152        
+     6              16777216       
+     7              134217728      
+
+  Looping over system levels:                2,...,16        
+
+  lower DoF limit:                           100000000        
+  upper DoF limit:                           1000000000        
+  Iterative solver:                          CG        
+  > Reduction:                               1.000e-08    
+  > Maximum number of iterations:            100        
+  Preconditioner:                            multigrid        
+
+  Matrix-free parallel scheme of tasks:      none        
+
+  Multigrid Smoother (Pre&Post):             Schwarz        
+  Schwarz operator:                          Additive, Cell-Patch Operator
+  Number of smoothing steps:                 1
+  Damping factor:                            7.0000e-01
+  Patch-wise damping factor:                 1.0000e+00
+  Manual coloring:                           false
+  Number of quad points (surrogate):         4
+  Normalize surrogate patches:               false
+  Arc length for surrogate:                  true
+
+  Coarse-Grid Solver:                        Accurate Chebyshev smoother        
+  > Polynomial degree:                       t.b.c.        
+  > Guaranteed reduction/Accuracy:           1.000e-08    
+  > Schwarz operator:                        Additive, Cell-Patch operator        
+
+ ... set up linear system & multigrid!
+
+ Solve linear system ... 
+
+ ... done! 
+
+  Average reduction:                         0.342079        
+  Fractional steps:                          17.1721        
+  Iteration steps:                           18        
+
+  Calls: 
+  [Sys] [MF::Operator] vmult:                          18        
+  [MGmax] [MF::Operator] vmult:                        54        
+  [MGmax] Pre-smooth:                                  18        
+  [MGmax] Post-smooth:                                 18        
+  [MGmax] [SchwarzPrecond] Update residuals:           0        
+  [MGmax] [SchwarzPrecond] Apply inverses:             36        
+

@@ -1,0 +1,55 @@
+Sanitize socket IDs
+Sanitize socket IDs
+hi
+
+   +++++++++++++++   PARALLELIZATION STATS   +++++++++++++++
+   Multithreading stats:   (threads_per_proc)   (1)
+   MPI stats:              (#mpi_procs)         (1)
+   Vectorization stats:    #lanes with (double/float)   (8/16)
+
+   +++++++++++++++   EQUATION DATA   +++++++++++++++
+   Diffusion problem:   - div_(D*grad_u) = 1 
+                        where D(x) = 1 / (alpha + beta * |x|^2)
+                        ((alpha|beta))   ((1|0))
+
+   +++++++++++++++   DISCRETIZATION STATS   +++++++++++++++
+   DGQ(7)
+   QGaussLegendre(8)
+   factor (non-cartesian cells): 1
+
+   start test cycle on (coarse_level, [fine_start ... fine_end]):   (4, [4 ... 4])
+
+   +++++++++++++++   DOMAIN INFO   +++++++++++++++
+   Physical domain:   [0, 1]^3
+
+   +++++++++++++++   SOLVER STATS   +++++++++++++++
+   SolverType:   N6dealii8SolverCGINS_13LinearAlgebra11distributed6VectorIdNS_11MemorySpace4HostEEEEE
+   (tolerance/reduction)   (1e-12/1e-08)
+
+n_active_cells : 4096
+   %%%%%%%%%%%%%%%   System on level 4   %%%%%%%%%%%%%%%   
+
+n_active_cells : 4096
+n_global_dofs : 2097152
+   +++++++++++++++   MULTIGRID STATS   +++++++++++++++
+   hierarchy on levels: 4 
+   Coarse Grid(IterativeMethod):   (accuracy)   (1e-16)
+   Smoothing steps: 1
+
+Assembling Block-Jacobi-Smoother.
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |  1.11e+05s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| Assemble RHS                    |         1 |      42.2s |         0% |
+| MFOperator::apply (mg)          |         2 |      0.48s |         0% |
+| MatrixFree::init (global)       |         1 |      14.8s |         0% |
+| MatrixFree::init (mg)           |         1 |      15.1s |         0% |
+| PSC::initialize @ level 04      |         1 |  1.11e+05s |     1e+02% |
+| PSC::initialize all levels      |         1 |  1.11e+05s |     1e+02% |
+| Refine Mesh                     |         1 |  4.27e-06s |         0% |
++---------------------------------+-----------+------------+------------+
+

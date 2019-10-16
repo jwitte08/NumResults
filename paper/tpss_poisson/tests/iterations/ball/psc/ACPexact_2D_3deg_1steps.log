@@ -1,0 +1,465 @@
+
+
+   +++++++++++++++   PARALLELIZATION STATS   +++++++++++++++
+   Multithreading stats:   (threads_per_proc)   (1)
+   MPI stats:              (#mpi_procs)         (1)
+   Vectorization stats:    #lanes with (double/float)   (8/16)
+
+   +++++++++++++++   EQUATION DATA   +++++++++++++++
+   Diffusion problem:   - div_(D*grad_u) = 1 
+                        where D(x) = 1 / (alpha + beta * |x|^2)
+                        ((alpha|beta))   ((1|0))
+
+   +++++++++++++++   DISCRETIZATION STATS   +++++++++++++++
+   DGQ(3)
+   QGaussLegendre(4)
+   factor (non-cartesian cells): 4
+
+   start test cycle on (coarse_level, [fine_start ... fine_end]):   (1, [5 ... 10])
+
+   +++++++++++++++   DOMAIN INFO   +++++++++++++++
+   Physical domain:   B[(0.5 0.5); 0.883883]
+   (possible distortation factor 0.25)
+
+   +++++++++++++++   SOLVER STATS   +++++++++++++++
+   SolverType:   N6dealii8SolverCGINS_13LinearAlgebra11distributed6VectorIdNS_11MemorySpace4HostEEEEE
+   (tolerance/reduction)   (1e-12/1e-08)
+
+n_active_cells : 20
+   %%%%%%%%%%%%%%%   System on level 5   %%%%%%%%%%%%%%%   
+
+n_active_cells : 5120
+n_global_dofs : 81920
+   +++++++++++++++   MULTIGRID STATS   +++++++++++++++
+   hierarchy on levels: 1 2 3 4 5 
+   Coarse Grid(IterativeMethod):   (accuracy)   (1e-16)
+   Smoothing steps: 1
+
+Assembling Block-Jacobi-Smoother.
+DEAL:cg::Check 0	440.106
+DEAL:cg::Starting value 440.106
+DEAL:cg::Check 1	4.74669
+DEAL:cg::Check 2	2.23604
+DEAL:cg::Check 3	0.992926
+DEAL:cg::Check 4	0.423399
+DEAL:cg::Check 5	0.248785
+DEAL:cg::Check 6	0.0943960
+DEAL:cg::Check 7	0.0497916
+DEAL:cg::Check 8	0.0336522
+DEAL:cg::Check 9	0.0328083
+DEAL:cg::Check 10	0.0164606
+DEAL:cg::Check 11	0.00724650
+DEAL:cg::Check 12	0.00580088
+DEAL:cg::Check 13	0.00379049
+DEAL:cg::Check 14	0.00225320
+DEAL:cg::Check 15	0.00193055
+DEAL:cg::Check 16	0.00158678
+DEAL:cg::Check 17	0.000717059
+DEAL:cg::Check 18	0.000479285
+DEAL:cg::Check 19	0.000357558
+DEAL:cg::Check 20	0.000253949
+DEAL:cg::Check 21	0.000146535
+DEAL:cg::Check 22	0.000102648
+DEAL:cg::Check 23	7.56245e-05
+DEAL:cg::Check 24	4.07547e-05
+DEAL:cg::Check 25	3.19252e-05
+DEAL:cg::Check 26	2.06920e-05
+DEAL:cg::Check 27	1.44759e-05
+DEAL:cg::Check 28	8.36750e-06
+DEAL:cg::Check 29	7.15485e-06
+DEAL:cg::Check 30	5.74955e-06
+DEAL:cg::Convergence step 31 value 2.83039e-06
+
+
+   +++++++++++++++   SOLVER STATS (post process)   +++++++++++++++
+   average reduction:   0.544191
+   fractional steps: 30.3771
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |      8.48s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| Assemble RHS                    |         1 |    0.0403s |      0.48% |
+| MFOperator::apply (global)      |        31 |     0.115s |       1.4% |
+| MFOperator::apply (mg)          |       248 |     0.301s |       3.5% |
+| MatrixFree::init (global)       |         1 |    0.0504s |      0.59% |
+| MatrixFree::init (mg)           |         5 |    0.0835s |      0.98% |
+| PSC::initialize @ level 01      |         1 |    0.0202s |      0.24% |
+| PSC::initialize @ level 02      |         1 |    0.0786s |      0.93% |
+| PSC::initialize @ level 03      |         1 |     0.318s |       3.7% |
+| PSC::initialize @ level 04      |         1 |      1.17s |        14% |
+| PSC::initialize @ level 05      |         1 |      5.05s |        59% |
+| PSC::initialize all levels      |         5 |      6.64s |        78% |
+| Refine Mesh                     |         1 |    0.0197s |      0.23% |
+| Solve System                    |         1 |      1.61s |        19% |
++---------------------------------+-----------+------------+------------+
+
+   %%%%%%%%%%%%%%%   System on level 6   %%%%%%%%%%%%%%%   
+
+n_active_cells : 20480
+n_global_dofs : 327680
+   +++++++++++++++   MULTIGRID STATS   +++++++++++++++
+   hierarchy on levels: 1 2 3 4 5 6 
+   Coarse Grid(IterativeMethod):   (accuracy)   (1e-16)
+   Smoothing steps: 1
+
+Assembling Block-Jacobi-Smoother.
+DEAL:cg::Check 0	620.729
+DEAL:cg::Starting value 620.729
+DEAL:cg::Check 1	5.77939
+DEAL:cg::Check 2	2.77056
+DEAL:cg::Check 3	1.12844
+DEAL:cg::Check 4	0.531163
+DEAL:cg::Check 5	0.344177
+DEAL:cg::Check 6	0.149516
+DEAL:cg::Check 7	0.0696231
+DEAL:cg::Check 8	0.0404324
+DEAL:cg::Check 9	0.0406553
+DEAL:cg::Check 10	0.0251502
+DEAL:cg::Check 11	0.00948890
+DEAL:cg::Check 12	0.00779528
+DEAL:cg::Check 13	0.00552505
+DEAL:cg::Check 14	0.00336281
+DEAL:cg::Check 15	0.00256011
+DEAL:cg::Check 16	0.00216521
+DEAL:cg::Check 17	0.000957041
+DEAL:cg::Check 18	0.000871749
+DEAL:cg::Check 19	0.000621633
+DEAL:cg::Check 20	0.000378650
+DEAL:cg::Check 21	0.000212022
+DEAL:cg::Check 22	0.000171965
+DEAL:cg::Check 23	0.000122216
+DEAL:cg::Check 24	6.61044e-05
+DEAL:cg::Check 25	5.05366e-05
+DEAL:cg::Check 26	3.51268e-05
+DEAL:cg::Check 27	2.58057e-05
+DEAL:cg::Check 28	1.49064e-05
+DEAL:cg::Check 29	1.26959e-05
+DEAL:cg::Check 30	9.21383e-06
+DEAL:cg::Convergence step 31 value 4.65929e-06
+
+
+   +++++++++++++++   SOLVER STATS (post process)   +++++++++++++++
+   average reduction:   0.546911
+   fractional steps: 30.5793
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |      40.1s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| Assemble RHS                    |         1 |     0.137s |      0.34% |
+| MFOperator::apply (global)      |        31 |     0.647s |       1.6% |
+| MFOperator::apply (mg)          |       310 |      1.73s |       4.3% |
+| MatrixFree::init (global)       |         1 |     0.228s |      0.57% |
+| MatrixFree::init (mg)           |         6 |     0.336s |      0.84% |
+| PSC::initialize @ level 01      |         1 |    0.0205s |         0% |
+| PSC::initialize @ level 02      |         1 |    0.0786s |       0.2% |
+| PSC::initialize @ level 03      |         1 |     0.323s |      0.81% |
+| PSC::initialize @ level 04      |         1 |      1.05s |       2.6% |
+| PSC::initialize @ level 05      |         1 |      4.74s |        12% |
+| PSC::initialize @ level 06      |         1 |      24.3s |        61% |
+| PSC::initialize all levels      |         6 |      30.5s |        76% |
+| Refine Mesh                     |         1 |    0.0635s |      0.16% |
+| Solve System                    |         1 |      8.67s |        22% |
++---------------------------------+-----------+------------+------------+
+
+   %%%%%%%%%%%%%%%   System on level 7   %%%%%%%%%%%%%%%   
+
+n_active_cells : 81920
+n_global_dofs : 1310720
+   +++++++++++++++   MULTIGRID STATS   +++++++++++++++
+   hierarchy on levels: 1 2 3 4 5 6 7 
+   Coarse Grid(IterativeMethod):   (accuracy)   (1e-16)
+   Smoothing steps: 1
+
+Assembling Block-Jacobi-Smoother.
+DEAL:cg::Check 0	876.599
+DEAL:cg::Starting value 876.599
+DEAL:cg::Check 1	7.62323
+DEAL:cg::Check 2	3.66001
+DEAL:cg::Check 3	1.42498
+DEAL:cg::Check 4	0.679107
+DEAL:cg::Check 5	0.452605
+DEAL:cg::Check 6	0.220199
+DEAL:cg::Check 7	0.100184
+DEAL:cg::Check 8	0.0533976
+DEAL:cg::Check 9	0.0516949
+DEAL:cg::Check 10	0.0363275
+DEAL:cg::Check 11	0.0131606
+DEAL:cg::Check 12	0.0117494
+DEAL:cg::Check 13	0.00831306
+DEAL:cg::Check 14	0.00469318
+DEAL:cg::Check 15	0.00324469
+DEAL:cg::Check 16	0.00258555
+DEAL:cg::Check 17	0.00134665
+DEAL:cg::Check 18	0.00136345
+DEAL:cg::Check 19	0.000898668
+DEAL:cg::Check 20	0.000497789
+DEAL:cg::Check 21	0.000319588
+DEAL:cg::Check 22	0.000303231
+DEAL:cg::Check 23	0.000169284
+DEAL:cg::Check 24	9.95641e-05
+DEAL:cg::Check 25	7.77967e-05
+DEAL:cg::Check 26	5.44580e-05
+DEAL:cg::Check 27	3.85980e-05
+DEAL:cg::Check 28	2.35435e-05
+DEAL:cg::Check 29	2.18913e-05
+DEAL:cg::Check 30	1.42870e-05
+DEAL:cg::Convergence step 31 value 7.49706e-06
+
+
+   +++++++++++++++   SOLVER STATS (post process)   +++++++++++++++
+   average reduction:   0.549218
+   fractional steps: 30.7575
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |       180s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| Assemble RHS                    |         1 |     0.538s |       0.3% |
+| MFOperator::apply (global)      |        31 |      2.73s |       1.5% |
+| MFOperator::apply (mg)          |       372 |      6.62s |       3.7% |
+| MatrixFree::init (global)       |         1 |      1.05s |      0.59% |
+| MatrixFree::init (mg)           |         7 |      1.21s |      0.67% |
+| PSC::initialize @ level 01      |         1 |    0.0206s |         0% |
+| PSC::initialize @ level 02      |         1 |    0.0763s |         0% |
+| PSC::initialize @ level 03      |         1 |     0.295s |      0.16% |
+| PSC::initialize @ level 04      |         1 |      1.21s |      0.67% |
+| PSC::initialize @ level 05      |         1 |      5.94s |       3.3% |
+| PSC::initialize @ level 06      |         1 |      26.5s |        15% |
+| PSC::initialize @ level 07      |         1 |       106s |        59% |
+| PSC::initialize all levels      |         7 |       140s |        78% |
+| Refine Mesh                     |         1 |     0.285s |      0.16% |
+| Solve System                    |         1 |      35.8s |        20% |
++---------------------------------+-----------+------------+------------+
+
+   %%%%%%%%%%%%%%%   System on level 8   %%%%%%%%%%%%%%%   
+
+n_active_cells : 327680
+n_global_dofs : 5242880
+   +++++++++++++++   MULTIGRID STATS   +++++++++++++++
+   hierarchy on levels: 1 2 3 4 5 6 7 8 
+   Coarse Grid(IterativeMethod):   (accuracy)   (1e-16)
+   Smoothing steps: 1
+
+Assembling Block-Jacobi-Smoother.
+DEAL:cg::Check 0	1238.80
+DEAL:cg::Starting value 1238.80
+DEAL:cg::Check 1	10.4895
+DEAL:cg::Check 2	5.05004
+DEAL:cg::Check 3	1.93262
+DEAL:cg::Check 4	0.919659
+DEAL:cg::Check 5	0.614020
+DEAL:cg::Check 6	0.315045
+DEAL:cg::Check 7	0.143383
+DEAL:cg::Check 8	0.0745934
+DEAL:cg::Check 9	0.0709786
+DEAL:cg::Check 10	0.0529352
+DEAL:cg::Check 11	0.0185458
+DEAL:cg::Check 12	0.0157687
+DEAL:cg::Check 13	0.0118737
+DEAL:cg::Check 14	0.00661152
+DEAL:cg::Check 15	0.00431521
+DEAL:cg::Check 16	0.00345829
+DEAL:cg::Check 17	0.00193834
+DEAL:cg::Check 18	0.00193266
+DEAL:cg::Check 19	0.00116587
+DEAL:cg::Check 20	0.000674857
+DEAL:cg::Check 21	0.000564841
+DEAL:cg::Check 22	0.000494976
+DEAL:cg::Check 23	0.000230124
+DEAL:cg::Check 24	0.000146940
+DEAL:cg::Check 25	0.000118337
+DEAL:cg::Check 26	8.06664e-05
+DEAL:cg::Check 27	5.67256e-05
+DEAL:cg::Check 28	3.58650e-05
+DEAL:cg::Check 29	3.21386e-05
+DEAL:cg::Check 30	1.72610e-05
+DEAL:cg::Convergence step 31 value 1.21432e-05
+
+
+   +++++++++++++++   SOLVER STATS (post process)   +++++++++++++++
+   average reduction:   0.55164
+   fractional steps: 30.9433
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |       778s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| Assemble RHS                    |         1 |      2.43s |      0.31% |
+| MFOperator::apply (global)      |        31 |      11.8s |       1.5% |
+| MFOperator::apply (mg)          |       434 |      27.8s |       3.6% |
+| MatrixFree::init (global)       |         1 |      5.13s |      0.66% |
+| MatrixFree::init (mg)           |         8 |       6.8s |      0.87% |
+| PSC::initialize @ level 01      |         1 |     0.022s |         0% |
+| PSC::initialize @ level 02      |         1 |    0.0932s |         0% |
+| PSC::initialize @ level 03      |         1 |     0.306s |         0% |
+| PSC::initialize @ level 04      |         1 |      1.31s |      0.17% |
+| PSC::initialize @ level 05      |         1 |      4.98s |      0.64% |
+| PSC::initialize @ level 06      |         1 |      25.3s |       3.3% |
+| PSC::initialize @ level 07      |         1 |       103s |        13% |
+| PSC::initialize @ level 08      |         1 |       471s |        60% |
+| PSC::initialize all levels      |         8 |       606s |        78% |
+| Refine Mesh                     |         1 |      1.21s |      0.16% |
+| Solve System                    |         1 |       153s |        20% |
++---------------------------------+-----------+------------+------------+
+
+   %%%%%%%%%%%%%%%   System on level 9   %%%%%%%%%%%%%%%   
+
+n_active_cells : 1310720
+n_global_dofs : 20971520
+   +++++++++++++++   MULTIGRID STATS   +++++++++++++++
+   hierarchy on levels: 1 2 3 4 5 6 7 8 9 
+   Coarse Grid(IterativeMethod):   (accuracy)   (1e-16)
+   Smoothing steps: 1
+
+Assembling Block-Jacobi-Smoother.
+DEAL:cg::Check 0	1751.28
+DEAL:cg::Starting value 1751.28
+DEAL:cg::Check 1	14.6785
+DEAL:cg::Check 2	7.08794
+DEAL:cg::Check 3	2.69387
+DEAL:cg::Check 4	1.28061
+DEAL:cg::Check 5	0.854273
+DEAL:cg::Check 6	0.447234
+DEAL:cg::Check 7	0.203895
+DEAL:cg::Check 8	0.105655
+DEAL:cg::Check 9	0.100251
+DEAL:cg::Check 10	0.0771101
+DEAL:cg::Check 11	0.0269870
+DEAL:cg::Check 12	0.0201053
+DEAL:cg::Check 13	0.0164202
+DEAL:cg::Check 14	0.00938498
+DEAL:cg::Check 15	0.00582503
+DEAL:cg::Check 16	0.00500219
+DEAL:cg::Check 17	0.00269415
+DEAL:cg::Check 18	0.00260959
+DEAL:cg::Check 19	0.00169497
+DEAL:cg::Check 20	0.000943541
+DEAL:cg::Check 21	0.000815843
+DEAL:cg::Check 22	0.000722396
+DEAL:cg::Check 23	0.000314722
+DEAL:cg::Check 24	0.000217740
+DEAL:cg::Check 25	0.000172307
+DEAL:cg::Check 26	0.000113814
+DEAL:cg::Check 27	7.83818e-05
+DEAL:cg::Check 28	6.00793e-05
+DEAL:cg::Check 29	4.24509e-05
+DEAL:cg::Check 30	2.55569e-05
+DEAL:cg::Check 31	2.32102e-05
+DEAL:cg::Convergence step 32 value 1.32995e-05
+
+
+   +++++++++++++++   SOLVER STATS (post process)   +++++++++++++++
+   average reduction:   0.557526
+   fractional steps: 31.5058
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |   3.2e+03s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| Assemble RHS                    |         1 |       8.6s |      0.27% |
+| MFOperator::apply (global)      |        32 |      55.7s |       1.7% |
+| MFOperator::apply (mg)          |       512 |       132s |       4.1% |
+| MatrixFree::init (global)       |         1 |      21.3s |      0.67% |
+| MatrixFree::init (mg)           |         9 |      28.9s |       0.9% |
+| PSC::initialize @ level 01      |         1 |    0.0219s |         0% |
+| PSC::initialize @ level 02      |         1 |    0.0801s |         0% |
+| PSC::initialize @ level 03      |         1 |     0.411s |         0% |
+| PSC::initialize @ level 04      |         1 |      1.67s |         0% |
+| PSC::initialize @ level 05      |         1 |      5.51s |      0.17% |
+| PSC::initialize @ level 06      |         1 |      25.8s |      0.81% |
+| PSC::initialize @ level 07      |         1 |       105s |       3.3% |
+| PSC::initialize @ level 08      |         1 |       458s |        14% |
+| PSC::initialize @ level 09      |         1 |  1.82e+03s |        57% |
+| PSC::initialize all levels      |         9 |  2.42e+03s |        76% |
+| Refine Mesh                     |         1 |      6.22s |      0.19% |
+| Solve System                    |         1 |       701s |        22% |
++---------------------------------+-----------+------------+------------+
+
+   %%%%%%%%%%%%%%%   System on level 10   %%%%%%%%%%%%%%%   
+
+n_active_cells : 5242880
+n_global_dofs : 83886080
+   +++++++++++++++   MULTIGRID STATS   +++++++++++++++
+   hierarchy on levels: 1 2 3 4 5 6 7 8 9 10 
+   Coarse Grid(IterativeMethod):   (accuracy)   (1e-16)
+   Smoothing steps: 1
+
+Assembling Block-Jacobi-Smoother.
+DEAL:cg::Check 0	2476.22
+DEAL:cg::Starting value 2476.22
+DEAL:cg::Check 1	20.6694
+DEAL:cg::Check 2	10.0019
+DEAL:cg::Check 3	3.78913
+DEAL:cg::Check 4	1.80054
+DEAL:cg::Check 5	1.20053
+DEAL:cg::Check 6	0.633185
+DEAL:cg::Check 7	0.288981
+DEAL:cg::Check 8	0.149855
+DEAL:cg::Check 9	0.142285
+DEAL:cg::Check 10	0.111443
+DEAL:cg::Check 11	0.0398900
+DEAL:cg::Check 12	0.0257936
+DEAL:cg::Check 13	0.0219417
+DEAL:cg::Check 14	0.0132854
+DEAL:cg::Check 15	0.00799794
+DEAL:cg::Check 16	0.00722540
+DEAL:cg::Check 17	0.00377302
+DEAL:cg::Check 18	0.00363505
+DEAL:cg::Check 19	0.00249431
+DEAL:cg::Check 20	0.00133893
+DEAL:cg::Check 21	0.00116947
+DEAL:cg::Check 22	0.00104642
+DEAL:cg::Check 23	0.000443417
+DEAL:cg::Check 24	0.000316724
+DEAL:cg::Check 25	0.000244311
+DEAL:cg::Check 26	0.000164161
+DEAL:cg::Check 27	0.000113185
+DEAL:cg::Check 28	8.76529e-05
+DEAL:cg::Check 29	5.86521e-05
+DEAL:cg::Check 30	3.86685e-05
+DEAL:cg::Check 31	3.40590e-05
+DEAL:cg::Convergence step 32 value 1.72608e-05
+
+
+   +++++++++++++++   SOLVER STATS (post process)   +++++++++++++++
+   average reduction:   0.556035
+   fractional steps: 31.469
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |  1.49e+04s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| Assemble RHS                    |         1 |        37s |      0.25% |
+| MFOperator::apply (global)      |        32 |       275s |       1.8% |
+| MFOperator::apply (mg)          |       576 |       581s |       3.9% |
+| MatrixFree::init (global)       |         1 |      76.5s |      0.51% |
+| MatrixFree::init (mg)           |        10 |       104s |       0.7% |
+| PSC::initialize @ level 01      |         1 |    0.0239s |         0% |
+| PSC::initialize @ level 02      |         1 |    0.0774s |         0% |
+| PSC::initialize @ level 03      |         1 |     0.384s |         0% |
+| PSC::initialize @ level 04      |         1 |      1.91s |         0% |
+| PSC::initialize @ level 05      |         1 |      6.26s |         0% |
+| PSC::initialize @ level 06      |         1 |      25.7s |      0.17% |
+| PSC::initialize @ level 07      |         1 |       114s |      0.77% |
+| PSC::initialize @ level 08      |         1 |       442s |         3% |
+| PSC::initialize @ level 09      |         1 |  1.98e+03s |        13% |
+| PSC::initialize @ level 10      |         1 |   8.2e+03s |        55% |
+| PSC::initialize all levels      |        10 |  1.08e+04s |        72% |
+| Refine Mesh                     |         1 |      21.9s |      0.15% |
+| Solve System                    |         1 |  3.81e+03s |        26% |
++---------------------------------+-----------+------------+------------+
+
