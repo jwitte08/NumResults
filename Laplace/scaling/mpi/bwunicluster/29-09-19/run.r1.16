@@ -1,0 +1,26 @@
+#!/bin/bash
+
+#MSUB -l nodes=16:ppn=28
+#MSUB -l naccesspolicy=singlejob                                                                                                                           
+#MSUB -l pmem=4gb
+#MSUB -v OMP_NUM_THREADS=1
+#MSUB -v DEAL_II_NUM_THREADS=1
+#MSUB -N ompi_test
+#MSUB -m bea
+#MSUB -M julius.witte@iwr.uni-heidelberg.de
+
+echo "starting on `date` with ppn=28, nodes=16 at `pwd`"
+
+echo "OMP_NUM_THREADS=$OMP_NUM_THREADS"
+echo "DEAL_II_NUM_THREADS=$DEAL_II_NUM_THREADS"
+
+for prog in poisson_ACP_DIM3_DEG3.out poisson_MCP_DIM3_DEG3.out poisson_MVP_DIM3_DEG3.out;
+do
+for args in 4 5 6 7 8;
+do
+    cmd="./${prog} ${args}"
+    mpirun --bind-to core --map-by core -display-devel-map -report-bindings ${cmd}
+done
+done
+
+echo "exiting on `date` with ppn=28, nodes=16 at `pwd`"

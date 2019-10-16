@@ -1,0 +1,44 @@
+* strong scaling poisson on bwunicluster
+  
+** DONE create orgfile
+   CLOSED: [2019-09-28 Sa 21:26]
+
+** DONE compile variants of poisson.cc (see ../poisson)
+   CLOSED: [2019-09-28 Sa 21:29]
+** DONE run tests for 2 4 8 16 // 32 nodes
+   CLOSED: [2019-10-01 Di 16:58]
+
+   
+
+** DONE we create two Poisson problems and therefore initialize twice the memory. therefore, refactor tests in poisson.cc
+   CLOSED: [2019-09-28 Sa 22:32]
+** DONE set the subsampling sizes:
+   CLOSED: [2019-09-28 Sa 22:32]
+   MF::vmult on 448 procs 262kDoFs: apply needs 1e-05
+                 56 procs 262kDoFs: apply needs 1e-04 --> 100 subsamplings ?!
+   MF::vmult on 448 procs 2MDoFs: apply needs 2e-04
+                 56 procs 2MDoFs: apply needs 1e-03 --> 100 subsamplings ?!
+   smooth on 448 procs 2MDoFs: apply needs 9e-04
+              56 procs 2MDoFs: apply needs 6e-03 --> 20 subsamplings ?!
+   vcycle on 448 procs 2MDoFs: apply needs 1e-02
+              56 procs 2MDoFs: apply needs 3e-02 --> 10 subsamplings ?!
+
+** DONE recompile variants (see ../poisson)
+   CLOSED: [2019-10-16 Mi 13:52]
+** DONE run on 
+   CLOSED: [2019-10-16 Mi 13:52]
+         2 nodes running 17551173 (exceeded job mem) (runtime 01:12:00)
+	 4 nodes running 17551174 (exceeded job mem) (runtime 00:59:00)
+	 8 nodes running 17551175 (exceeded job mem) (runtime 00:35:00)
+	16 nodes running 17551177 (exceeded job mem) (runtime 00:59:00)
+	32 nodes running 17551178 (exceeded job mem) (runtime 00:48:00)
+	
+* plotting with python (matplotlib)
+
+** DONE script extracting the timings and store them in CSV format
+   CLOSED: [2019-10-16 Mi 13:48]
+   + see git-project TPSS: scripts/mpi_scaling.py (+dependencies)
+** DONE write script plotting the timings
+   CLOSED: [2019-10-16 Mi 13:52]
+   + see git-project TPSS: scripts/mpi_scaling.py (+dependencies)
+   + HOWTO: python3 mpi_scaling -dir time
