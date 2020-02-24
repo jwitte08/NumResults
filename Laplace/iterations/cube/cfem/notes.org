@@ -1,0 +1,7 @@
+- m_pre = 1 and m_post = 1
+- reversed post smoother
+- cg solver with 10^-8 accuracy
+- coarse cg solver with 10^-12 accuracy
+- coarse grid is 2 x 2 x 2
+- user coloring (tiled colors)
+- computed on bwfordev 8 Nodes x 8 ppn = 64 procs
