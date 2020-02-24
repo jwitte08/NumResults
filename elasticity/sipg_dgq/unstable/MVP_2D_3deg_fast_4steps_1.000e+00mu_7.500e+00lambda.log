@@ -1,0 +1,423 @@
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               0        
+
+  Out of DoF limits!                         Try next...        
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               1        
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    64        
+  Finite element:                            FE_DGQ<2>(3)        
+  Equation Data:                                     
+  Lame coefficient (mu):                     1        
+  Lame coefficient (lambda):                 7.5        
+  IP pre-factor:                             1        
+
+  Compressed mode:                           false    
+  Number of run cycles:                      10        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Post-smoother                                  
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Average reduction (solver):                0.0148629        
+  Number of iterations (solver):             4.37662        
+ ||u - uh||_L2 = 1.89001e-05
+
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               2        
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    256        
+  Finite element:                            FE_DGQ<2>(3)        
+  Equation Data:                                     
+  Lame coefficient (mu):                     1        
+  Lame coefficient (lambda):                 7.5        
+  IP pre-factor:                             1        
+
+  Compressed mode:                           false    
+  Number of run cycles:                      10        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Post-smoother                                  
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Average reduction (solver):                0.0175133        
+  Number of iterations (solver):             4.55417        
+ ||u - uh||_L2 = 1.04083e-06
+
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               3        
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    1024        
+  Finite element:                            FE_DGQ<2>(3)        
+  Equation Data:                                     
+  Lame coefficient (mu):                     1        
+  Lame coefficient (lambda):                 7.5        
+  IP pre-factor:                             1        
+
+  Compressed mode:                           false    
+  Number of run cycles:                      10        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Post-smoother                                  
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Average reduction (solver):                0.0197671        
+  Number of iterations (solver):             4.69468        
+ ||u - uh||_L2 = 6.5696e-08
+
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               4        
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    4096        
+  Finite element:                            FE_DGQ<2>(3)        
+  Equation Data:                                     
+  Lame coefficient (mu):                     1        
+  Lame coefficient (lambda):                 7.5        
+  IP pre-factor:                             1        
+
+  Compressed mode:                           false    
+  Number of run cycles:                      10        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Post-smoother                                  
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Average reduction (solver):                0.0191775        
+  Number of iterations (solver):             4.65872        
+ ||u - uh||_L2 = 4.1432e-09
+
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               5        
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16384        
+  Finite element:                            FE_DGQ<2>(3)        
+  Equation Data:                                     
+  Lame coefficient (mu):                     1        
+  Lame coefficient (lambda):                 7.5        
+  IP pre-factor:                             1        
+
+  Compressed mode:                           false    
+  Number of run cycles:                      10        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Post-smoother                                  
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Average reduction (solver):                0.0178293        
+  Number of iterations (solver):             4.57439        
+ ||u - uh||_L2 = 2.59982e-10
+
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               6        
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    65536        
+  Finite element:                            FE_DGQ<2>(3)        
+  Equation Data:                                     
+  Lame coefficient (mu):                     1        
+  Lame coefficient (lambda):                 7.5        
+  IP pre-factor:                             1        
+
+  Compressed mode:                           false    
+  Number of run cycles:                      10        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Post-smoother                                  
+  Number of smoothing steps:                 4        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             1        
+  Patch-local damping factor                 1        
+  Manual coloring                            true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  Number of quad points (surrogate)          4        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Average reduction (solver):                0.0189285        
+  Number of iterations (solver):             4.64338        
+ ||u - uh||_L2 = 1.66326e-11
+
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               7        
+
+  Out of DoF limits!                         Try next...        
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               8        
+
+  Out of DoF limits!                         Try next...        
+  //////////////////////////////             //////////////////////////////        
+  Linear elasticity run cycle:               9        
+
+  Out of DoF limits!                         Try next...        
+ #DoFs        L2 error       
+   2048 1.890e-05     -    - 
+   8192 1.041e-06 18.16 4.18 
+  32768 6.570e-08 15.84 3.99 
+ 131072 4.143e-09 15.86 3.99 
+ 524288 2.600e-10 15.94 3.99 
+2097152 1.663e-11 15.63 3.97 
+
+
+
+
++---------------------------------------------+------------+------------+
+| Total wallclock time elapsed since start    |       185s |            |
+|                                             |            |            |
+| Section                         | no. calls |  wall time | % of total |
++---------------------------------+-----------+------------+------------+
+| Create triangulation            |        10 |     0.266s |      0.14% |
+| Distribute dofs                 |         6 |     0.136s |         0% |
+| Setup MG preconditioner         |         6 |      11.1s |         6% |
+| Setup linear system             |         6 |     0.854s |      0.46% |
+| Solve                           |         6 |       172s |        93% |
++---------------------------------+-----------+------------+------------+
+
