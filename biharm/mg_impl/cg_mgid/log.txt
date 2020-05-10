@@ -1,0 +1,361 @@
+  Finite element:                            FE_Q<2>(2)        
+  Number of run cycles:                      3        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 2        
+  Smoother:                                  None        
+  /// Post-smoother                                  
+  Number of smoothing steps:                 2        
+  Smoother:                                  None        
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16        
+Cycle: 0 of 3
+   Number of degrees of freedom: 289
+   Solving system...
+DEAL:cg::Check 0	3068.01
+DEAL:cg::Starting value 3068.01
+DEAL:cg::Check 1	894.347
+DEAL:cg::Check 2	240.503
+DEAL:cg::Check 3	171.109
+DEAL:cg::Check 4	157.324
+DEAL:cg::Check 5	168.386
+DEAL:cg::Check 6	171.059
+DEAL:cg::Check 7	168.395
+DEAL:cg::Check 8	167.812
+DEAL:cg::Check 9	167.129
+DEAL:cg::Check 10	167.311
+DEAL:cg::Check 11	167.405
+DEAL:cg::Check 12	167.496
+DEAL:cg::Check 13	167.493
+DEAL:cg::Check 14	167.471
+DEAL:cg::Check 15	167.461
+DEAL:cg::Check 16	167.457
+DEAL:cg::Check 17	167.464
+DEAL:cg::Check 18	167.466
+DEAL:cg::Check 19	167.467
+DEAL:cg::Check 20	167.466
+DEAL:cg::Check 21	167.465
+DEAL:cg::Check 22	167.464
+DEAL:cg::Check 23	167.464
+DEAL:cg::Check 24	167.464
+DEAL:cg::Check 25	167.464
+DEAL:cg::Check 26	167.464
+DEAL:cg::Check 27	167.465
+DEAL:cg::Check 28	167.465
+DEAL:cg::Check 29	167.465
+DEAL:cg::Check 30	167.465
+DEAL:cg::Check 31	167.465
+DEAL:cg::Check 32	167.465
+DEAL:cg::Check 33	167.465
+DEAL:cg::Check 34	167.465
+DEAL:cg::Check 35	167.465
+DEAL:cg::Check 36	167.464
+DEAL:cg::Check 37	167.464
+DEAL:cg::Check 38	167.464
+DEAL:cg::Check 39	167.464
+DEAL:cg::Check 40	167.464
+DEAL:cg::Check 41	167.465
+DEAL:cg::Check 42	167.465
+DEAL:cg::Check 43	167.465
+DEAL:cg::Check 44	167.465
+DEAL:cg::Check 45	167.465
+DEAL:cg::Check 46	167.465
+DEAL:cg::Check 47	167.465
+DEAL:cg::Check 48	167.465
+DEAL:cg::Check 49	167.465
+DEAL:cg::Check 50	167.465
+DEAL:cg::Check 51	167.465
+DEAL:cg::Check 52	167.465
+DEAL:cg::Check 53	167.465
+DEAL:cg::Check 54	167.465
+DEAL:cg::Check 55	167.465
+DEAL:cg::Check 56	167.465
+DEAL:cg::Check 57	167.465
+DEAL:cg::Check 58	167.465
+DEAL:cg::Check 59	167.465
+DEAL:cg::Check 60	167.465
+DEAL:cg::Check 61	167.465
+DEAL:cg::Check 62	167.465
+DEAL:cg::Check 63	167.465
+DEAL:cg::Check 64	167.465
+DEAL:cg::Check 65	167.465
+DEAL:cg::Check 66	167.465
+DEAL:cg::Check 67	167.465
+DEAL:cg::Check 68	167.465
+DEAL:cg::Check 69	167.465
+DEAL:cg::Check 70	167.465
+DEAL:cg::Check 71	167.465
+DEAL:cg::Check 72	167.465
+DEAL:cg::Check 73	167.465
+DEAL:cg::Check 74	167.465
+DEAL:cg::Check 75	167.465
+DEAL:cg::Check 76	167.465
+DEAL:cg::Check 77	167.465
+DEAL:cg::Check 78	167.465
+DEAL:cg::Check 79	167.465
+DEAL:cg::Check 80	167.465
+DEAL:cg::Check 81	167.465
+DEAL:cg::Check 82	167.465
+DEAL:cg::Check 83	167.465
+DEAL:cg::Check 84	167.465
+DEAL:cg::Check 85	167.465
+DEAL:cg::Check 86	167.465
+DEAL:cg::Check 87	167.465
+DEAL:cg::Check 88	167.465
+DEAL:cg::Check 89	167.465
+DEAL:cg::Check 90	167.465
+DEAL:cg::Check 91	167.465
+DEAL:cg::Check 92	167.465
+DEAL:cg::Check 93	167.465
+DEAL:cg::Check 94	167.465
+DEAL:cg::Check 95	167.465
+DEAL:cg::Check 96	167.465
+DEAL:cg::Check 97	167.465
+DEAL:cg::Check 98	167.465
+DEAL:cg::Check 99	167.465
+DEAL:cg::Convergence step 100 value 167.465
+   Writing graphical output...
+   Error in the L2 norm       :     0.0831685
+   Error in the H1 seminorm       : 0.418108
+   Error in the broken H2 seminorm: 3.3728
+
+Cycle: 1 of 3
+   Number of degrees of freedom: 1089
+   Solving system...
+DEAL:cg::Check 0	8647.51
+DEAL:cg::Starting value 8647.51
+DEAL:cg::Check 1	2481.54
+DEAL:cg::Check 2	599.302
+DEAL:cg::Check 3	447.207
+DEAL:cg::Check 4	349.753
+DEAL:cg::Check 5	370.816
+DEAL:cg::Check 6	375.696
+DEAL:cg::Check 7	370.032
+DEAL:cg::Check 8	368.736
+DEAL:cg::Check 9	367.025
+DEAL:cg::Check 10	367.175
+DEAL:cg::Check 11	367.381
+DEAL:cg::Check 12	367.585
+DEAL:cg::Check 13	367.585
+DEAL:cg::Check 14	367.537
+DEAL:cg::Check 15	367.514
+DEAL:cg::Check 16	367.507
+DEAL:cg::Check 17	367.524
+DEAL:cg::Check 18	367.529
+DEAL:cg::Check 19	367.532
+DEAL:cg::Check 20	367.529
+DEAL:cg::Check 21	367.525
+DEAL:cg::Check 22	367.523
+DEAL:cg::Check 23	367.523
+DEAL:cg::Check 24	367.522
+DEAL:cg::Check 25	367.523
+DEAL:cg::Check 26	367.525
+DEAL:cg::Check 27	367.525
+DEAL:cg::Check 28	367.525
+DEAL:cg::Check 29	367.526
+DEAL:cg::Check 30	367.526
+DEAL:cg::Check 31	367.526
+DEAL:cg::Check 32	367.525
+DEAL:cg::Check 33	367.525
+DEAL:cg::Check 34	367.525
+DEAL:cg::Check 35	367.525
+DEAL:cg::Check 36	367.525
+DEAL:cg::Check 37	367.525
+DEAL:cg::Check 38	367.525
+DEAL:cg::Check 39	367.525
+DEAL:cg::Check 40	367.525
+DEAL:cg::Check 41	367.525
+DEAL:cg::Check 42	367.525
+DEAL:cg::Check 43	367.525
+DEAL:cg::Check 44	367.525
+DEAL:cg::Check 45	367.525
+DEAL:cg::Check 46	367.525
+DEAL:cg::Check 47	367.525
+DEAL:cg::Check 48	367.525
+DEAL:cg::Check 49	367.525
+DEAL:cg::Check 50	367.525
+DEAL:cg::Check 51	367.525
+DEAL:cg::Check 52	367.525
+DEAL:cg::Check 53	367.525
+DEAL:cg::Check 54	367.525
+DEAL:cg::Check 55	367.525
+DEAL:cg::Check 56	367.525
+DEAL:cg::Check 57	367.525
+DEAL:cg::Check 58	367.525
+DEAL:cg::Check 59	367.525
+DEAL:cg::Check 60	367.525
+DEAL:cg::Check 61	367.525
+DEAL:cg::Check 62	367.525
+DEAL:cg::Check 63	367.525
+DEAL:cg::Check 64	367.525
+DEAL:cg::Check 65	367.525
+DEAL:cg::Check 66	367.525
+DEAL:cg::Check 67	367.525
+DEAL:cg::Check 68	367.525
+DEAL:cg::Check 69	367.525
+DEAL:cg::Check 70	367.525
+DEAL:cg::Check 71	367.525
+DEAL:cg::Check 72	367.525
+DEAL:cg::Check 73	367.525
+DEAL:cg::Check 74	367.525
+DEAL:cg::Check 75	367.525
+DEAL:cg::Check 76	367.525
+DEAL:cg::Check 77	367.525
+DEAL:cg::Check 78	367.525
+DEAL:cg::Check 79	367.525
+DEAL:cg::Check 80	367.525
+DEAL:cg::Check 81	367.525
+DEAL:cg::Check 82	367.525
+DEAL:cg::Check 83	367.525
+DEAL:cg::Check 84	367.525
+DEAL:cg::Check 85	367.525
+DEAL:cg::Check 86	367.525
+DEAL:cg::Check 87	367.525
+DEAL:cg::Check 88	367.525
+DEAL:cg::Check 89	367.525
+DEAL:cg::Check 90	367.525
+DEAL:cg::Check 91	367.525
+DEAL:cg::Check 92	367.525
+DEAL:cg::Check 93	367.525
+DEAL:cg::Check 94	367.525
+DEAL:cg::Check 95	367.525
+DEAL:cg::Check 96	367.525
+DEAL:cg::Check 97	367.525
+DEAL:cg::Check 98	367.525
+DEAL:cg::Check 99	367.525
+DEAL:cg::Convergence step 100 value 367.525
+   Writing graphical output...
+   Error in the L2 norm       :     0.0896191
+   Error in the H1 seminorm       : 0.445098
+   Error in the broken H2 seminorm: 3.40952
+
+Cycle: 2 of 3
+   Number of degrees of freedom: 4225
+   Solving system...
+DEAL:cg::Check 0	24452.4
+DEAL:cg::Starting value 24452.4
+DEAL:cg::Check 1	6956.24
+DEAL:cg::Check 2	1633.08
+DEAL:cg::Check 3	1290.88
+DEAL:cg::Check 4	933.109
+DEAL:cg::Check 5	963.424
+DEAL:cg::Check 6	969.876
+DEAL:cg::Check 7	959.650
+DEAL:cg::Check 8	957.312
+DEAL:cg::Check 9	953.725
+DEAL:cg::Check 10	953.459
+DEAL:cg::Check 11	953.804
+DEAL:cg::Check 12	954.158
+DEAL:cg::Check 13	954.158
+DEAL:cg::Check 14	954.073
+DEAL:cg::Check 15	954.032
+DEAL:cg::Check 16	954.021
+DEAL:cg::Check 17	954.050
+DEAL:cg::Check 18	954.059
+DEAL:cg::Check 19	954.064
+DEAL:cg::Check 20	954.058
+DEAL:cg::Check 21	954.050
+DEAL:cg::Check 22	954.048
+DEAL:cg::Check 23	954.046
+DEAL:cg::Check 24	954.046
+DEAL:cg::Check 25	954.048
+DEAL:cg::Check 26	954.051
+DEAL:cg::Check 27	954.052
+DEAL:cg::Check 28	954.053
+DEAL:cg::Check 29	954.053
+DEAL:cg::Check 30	954.053
+DEAL:cg::Check 31	954.053
+DEAL:cg::Check 32	954.052
+DEAL:cg::Check 33	954.052
+DEAL:cg::Check 34	954.051
+DEAL:cg::Check 35	954.051
+DEAL:cg::Check 36	954.051
+DEAL:cg::Check 37	954.051
+DEAL:cg::Check 38	954.051
+DEAL:cg::Check 39	954.051
+DEAL:cg::Check 40	954.051
+DEAL:cg::Check 41	954.051
+DEAL:cg::Check 42	954.051
+DEAL:cg::Check 43	954.051
+DEAL:cg::Check 44	954.051
+DEAL:cg::Check 45	954.051
+DEAL:cg::Check 46	954.051
+DEAL:cg::Check 47	954.052
+DEAL:cg::Check 48	954.052
+DEAL:cg::Check 49	954.052
+DEAL:cg::Check 50	954.051
+DEAL:cg::Check 51	954.051
+DEAL:cg::Check 52	954.051
+DEAL:cg::Check 53	954.051
+DEAL:cg::Check 54	954.051
+DEAL:cg::Check 55	954.051
+DEAL:cg::Check 56	954.051
+DEAL:cg::Check 57	954.051
+DEAL:cg::Check 58	954.051
+DEAL:cg::Check 59	954.051
+DEAL:cg::Check 60	954.051
+DEAL:cg::Check 61	954.051
+DEAL:cg::Check 62	954.051
+DEAL:cg::Check 63	954.051
+DEAL:cg::Check 64	954.051
+DEAL:cg::Check 65	954.051
+DEAL:cg::Check 66	954.051
+DEAL:cg::Check 67	954.051
+DEAL:cg::Check 68	954.051
+DEAL:cg::Check 69	954.051
+DEAL:cg::Check 70	954.051
+DEAL:cg::Check 71	954.051
+DEAL:cg::Check 72	954.051
+DEAL:cg::Check 73	954.051
+DEAL:cg::Check 74	954.051
+DEAL:cg::Check 75	954.051
+DEAL:cg::Check 76	954.051
+DEAL:cg::Check 77	954.051
+DEAL:cg::Check 78	954.051
+DEAL:cg::Check 79	954.051
+DEAL:cg::Check 80	954.051
+DEAL:cg::Check 81	954.051
+DEAL:cg::Check 82	954.051
+DEAL:cg::Check 83	954.051
+DEAL:cg::Check 84	954.051
+DEAL:cg::Check 85	954.051
+DEAL:cg::Check 86	954.051
+DEAL:cg::Check 87	954.051
+DEAL:cg::Check 88	954.051
+DEAL:cg::Check 89	954.051
+DEAL:cg::Check 90	954.051
+DEAL:cg::Check 91	954.051
+DEAL:cg::Check 92	954.051
+DEAL:cg::Check 93	954.051
+DEAL:cg::Check 94	954.051
+DEAL:cg::Check 95	954.051
+DEAL:cg::Check 96	954.051
+DEAL:cg::Check 97	954.051
+DEAL:cg::Check 98	954.051
+DEAL:cg::Check 99	954.051
+DEAL:cg::Convergence step 100 value 954.051
+   Writing graphical output...
+   Error in the L2 norm       :     0.0929106
+   Error in the H1 seminorm       : 0.459058
+   Error in the broken H2 seminorm: 3.42947
+

@@ -1,0 +1,164 @@
+  Finite element:                            FE_Q<2>(2)        
+  Number of run cycles:                      3        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    gmres        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 2        
+  Smoother:                                  None        
+  /// Post-smoother                                  
+  Number of smoothing steps:                 2        
+  Smoother:                                  None        
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16        
+Cycle: 0 of 3
+   Number of degrees of freedom: 289
+   Solving system...
+DEAL:GMRES::Check 0	310.327
+DEAL:GMRES::Starting value 310.327
+DEAL:GMRES::Check 1	2.84265
+DEAL:GMRES::Check 2	0.293970
+DEAL:GMRES::Check 3	0.0472699
+DEAL:GMRES::Check 4	0.00567377
+DEAL:GMRES::Check 5	0.000649015
+DEAL:GMRES::Check 6	7.88288e-05
+DEAL:GMRES::Check 7	4.82979e-06
+DEAL:GMRES::Check 8	7.82046e-09
+DEAL:GMRES::Check 9	6.63157e-14
+DEAL:GMRES::Check 10	5.99175e-14
+DEAL:GMRES::Check 11	5.57225e-14
+DEAL:GMRES::Check 12	5.18383e-14
+DEAL:GMRES::Check 13	3.82739e-14
+DEAL:GMRES::Check 14	3.57533e-14
+DEAL:GMRES::Check 15	3.37951e-14
+DEAL:GMRES::Check 16	3.26958e-14
+DEAL:GMRES::Check 17	3.12942e-14
+DEAL:GMRES::Check 18	3.11786e-14
+DEAL:GMRES::Check 19	2.94144e-14
+DEAL:GMRES::Check 20	2.92078e-14
+DEAL:GMRES::Check 21	2.74624e-14
+DEAL:GMRES::Check 22	2.61259e-14
+DEAL:GMRES::Check 23	2.61150e-14
+DEAL:GMRES::Check 24	2.36753e-14
+DEAL:GMRES::Check 25	2.35687e-14
+DEAL:GMRES::Check 26	2.35656e-14
+DEAL:GMRES::Check 27	2.34808e-14
+DEAL:GMRES::Check 28	2.24655e-14
+DEAL:GMRES::Check 28	1.19100e-12
+DEAL:GMRES::Check 29	4.07238e-13
+DEAL:GMRES::Check 30	2.85653e-14
+DEAL:GMRES::Check 31	3.13218e-15
+DEAL:GMRES::Convergence step 31 value 3.13218e-15
+   Writing graphical output...
+   Error in the L2 norm       :     0.883743
+   Error in the H1 seminorm       : 20.9433
+   Error in the broken H2 seminorm: 764.844
+
+Cycle: 1 of 3
+   Number of degrees of freedom: 1089
+   Solving system...
+DEAL:GMRES::Check 0	1222.93
+DEAL:GMRES::Starting value 1222.93
+DEAL:GMRES::Check 1	11.1268
+DEAL:GMRES::Check 2	1.21349
+DEAL:GMRES::Check 3	0.204308
+DEAL:GMRES::Check 4	0.0262649
+DEAL:GMRES::Check 5	0.00320809
+DEAL:GMRES::Check 6	0.000386347
+DEAL:GMRES::Check 7	3.06901e-05
+DEAL:GMRES::Check 8	1.87651e-07
+DEAL:GMRES::Check 9	1.63418e-13
+DEAL:GMRES::Check 10	1.42191e-13
+DEAL:GMRES::Check 11	1.24284e-13
+DEAL:GMRES::Check 12	1.18493e-13
+DEAL:GMRES::Check 13	1.17653e-13
+DEAL:GMRES::Check 14	1.17650e-13
+DEAL:GMRES::Check 15	1.17646e-13
+DEAL:GMRES::Check 16	1.15825e-13
+DEAL:GMRES::Check 17	1.15288e-13
+DEAL:GMRES::Check 18	1.14773e-13
+DEAL:GMRES::Check 19	1.14604e-13
+DEAL:GMRES::Check 20	1.11948e-13
+DEAL:GMRES::Check 21	1.11771e-13
+DEAL:GMRES::Check 22	1.09807e-13
+DEAL:GMRES::Check 23	1.09528e-13
+DEAL:GMRES::Check 24	1.09476e-13
+DEAL:GMRES::Check 25	1.09362e-13
+DEAL:GMRES::Check 26	1.09359e-13
+DEAL:GMRES::Check 27	1.09177e-13
+DEAL:GMRES::Check 28	1.08569e-13
+DEAL:GMRES::Check 28	1.45471e-10
+DEAL:GMRES::Check 29	3.45824e-12
+DEAL:GMRES::Check 30	4.44733e-13
+DEAL:GMRES::Check 31	3.41026e-14
+DEAL:GMRES::Check 32	6.23701e-15
+DEAL:GMRES::Convergence step 32 value 6.23701e-15
+   Writing graphical output...
+   Error in the L2 norm       :     0.700485
+   Error in the H1 seminorm       : 22.0184
+   Error in the broken H2 seminorm: 1525.06
+
+Cycle: 2 of 3
+   Number of degrees of freedom: 4225
+   Solving system...
+DEAL:GMRES::Check 0	4856.32
+DEAL:GMRES::Starting value 4856.32
+DEAL:GMRES::Check 1	44.0819
+DEAL:GMRES::Check 2	4.94854
+DEAL:GMRES::Check 3	0.850350
+DEAL:GMRES::Check 4	0.113239
+DEAL:GMRES::Check 5	0.0141371
+DEAL:GMRES::Check 6	0.00170015
+DEAL:GMRES::Check 7	0.000151902
+DEAL:GMRES::Check 8	4.20058e-07
+DEAL:GMRES::Check 9	7.96286e-13
+DEAL:GMRES::Check 10	6.61620e-13
+DEAL:GMRES::Check 11	6.20380e-13
+DEAL:GMRES::Check 12	6.12487e-13
+DEAL:GMRES::Check 13	5.82782e-13
+DEAL:GMRES::Check 14	5.78719e-13
+DEAL:GMRES::Check 15	5.75979e-13
+DEAL:GMRES::Check 16	5.74999e-13
+DEAL:GMRES::Check 17	5.53178e-13
+DEAL:GMRES::Check 18	5.42424e-13
+DEAL:GMRES::Check 19	5.42328e-13
+DEAL:GMRES::Check 20	5.40905e-13
+DEAL:GMRES::Check 21	5.35146e-13
+DEAL:GMRES::Check 22	5.34922e-13
+DEAL:GMRES::Check 23	5.34905e-13
+DEAL:GMRES::Check 24	5.34031e-13
+DEAL:GMRES::Check 25	5.33881e-13
+DEAL:GMRES::Check 26	5.33282e-13
+DEAL:GMRES::Check 27	5.32981e-13
+DEAL:GMRES::Check 28	5.32425e-13
+DEAL:GMRES::Check 28	9.58980e-10
+DEAL:GMRES::Check 29	5.36831e-11
+DEAL:GMRES::Check 30	6.41389e-12
+DEAL:GMRES::Check 31	5.62550e-13
+DEAL:GMRES::Check 32	1.30363e-13
+DEAL:GMRES::Check 33	1.47283e-14
+DEAL:GMRES::Check 34	9.27389e-16
+DEAL:GMRES::Convergence step 34 value 9.27389e-16
+   Writing graphical output...
+   Error in the L2 norm       :     0.777796
+   Error in the H1 seminorm       : 40.1168
+   Error in the broken H2 seminorm: 5324.46
+
