@@ -1,0 +1,314 @@
+  Finite element:                            FE_Q<2>(2)        
+  Number of run cycles:                      6        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              200        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 2        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Additive Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             0.1        
+  Patch-local damping factor                 1        
+  Manual coloring                            false    
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+  /// Post-smoother                                  
+  Number of smoothing steps:                 2        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Additive Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             0.1        
+  Patch-local damping factor                 1        
+  Manual coloring                            false    
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16        
+Cycle: 0 of 6
+   Number of degrees of freedom: 289
+   Solving system...
+DEAL:cg::Check 0	3068.01
+DEAL:cg::Starting value 3068.01
+DEAL:cg::Check 1	492.842
+DEAL:cg::Check 2	113.940
+DEAL:cg::Check 3	81.4343
+DEAL:cg::Check 4	41.0526
+DEAL:cg::Check 5	9.32598
+DEAL:cg::Check 6	8.05622
+DEAL:cg::Check 7	4.03720
+DEAL:cg::Check 8	1.45222
+DEAL:cg::Check 9	0.554614
+DEAL:cg::Check 10	0.198349
+DEAL:cg::Check 11	0.0649432
+DEAL:cg::Check 12	0.0237361
+DEAL:cg::Check 13	0.00860493
+DEAL:cg::Check 14	0.00298180
+DEAL:cg::Check 15	0.000833374
+DEAL:cg::Check 16	0.000181890
+DEAL:cg::Check 17	4.06747e-05
+DEAL:cg::Convergence step 18 value 2.54169e-05
+   Writing graphical output...
+   Error in the L2 norm       :     0.00456378
+   Error in the H1 seminorm       : 0.0240852
+   Error in the broken H2 seminorm: 0.79659
+
+Cycle: 1 of 6
+   Number of degrees of freedom: 1089
+   Solving system...
+DEAL:cg::Check 0	8647.51
+DEAL:cg::Starting value 8647.51
+DEAL:cg::Check 1	2137.92
+DEAL:cg::Check 2	457.982
+DEAL:cg::Check 3	313.373
+DEAL:cg::Check 4	206.645
+DEAL:cg::Check 5	84.3596
+DEAL:cg::Check 6	46.7197
+DEAL:cg::Check 7	19.4290
+DEAL:cg::Check 8	7.65115
+DEAL:cg::Check 9	3.03822
+DEAL:cg::Check 10	1.65840
+DEAL:cg::Check 11	0.762625
+DEAL:cg::Check 12	0.225133
+DEAL:cg::Check 13	0.133178
+DEAL:cg::Check 14	0.0423854
+DEAL:cg::Check 15	0.0219830
+DEAL:cg::Check 16	0.0168222
+DEAL:cg::Check 17	0.00956763
+DEAL:cg::Check 18	0.00286366
+DEAL:cg::Check 19	0.00164914
+DEAL:cg::Check 20	0.00100427
+DEAL:cg::Check 21	0.000478894
+DEAL:cg::Check 22	0.000385687
+DEAL:cg::Check 23	0.000147953
+DEAL:cg::Convergence step 24 value 7.17774e-05
+   Writing graphical output...
+   Error in the L2 norm       :     0.0012505
+   Error in the H1 seminorm       : 0.0064388
+   Error in the broken H2 seminorm: 0.396943
+
+Cycle: 2 of 6
+   Number of degrees of freedom: 4225
+   Solving system...
+DEAL:cg::Check 0	24452.4
+DEAL:cg::Starting value 24452.4
+DEAL:cg::Check 1	7555.23
+DEAL:cg::Check 2	1868.25
+DEAL:cg::Check 3	1107.42
+DEAL:cg::Check 4	1280.32
+DEAL:cg::Check 5	772.393
+DEAL:cg::Check 6	200.150
+DEAL:cg::Check 7	94.7364
+DEAL:cg::Check 8	64.8496
+DEAL:cg::Check 9	42.4230
+DEAL:cg::Check 10	16.3699
+DEAL:cg::Check 11	6.53116
+DEAL:cg::Check 12	3.53642
+DEAL:cg::Check 13	1.29775
+DEAL:cg::Check 14	1.04082
+DEAL:cg::Check 15	0.715039
+DEAL:cg::Check 16	0.286572
+DEAL:cg::Check 17	0.195651
+DEAL:cg::Check 18	0.139493
+DEAL:cg::Check 19	0.0771091
+DEAL:cg::Check 20	0.0467080
+DEAL:cg::Check 21	0.0212117
+DEAL:cg::Check 22	0.00918124
+DEAL:cg::Check 23	0.00462108
+DEAL:cg::Check 24	0.00312426
+DEAL:cg::Check 25	0.00180344
+DEAL:cg::Check 26	0.000976496
+DEAL:cg::Check 27	0.000697182
+DEAL:cg::Check 28	0.000340912
+DEAL:cg::Convergence step 29 value 0.000155986
+   Writing graphical output...
+   Error in the L2 norm       :     0.00032776
+   Error in the H1 seminorm       : 0.00166692
+   Error in the broken H2 seminorm: 0.198127
+
+Cycle: 3 of 6
+   Number of degrees of freedom: 16641
+   Solving system...
+DEAL:cg::Check 0	69162.2
+DEAL:cg::Starting value 69162.2
+DEAL:cg::Check 1	24395.7
+DEAL:cg::Check 2	6829.42
+DEAL:cg::Check 3	4453.17
+DEAL:cg::Check 4	4578.65
+DEAL:cg::Check 5	3638.55
+DEAL:cg::Check 6	1533.07
+DEAL:cg::Check 7	457.622
+DEAL:cg::Check 8	398.828
+DEAL:cg::Check 9	295.257
+DEAL:cg::Check 10	153.451
+DEAL:cg::Check 11	82.5860
+DEAL:cg::Check 12	42.5207
+DEAL:cg::Check 13	31.2688
+DEAL:cg::Check 14	18.1173
+DEAL:cg::Check 15	8.96511
+DEAL:cg::Check 16	4.35352
+DEAL:cg::Check 17	4.46380
+DEAL:cg::Check 18	2.21669
+DEAL:cg::Check 19	1.39387
+DEAL:cg::Check 20	0.869289
+DEAL:cg::Check 21	0.669224
+DEAL:cg::Check 22	0.491150
+DEAL:cg::Check 23	0.215733
+DEAL:cg::Check 24	0.158892
+DEAL:cg::Check 25	0.0820308
+DEAL:cg::Check 26	0.0511658
+DEAL:cg::Check 27	0.0268339
+DEAL:cg::Check 28	0.0113226
+DEAL:cg::Check 29	0.00860457
+DEAL:cg::Check 30	0.00434735
+DEAL:cg::Check 31	0.00298128
+DEAL:cg::Check 32	0.00176656
+DEAL:cg::Check 33	0.00150815
+DEAL:cg::Check 34	0.000786644
+DEAL:cg::Convergence step 35 value 0.000417557
+   Writing graphical output...
+   Error in the L2 norm       :     8.39339e-05
+   Error in the H1 seminorm       : 0.000424244
+   Error in the broken H2 seminorm: 0.0989777
+
+Cycle: 4 of 6
+   Number of degrees of freedom: 66049
+   Solving system...
+DEAL:cg::Check 0	195622.
+DEAL:cg::Starting value 195622.
+DEAL:cg::Check 1	75277.1
+DEAL:cg::Check 2	23551.6
+DEAL:cg::Check 3	16713.0
+DEAL:cg::Check 4	14041.4
+DEAL:cg::Check 5	13128.6
+DEAL:cg::Check 6	7787.08
+DEAL:cg::Check 7	3150.65
+DEAL:cg::Check 8	1573.65
+DEAL:cg::Check 9	1569.92
+DEAL:cg::Check 10	1168.92
+DEAL:cg::Check 11	534.669
+DEAL:cg::Check 12	282.030
+DEAL:cg::Check 13	253.141
+DEAL:cg::Check 14	161.778
+DEAL:cg::Check 15	95.6961
+DEAL:cg::Check 16	91.0178
+DEAL:cg::Check 17	42.2354
+DEAL:cg::Check 18	33.9284
+DEAL:cg::Check 19	30.2059
+DEAL:cg::Check 20	16.7273
+DEAL:cg::Check 21	14.8594
+DEAL:cg::Check 22	9.83315
+DEAL:cg::Check 23	4.65135
+DEAL:cg::Check 24	3.11806
+DEAL:cg::Check 25	2.72581
+DEAL:cg::Check 26	1.35479
+DEAL:cg::Check 27	0.596531
+DEAL:cg::Check 28	0.482635
+DEAL:cg::Check 29	0.294781
+DEAL:cg::Check 30	0.241308
+DEAL:cg::Check 31	0.153705
+DEAL:cg::Check 32	0.140835
+DEAL:cg::Check 33	0.0817085
+DEAL:cg::Check 34	0.0589657
+DEAL:cg::Check 35	0.0478471
+DEAL:cg::Check 36	0.0347656
+DEAL:cg::Check 37	0.0155733
+DEAL:cg::Check 38	0.00917076
+DEAL:cg::Check 39	0.00777790
+DEAL:cg::Check 40	0.00634861
+DEAL:cg::Check 41	0.00352981
+DEAL:cg::Check 42	0.00215311
+DEAL:cg::Convergence step 43 value 0.00136241
+   Writing graphical output...
+   Error in the L2 norm       :     2.12386e-05
+   Error in the H1 seminorm       : 0.000107021
+   Error in the broken H2 seminorm: 0.0494675
+
+Cycle: 5 of 6
+   Number of degrees of freedom: 263169
+   Solving system...
+DEAL:cg::Check 0	553305.
+DEAL:cg::Starting value 553305.
+DEAL:cg::Check 1	226386.
+DEAL:cg::Check 2	79182.3
+DEAL:cg::Check 3	57071.4
+DEAL:cg::Check 4	42052.6
+DEAL:cg::Check 5	39840.4
+DEAL:cg::Check 6	31118.0
+DEAL:cg::Check 7	17523.2
+DEAL:cg::Check 8	8171.51
+DEAL:cg::Check 9	5635.28
+DEAL:cg::Check 10	5424.18
+DEAL:cg::Check 11	3960.13
+DEAL:cg::Check 12	2837.76
+DEAL:cg::Check 13	1588.52
+DEAL:cg::Check 14	1041.55
+DEAL:cg::Check 15	720.341
+DEAL:cg::Check 16	627.277
+DEAL:cg::Check 17	441.715
+DEAL:cg::Check 18	317.315
+DEAL:cg::Check 19	228.342
+DEAL:cg::Check 20	190.060
+DEAL:cg::Check 21	130.550
+DEAL:cg::Check 22	97.3402
+DEAL:cg::Check 23	82.4545
+DEAL:cg::Check 24	63.8983
+DEAL:cg::Check 25	36.5562
+DEAL:cg::Check 26	24.8720
+DEAL:cg::Check 27	12.9235
+DEAL:cg::Check 28	10.1798
+DEAL:cg::Check 29	8.54918
+DEAL:cg::Check 30	8.16437
+DEAL:cg::Check 31	5.85518
+DEAL:cg::Check 32	3.05765
+DEAL:cg::Check 33	1.93321
+DEAL:cg::Check 34	1.49633
+DEAL:cg::Check 35	1.09842
+DEAL:cg::Check 36	0.908489
+DEAL:cg::Check 37	0.459684
+DEAL:cg::Check 38	0.411089
+DEAL:cg::Check 39	0.303998
+DEAL:cg::Check 40	0.248921
+DEAL:cg::Check 41	0.170300
+DEAL:cg::Check 42	0.107814
+DEAL:cg::Check 43	0.0777145
+DEAL:cg::Check 44	0.0427095
+DEAL:cg::Check 45	0.0292813
+DEAL:cg::Check 46	0.0251848
+DEAL:cg::Check 47	0.0213646
+DEAL:cg::Check 48	0.0168505
+DEAL:cg::Check 49	0.0139215
+DEAL:cg::Check 50	0.00769178
+DEAL:cg::Check 51	0.00605427
+DEAL:cg::Convergence step 52 value 0.00447090
+   Writing graphical output...
+   Error in the L2 norm       :     5.43328e-06
+   Error in the H1 seminorm       : 2.7225e-05
+   Error in the broken H2 seminorm: 0.0247285
+

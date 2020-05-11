@@ -1,0 +1,363 @@
+  Finite element:                            FE_Q<2>(2)        
+  Number of run cycles:                      6        
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              200        
+  Preconditioner:                            GMG        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 2        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Additive Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             0.35        
+  Patch-local damping factor                 1        
+  Manual coloring                            false    
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+  /// Post-smoother                                  
+  Number of smoothing steps:                 2        
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Additive Vertex Patch        
+  Number of smoothing steps                  1        
+  Damping factor                             0.35        
+  Patch-local damping factor                 1        
+  Manual coloring                            false    
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16        
+Cycle: 0 of 6
+   Number of degrees of freedom: 289
+   Solving system...
+DEAL:cg::Check 0	3068.01
+DEAL:cg::Starting value 3068.01
+DEAL:cg::Check 1	1092.47
+DEAL:cg::Check 2	880.791
+DEAL:cg::Check 3	764.883
+DEAL:cg::Check 4	556.797
+DEAL:cg::Check 5	348.665
+DEAL:cg::Check 6	248.790
+DEAL:cg::Check 7	60.0750
+DEAL:cg::Check 8	22.7523
+DEAL:cg::Check 9	14.1758
+DEAL:cg::Check 10	4.75894
+DEAL:cg::Check 11	1.42684
+DEAL:cg::Check 12	0.115660
+DEAL:cg::Check 13	0.0120599
+DEAL:cg::Check 14	0.00190717
+DEAL:cg::Check 15	0.000149881
+DEAL:cg::Convergence step 16 value 1.19990e-05
+   Writing graphical output...
+   Error in the L2 norm       :     0.00456378
+   Error in the H1 seminorm       : 0.0240852
+   Error in the broken H2 seminorm: 0.79659
+
+Cycle: 1 of 6
+   Number of degrees of freedom: 1089
+   Solving system...
+DEAL:cg::Check 0	8647.51
+DEAL:cg::Starting value 8647.51
+DEAL:cg::Check 1	3444.29
+DEAL:cg::Check 2	3026.83
+DEAL:cg::Check 3	1798.12
+DEAL:cg::Check 4	1590.67
+DEAL:cg::Check 5	1401.25
+DEAL:cg::Check 6	1124.24
+DEAL:cg::Check 7	1070.42
+DEAL:cg::Check 8	1080.23
+DEAL:cg::Check 9	1057.18
+DEAL:cg::Check 10	897.560
+DEAL:cg::Check 11	840.751
+DEAL:cg::Check 12	836.342
+DEAL:cg::Check 13	835.040
+DEAL:cg::Check 14	725.053
+DEAL:cg::Check 15	498.229
+DEAL:cg::Check 16	334.026
+DEAL:cg::Check 17	309.017
+DEAL:cg::Check 18	300.443
+DEAL:cg::Check 19	287.638
+DEAL:cg::Check 20	286.818
+DEAL:cg::Check 21	254.369
+DEAL:cg::Check 22	216.614
+DEAL:cg::Check 23	157.790
+DEAL:cg::Check 24	93.2833
+DEAL:cg::Check 25	44.6716
+DEAL:cg::Check 26	26.9779
+DEAL:cg::Check 27	15.7548
+DEAL:cg::Check 28	15.8853
+DEAL:cg::Check 29	5.61518
+DEAL:cg::Check 30	1.53674
+DEAL:cg::Check 31	0.867322
+DEAL:cg::Check 32	0.700687
+DEAL:cg::Check 33	0.726263
+DEAL:cg::Check 34	0.538820
+DEAL:cg::Check 35	0.360268
+DEAL:cg::Check 36	0.148027
+DEAL:cg::Check 37	0.0765937
+DEAL:cg::Check 38	0.0269990
+DEAL:cg::Check 39	0.0218819
+DEAL:cg::Check 40	0.0212739
+DEAL:cg::Check 41	0.00878584
+DEAL:cg::Check 42	0.00204402
+DEAL:cg::Check 43	0.000554647
+DEAL:cg::Check 44	0.000300562
+DEAL:cg::Check 45	0.000194539
+DEAL:cg::Check 46	0.000200003
+DEAL:cg::Check 47	0.000156818
+DEAL:cg::Convergence step 48 value 8.06105e-05
+   Writing graphical output...
+   Error in the L2 norm       :     0.0012505
+   Error in the H1 seminorm       : 0.00643879
+   Error in the broken H2 seminorm: 0.396943
+
+Cycle: 2 of 6
+   Number of degrees of freedom: 4225
+   Solving system...
+DEAL:cg::Check 0	24452.4
+DEAL:cg::Starting value 24452.4
+DEAL:cg::Check 1	10448.3
+DEAL:cg::Check 2	9578.33
+DEAL:cg::Check 3	5769.37
+DEAL:cg::Check 4	5780.83
+DEAL:cg::Check 5	4263.39
+DEAL:cg::Check 6	4221.42
+DEAL:cg::Check 7	3469.99
+DEAL:cg::Check 8	3677.43
+DEAL:cg::Check 9	3252.14
+DEAL:cg::Check 10	2852.76
+DEAL:cg::Check 11	2836.19
+DEAL:cg::Check 12	2561.30
+DEAL:cg::Check 13	2401.58
+DEAL:cg::Check 14	2425.68
+DEAL:cg::Check 15	2260.95
+DEAL:cg::Check 16	2249.93
+DEAL:cg::Check 17	2214.21
+DEAL:cg::Check 18	2063.18
+DEAL:cg::Check 19	1983.82
+DEAL:cg::Check 20	1971.89
+DEAL:cg::Check 21	1896.22
+DEAL:cg::Check 22	1851.45
+DEAL:cg::Check 23	1851.40
+DEAL:cg::Check 24	1760.78
+DEAL:cg::Check 25	1660.34
+DEAL:cg::Check 26	1581.46
+DEAL:cg::Check 27	1582.52
+DEAL:cg::Check 28	1529.27
+DEAL:cg::Check 29	1515.93
+DEAL:cg::Check 30	1421.35
+DEAL:cg::Check 31	1265.38
+DEAL:cg::Check 32	1271.26
+DEAL:cg::Check 33	1171.89
+DEAL:cg::Check 34	1146.82
+DEAL:cg::Check 35	1149.22
+DEAL:cg::Check 36	1127.84
+DEAL:cg::Check 37	1043.64
+DEAL:cg::Check 38	1043.15
+DEAL:cg::Check 39	922.318
+DEAL:cg::Check 40	922.740
+DEAL:cg::Check 41	840.682
+DEAL:cg::Check 42	727.218
+DEAL:cg::Check 43	723.354
+DEAL:cg::Check 44	690.749
+DEAL:cg::Check 45	676.786
+DEAL:cg::Check 46	632.331
+DEAL:cg::Check 47	581.028
+DEAL:cg::Check 48	534.072
+DEAL:cg::Check 49	520.802
+DEAL:cg::Check 50	514.832
+DEAL:cg::Check 51	495.653
+DEAL:cg::Check 52	496.132
+DEAL:cg::Check 53	484.515
+DEAL:cg::Check 54	459.273
+DEAL:cg::Check 55	460.856
+DEAL:cg::Check 56	437.033
+DEAL:cg::Check 57	435.096
+DEAL:cg::Check 58	418.225
+DEAL:cg::Check 59	409.853
+DEAL:cg::Check 60	410.235
+DEAL:cg::Check 61	401.267
+DEAL:cg::Check 62	394.740
+DEAL:cg::Check 63	387.109
+DEAL:cg::Check 64	374.884
+DEAL:cg::Check 65	374.040
+DEAL:cg::Check 66	358.696
+DEAL:cg::Check 67	354.793
+DEAL:cg::Check 68	348.795
+DEAL:cg::Check 69	347.172
+DEAL:cg::Check 70	347.334
+DEAL:cg::Check 71	345.770
+DEAL:cg::Check 72	346.021
+DEAL:cg::Check 73	341.620
+DEAL:cg::Check 74	340.811
+DEAL:cg::Check 75	337.216
+DEAL:cg::Check 76	324.533
+DEAL:cg::Check 77	313.382
+DEAL:cg::Check 78	314.173
+DEAL:cg::Check 79	303.873
+DEAL:cg::Check 80	295.929
+DEAL:cg::Check 81	296.194
+DEAL:cg::Check 82	294.212
+DEAL:cg::Check 83	291.652
+DEAL:cg::Check 84	290.920
+DEAL:cg::Check 85	290.559
+DEAL:cg::Check 86	289.758
+DEAL:cg::Check 87	289.449
+DEAL:cg::Check 88	289.153
+DEAL:cg::Check 89	289.022
+DEAL:cg::Check 90	287.236
+DEAL:cg::Check 91	287.344
+DEAL:cg::Check 92	283.377
+DEAL:cg::Check 93	279.670
+DEAL:cg::Check 94	279.629
+DEAL:cg::Check 95	278.401
+DEAL:cg::Check 96	267.425
+DEAL:cg::Check 97	247.380
+DEAL:cg::Check 98	244.657
+DEAL:cg::Check 99	232.013
+DEAL:cg::Check 100	221.379
+DEAL:cg::Check 101	221.448
+DEAL:cg::Check 102	210.631
+DEAL:cg::Check 103	202.908
+DEAL:cg::Check 104	201.540
+DEAL:cg::Check 105	196.738
+DEAL:cg::Check 106	195.431
+DEAL:cg::Check 107	187.261
+DEAL:cg::Check 108	184.737
+DEAL:cg::Check 109	184.924
+DEAL:cg::Check 110	180.814
+DEAL:cg::Check 111	181.373
+DEAL:cg::Check 112	179.386
+DEAL:cg::Check 113	173.924
+DEAL:cg::Check 114	169.330
+DEAL:cg::Check 115	169.227
+DEAL:cg::Check 116	161.549
+DEAL:cg::Check 117	150.057
+DEAL:cg::Check 118	150.230
+DEAL:cg::Check 119	143.398
+DEAL:cg::Check 120	143.370
+DEAL:cg::Check 121	137.940
+DEAL:cg::Check 122	118.168
+DEAL:cg::Check 123	117.387
+DEAL:cg::Check 124	109.557
+DEAL:cg::Check 125	101.914
+DEAL:cg::Check 126	102.097
+DEAL:cg::Check 127	97.4758
+DEAL:cg::Check 128	92.7739
+DEAL:cg::Check 129	92.5396
+DEAL:cg::Check 130	91.2102
+DEAL:cg::Check 131	88.2429
+DEAL:cg::Check 132	88.2841
+DEAL:cg::Check 133	86.9669
+DEAL:cg::Check 134	86.7175
+DEAL:cg::Check 135	86.5637
+DEAL:cg::Check 136	86.2837
+DEAL:cg::Check 137	86.1949
+DEAL:cg::Check 138	85.7857
+DEAL:cg::Check 139	85.7343
+DEAL:cg::Check 140	84.9623
+DEAL:cg::Check 141	85.0392
+DEAL:cg::Check 142	84.1324
+DEAL:cg::Check 143	81.8313
+DEAL:cg::Check 144	81.0354
+DEAL:cg::Check 145	80.4567
+DEAL:cg::Check 146	74.6007
+DEAL:cg::Check 147	66.4972
+DEAL:cg::Check 148	61.2197
+DEAL:cg::Check 149	61.5677
+DEAL:cg::Check 150	54.7028
+DEAL:cg::Check 151	55.0841
+DEAL:cg::Check 152	50.7284
+DEAL:cg::Check 153	51.0542
+DEAL:cg::Check 154	48.4680
+DEAL:cg::Check 155	47.1697
+DEAL:cg::Check 156	47.0825
+DEAL:cg::Check 157	44.3091
+DEAL:cg::Check 158	42.8151
+DEAL:cg::Check 159	42.6270
+DEAL:cg::Check 160	40.2846
+DEAL:cg::Check 161	39.9958
+DEAL:cg::Check 162	38.9176
+DEAL:cg::Check 163	34.7254
+DEAL:cg::Check 164	33.1663
+DEAL:cg::Check 165	32.7178
+DEAL:cg::Check 166	29.6926
+DEAL:cg::Check 167	28.8822
+DEAL:cg::Check 168	27.7162
+DEAL:cg::Check 169	26.0881
+DEAL:cg::Check 170	26.2426
+DEAL:cg::Check 171	25.1075
+DEAL:cg::Check 172	25.3212
+DEAL:cg::Check 173	23.6746
+DEAL:cg::Check 174	21.1920
+DEAL:cg::Check 175	21.2266
+DEAL:cg::Check 176	17.6547
+DEAL:cg::Check 177	17.8454
+DEAL:cg::Check 178	14.2034
+DEAL:cg::Check 179	10.9939
+DEAL:cg::Check 180	10.8793
+DEAL:cg::Check 181	10.3543
+DEAL:cg::Check 182	9.82662
+DEAL:cg::Check 183	9.83643
+DEAL:cg::Check 184	9.57070
+DEAL:cg::Check 185	9.58467
+DEAL:cg::Check 186	9.11539
+DEAL:cg::Check 187	8.83212
+DEAL:cg::Check 188	8.82712
+DEAL:cg::Check 189	8.66967
+DEAL:cg::Check 190	8.25102
+DEAL:cg::Check 191	7.84798
+DEAL:cg::Check 192	7.32070
+DEAL:cg::Check 193	7.33059
+DEAL:cg::Check 194	6.72908
+DEAL:cg::Check 195	6.12535
+DEAL:cg::Check 196	6.18855
+DEAL:cg::Check 197	5.64483
+DEAL:cg::Check 198	4.51135
+DEAL:cg::Check 199	4.57772
+DEAL:cg::Check 200	3.85870
+DEAL:cg::Failure step 200 value 3.85870
+
+
+----------------------------------------------------
+Exception on processing: 
+
+--------------------------------------------------------
+An error occurred in line <457> of file </home/jwitte/software/dealii/developer/include/deal.II/lac/solver_cg.h> in function
+    void dealii::SolverCG<VectorType>::solve(const MatrixType&, VectorType&, const VectorType&, const PreconditionerType&) [with MatrixType = Biharmonic::SparseMatrixAugmented<2, 2, double>; PreconditionerType = dealii::PreconditionMG<2, dealii::Vector<double>, dealii::MGTransferPrebuilt<dealii::Vector<double> > >; VectorType = dealii::Vector<double>]
+The violated condition was: 
+    false
+Additional information: 
+Iterative method reported convergence failure in step 200. The residual in the last step was 3.8587.
+
+This error message can indicate that you have simply not allowed a sufficiently large number of iterations for your iterative solver to converge. This often happens when you increase the size of your problem. In such cases, the last residual will likely still be very small, and you can make the error go away by increasing the allowed number of iterations when setting up the SolverControl object that determines the maximal number of iterations you allow.
+
+The other situation where this error may occur is when your matrix is not invertible (e.g., your matrix has a null-space), or if you try to apply the wrong solver to a matrix (e.g., using CG for a matrix that is not symmetric or not positive definite). In these cases, the residual in the last iteration is likely going to be large.
+--------------------------------------------------------
+
+Aborting!
+----------------------------------------------------
