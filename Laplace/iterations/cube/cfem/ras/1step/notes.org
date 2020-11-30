@@ -1,0 +1,20 @@
+- m_pre = 1 and m_post = 1
+- gmres solver with 10^-8 accuracy
+- coarse gmres solver with 10^-12 accuracy
+- coarse grid is 2 x 2 x 2
+- user-defined coloring (avoiding race conditions)
+
+variants:
+
+* (1) xdamp (standard additive Schwarz + damping)
+- different damping factor in 2D and 3D (...xdamp)
+- computed on simserv02 40 procs x 4 threads = 160 threads
+
+* (2) RASw (restricted additive Schwarz + weighted partition of unity)
+- see thesis or TPSS lib for details
+- computed on simserv02 40 procs x 4 threads = 160 threads
+
+* (3) RASb (restricted additive Schwarz + boolean partition of unity)
+- see thesis or TPSS lib for details
+- computed on simserv02 160 threads
+
