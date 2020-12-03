@@ -1,0 +1,30 @@
+A GOOD iterative solver is not necessarily a GOOD smoother: a smoother should damp errors with high frequencies efficiently!
+
+the optimal damping factor w_opt for a classical Jacobi solver is computed by
+   (eq.1)   w_opt = 2 / (2 - lambda_min - lambda_max)
+see Andreas Meister'15
+
+the same applies to (non-overlapping) block-Jacobi solvers
+
+* ACP
+  ACP smoothing step = non-overlapping block-Jacobi solve
+
+  the spectrum of a classic Jacobi error propagation matrix is symmetric around zero, see Meister'15
+  
+  we examine the same for non-overlapping additive Schwarz smoothing steps (ACP for DGQ)
+
+  the optimal damping factor is w_opt = 1, which smooths the errors with mid-range frequencies the best
+
+  experimentally, a scaling of 0.7, i.e. a damping w = 0.7w_opt, has proven to shift the spectrum such that mainly the errors with high to mid-high frequencies. that is what we demand from a good smoother.
+
+* AVP
+  AVP smoothing step = damped overlapping block-Jacobi solve
+
+  we only obtain an iterative solver if we compensate for the overlap. all interior cells belong to 2^dim vertex patches, thus, choosing a damping factor of 1 / 2^dim compensates the overlap... [see eigenvalues_...txt]
+
+  the spectrum of the so-obtained damped overlapping block-Jacobi error propagation matrix is not symmetric around zero as it was for the ACP smoother
+
+  we compute w_opt as given by (eq.1) which compensates for the overlap and symmetrizes the spectrum around zero. [see symmetrized_eigenvalues_...txt]
+
+  however a w_opt damped smoother is a good iterative solver but not a good smoother. once again we scale by 0.7 to obtain a good smoother, i.e. finally we have a (0.7w_opt) damped AVP smoother! [see optsmooth_eigenvalues...txt and corresponding poisson_...xdmp.txt]
+
