@@ -1,0 +1,136 @@
+  Equation Data:                             clamped (Gaussian bells)        
+  IP pre-factor:                             1        
+  Local solver:                              Exact        
+  Stream function formulation (Stokes):      false    
+
+  Finite element:                            FE_Q<2>(4)        
+  Number of run cycles:                      10        
+  Lower dof limit:                           10        
+  Upper dof limit:                           1000000        
+  Using TBB:                                 false    
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    direct        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-14    
+  Number of maximal iterations:              200        
+  Preconditioner:                            None        
+  Solver control:                            absolute tolerance        
+
+
+Cycle: 1 of 10
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16        
+
+  Number of degrees of freedom:              289        
+interpolating boundary values...
+  Solving system                             ...        
+  Average reduction (solver):                direct solver        
+  Number of iterations (solver):             ---        
+  Error in the L2 norm:                      2.040e-04          
+  Error in the H1 seminorm:                  0.00662843        
+  Error in energy norm (resp. |.|_h):        0.402384        
+
+Cycle: 2 of 10
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    64        
+
+  Number of degrees of freedom:              1089        
+interpolating boundary values...
+  Solving system                             ...        
+  Average reduction (solver):                direct solver        
+  Number of iterations (solver):             ---        
+  Error in the L2 norm:                      9.718e-06         
+  Error in the H1 seminorm:                  5.525e-04          
+  Error in energy norm (resp. |.|_h):        0.0526953        
+
+Cycle: 3 of 10
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    256        
+
+  Number of degrees of freedom:              4225        
+interpolating boundary values...
+  Solving system                             ...        
+  Average reduction (solver):                direct solver        
+  Number of iterations (solver):             ---        
+  Error in the L2 norm:                      3.458e-07          
+  Error in the H1 seminorm:                  3.754e-05          
+  Error in energy norm (resp. |.|_h):        0.00623097        
+
+Cycle: 4 of 10
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    1024        
+
+  Number of degrees of freedom:              16641        
+interpolating boundary values...
+  Solving system                             ...        
+  Average reduction (solver):                direct solver        
+  Number of iterations (solver):             ---        
+  Error in the L2 norm:                      1.147e-08          
+  Error in the H1 seminorm:                  2.416e-06          
+  Error in energy norm (resp. |.|_h):        7.581e-04          
+
+Cycle: 5 of 10
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    4096        
+
+  Number of degrees of freedom:              66049        
+interpolating boundary values...
+  Solving system                             ...        
+  Average reduction (solver):                direct solver        
+  Number of iterations (solver):             ---        
+  Error in the L2 norm:                      3.193e-08          
+  Error in the H1 seminorm:                  2.170e-07          
+  Error in energy norm (resp. |.|_h):        9.381e-05          
+
+Cycle: 6 of 10
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16384        
+
+  Number of degrees of freedom:              263169        
+interpolating boundary values...
+  Solving system                             ...        
+  Average reduction (solver):                direct solver        
+  Number of iterations (solver):             ---        
+  Error in the L2 norm:                      5.043e-07          
+  Error in the H1 seminorm:                  2.439e-06          
+  Error in energy norm (resp. |.|_h):        2.171e-05          
+
+Cycle: 7 of 10
+no mesh created... 
+
+Cycle: 8 of 10
+no mesh created... 
+
+Cycle: 9 of 10
+no mesh created... 
+
+Cycle: 10 of 10
+no mesh created... 
+
+
+
+n_levels n_cells n_dofs n_colors n_iter reduction       L2_error           energy_error     
+       0      16    289        0 0.0000 0.000e+00 2.040e-04     -     - 4.024e-01    -    - 
+       0      64   1089        0 0.0000 0.000e+00 9.718e-06 20.99  4.59 5.270e-02 7.64 3.06 
+       0     256   4225        0 0.0000 0.000e+00 3.458e-07 28.11  4.92 6.231e-03 8.46 3.15 
+       0    1024  16641        0 0.0000 0.000e+00 1.147e-08 30.14  4.97 7.581e-04 8.22 3.07 
+       0    4096  66049        0 0.0000 0.000e+00 3.193e-08  0.36 -1.49 9.381e-05 8.08 3.03 
+       0   16384 263169        0 0.0000 0.000e+00 5.043e-07  0.06 -3.99 2.171e-05 4.32 2.12 
