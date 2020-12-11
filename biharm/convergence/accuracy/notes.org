@@ -1,0 +1,9 @@
+the accuracy of finite element errors decreases for decreasing mesh refinements h.
+
+all integralterms occuring in the C0IP form scale with h^(dim-4). this leads to a bad conditioning of the system matrix and,thus, results in floating point errors during matrix-vector products.
+
+for standard Lagrange elements with Gauss-Lobatto support points (FE_Q) we see a steady error increase of h^-4, see feq!
+
+for hierarchical elements as in Demkowicz et al'89 (FE_Q_Hierarchical) we see a bit improved error increase jumping between h^-2 and h^-5 for the refinements tested, see feqh!
+
+see mails with Guido and Timo.
