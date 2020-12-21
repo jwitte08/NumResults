@@ -1,0 +1,10 @@
+- CG with rel. accuracy 10^-8
+- standard V-cycle
+- 2 pre- and post-smoothing steps
+
+* exac:
+  exact local solver
+
+* bila:
+  inexact local solver: separable rank-2 kronecker decomposition based on
+  bilaplacian (mixed contribution including laplacians are omitted)
