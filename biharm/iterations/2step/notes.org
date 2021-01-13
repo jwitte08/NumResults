@@ -8,3 +8,17 @@
 * bila:
   inexact local solver: separable rank-2 kronecker decomposition based on
   bilaplacian (mixed contribution including laplacians are omitted)
+
+* KSVD: WIP
+  * best rank-1 approximation:
+    rank-1 KSVD of local matrices, fast inversion via tensor-aware eigendecomposition... WIP
+
+  * best rank-2 approximation (cutting of negative eigenvalues):
+    compute rank-2 KSVD of local matrices, fast inversion via tensor-aware
+    generalized eigendecomposition (we cut off all negative inverse eigenvalues
+    to guarantee positive definiteness)... WIP
+
+  * suboptimal rank-2 approximation:
+    compute rank-3 KSVD of local matrices, take first and third tensor as local
+    approximations which guarantees a positive definite approximation, fast
+    inversion via tensor-aware generalized eigendecomposition... WIP
