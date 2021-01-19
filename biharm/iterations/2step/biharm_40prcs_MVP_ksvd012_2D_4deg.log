@@ -1,0 +1,158 @@
+  Equation Data:                             clamped (Gaussian bells)        
+  IP pre-factor:                             1        
+  Local solver:                              Kronecker SVD        
+  Selected KSVD tensors:                     [0, 1, 2]        
+  Stream function formulation (Stokes):      false    
+
+  Finite element:                            FE_Q<2>(4)        
+  Number of run cycles:                      12        
+  Lower dof limit:                           50000        
+  Upper dof limit:                           10000000        
+  Using TBB:                                 false    
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+  Solver control:                            relative tolerance        
+
+  Multigrid:                                 V-cycle        
+  /// Pre-smoother                                   
+  Number of smoothing steps:                 2        
+  Doubling of smoothing steps:               false    
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Damping factor                             1        
+  User-defined coloring                      true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  RAS - weights                              false    
+  RAS - boolean weights                      false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+  /// Post-smoother                                  
+  Number of smoothing steps:                 2        
+  Doubling of smoothing steps:               false    
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Damping factor                             1        
+  User-defined coloring                      true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  RAS - weights                              false    
+  RAS - boolean weights                      false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+  /// Coarse grid solver                             
+  Coarse grid solver:                        Full Inverse (SVD)        
+
+  Starting cycle 1 of 12                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 2 of 12                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 3 of 12                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 4 of 12                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 5 of 12                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    4096        
+
+  Number of degrees of freedom:              66049        
+  Interpolating boundary values              ...        
+  Solving system                             ...        
+  Average reduction (solver):                0.00178729        
+  Number of iterations (solver):             2.91142        
+  Error in the L2 norm:                      1.673e-06          
+  Error in the H1 seminorm:                  1.691e-05          
+  Error in energy norm (resp. |.|_h):        0.00154023        
+
+  Starting cycle 6 of 12                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16384        
+
+  Number of degrees of freedom:              263169        
+  Interpolating boundary values              ...        
+  Solving system                             ...        
+  Average reduction (solver):                0.00177852        
+  Number of iterations (solver):             2.90915        
+  Error in the L2 norm:                      1.589e-06          
+  Error in the H1 seminorm:                  2.187e-05          
+  Error in energy norm (resp. |.|_h):        0.00418466        
+
+  Starting cycle 7 of 12                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    65536        
+
+  Number of degrees of freedom:              1050625        
+  Interpolating boundary values              ...        
+  Solving system                             ...        
+  Average reduction (solver):                0.00177386        
+  Number of iterations (solver):             2.90795        
+  Error in the L2 norm:                      1.750e-06         
+  Error in the H1 seminorm:                  2.996e-05          
+  Error in energy norm (resp. |.|_h):        0.0115831        
+
+  Starting cycle 8 of 12                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    262144        
+
+  Number of degrees of freedom:              4198401        
+  Interpolating boundary values              ...        
+  Solving system                             ...        
+  Average reduction (solver):                0.00177138        
+  Number of iterations (solver):             2.90731        
+  Error in the L2 norm:                      3.370e-05          
+  Error in the H1 seminorm:                  1.667e-04          
+  Error in energy norm (resp. |.|_h):        0.0324105        
+
+  Starting cycle 9 of 12                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 10 of 12                    ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 11 of 12                    ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 12 of 12                    ...        
+  No mesh created                            ...        
+
+
+
+
+n_levels n_cells n_dofs  n_colors n_iter reduction       L2_error           energy_error     
+       6    4096   66049        8 2.9114 1.787e-03 1.673e-06    -     - 1.540e-03    -     - 
+       7   16384  263169        8 2.9092 1.779e-03 1.589e-06 1.05  0.07 4.185e-03 0.37 -1.45 
+       8   65536 1050625        8 2.9079 1.774e-03 1.750e-06 0.91 -0.14 1.158e-02 0.36 -1.47 
+       9  262144 4198401        8 2.9073 1.771e-03 3.370e-05 0.05 -4.27 3.241e-02 0.36 -1.49 
