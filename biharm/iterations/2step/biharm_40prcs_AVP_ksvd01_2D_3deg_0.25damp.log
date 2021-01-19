@@ -3,7 +3,7 @@
   Local solver:                              Kronecker SVD        
   Selected KSVD tensors:                     [0, 1]        
   Number of Lanczos iterations:              5        
-  Addition to min. eigenvalue:               0.01        
+  Addition to min. eigenvalue:               0.025        
   Stream function formulation (Stokes):      false    
 
   Finite element:                            FE_Q<2>(3)        
@@ -88,11 +88,11 @@
   Number of degrees of freedom:              148225        
   Interpolating boundary values              ...        
   Solving system                             ...        
-  Average reduction (solver):                0.200241        
-  Number of iterations (solver):             11.454        
-  Error in the L2 norm:                      3.900e-07          
-  Error in the H1 seminorm:                  3.845e-06          
-  Error in energy norm (resp. |.|_h):        0.00233998        
+  Average reduction (solver):                0.192841        
+  Number of iterations (solver):             11.1919        
+  Error in the L2 norm:                      1.660e-07          
+  Error in the H1 seminorm:                  3.223e-06          
+  Error in energy norm (resp. |.|_h):        0.00234126        
 
   Starting cycle 7 of 12                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -103,11 +103,11 @@
   Number of degrees of freedom:              591361        
   Interpolating boundary values              ...        
   Solving system                             ...        
-  Average reduction (solver):                0.198316        
-  Number of iterations (solver):             11.3856        
-  Error in the L2 norm:                      6.774e-07          
-  Error in the H1 seminorm:                  6.776e-06          
-  Error in energy norm (resp. |.|_h):        8.240e-04          
+  Average reduction (solver):                0.190954        
+  Number of iterations (solver):             11.1255        
+  Error in the L2 norm:                      6.263e-07          
+  Error in the H1 seminorm:                  7.958e-06          
+  Error in energy norm (resp. |.|_h):        7.940e-04          
 
   Starting cycle 8 of 12                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -118,11 +118,11 @@
   Number of degrees of freedom:              2362369        
   Interpolating boundary values              ...        
   Solving system                             ...        
-  Average reduction (solver):                0.196324        
-  Number of iterations (solver):             11.315        
-  Error in the L2 norm:                      5.900e-06          
-  Error in the H1 seminorm:                  3.253e-05          
-  Error in energy norm (resp. |.|_h):        0.00148618        
+  Average reduction (solver):                0.188802        
+  Number of iterations (solver):             11.0498        
+  Error in the L2 norm:                      4.189e-06         
+  Error in the H1 seminorm:                  2.899e-05          
+  Error in energy norm (resp. |.|_h):        0.00134336        
 
   Starting cycle 9 of 12                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -133,11 +133,11 @@
   Number of degrees of freedom:              9443329        
   Interpolating boundary values              ...        
   Solving system                             ...        
-  Average reduction (solver):                0.194375        
-  Number of iterations (solver):             11.2461        
-  Error in the L2 norm:                      1.980e-04          
-  Error in the H1 seminorm:                  9.849e-04          
-  Error in energy norm (resp. |.|_h):        0.00816051        
+  Average reduction (solver):                0.187018        
+  Number of iterations (solver):             10.9872        
+  Error in the L2 norm:                      1.965e-04          
+  Error in the H1 seminorm:                  9.877e-04          
+  Error in energy norm (resp. |.|_h):        0.00793355        
 
   Starting cycle 10 of 12                    ...        
   No mesh created                            ...        
@@ -154,7 +154,7 @@
 
 
 n_levels n_cells n_dofs  n_colors n_iter  reduction       L2_error           energy_error     
-       7   16384  148225        1 11.4540 2.002e-01 3.900e-07    -     - 2.340e-03    -     - 
-       8   65536  591361        1 11.3856 1.983e-01 6.774e-07 0.58 -0.80 8.240e-04 2.84  1.51 
-       9  262144 2362369        1 11.3150 1.963e-01 5.900e-06 0.11 -3.13 1.486e-03 0.55 -0.85 
-      10 1048576 9443329        1 11.2461 1.944e-01 1.980e-04 0.03 -5.07 8.161e-03 0.18 -2.46 
+       7   16384  148225        1 11.1919 1.928e-01 1.660e-07    -     - 2.341e-03    -     - 
+       8   65536  591361        1 11.1255 1.910e-01 6.263e-07 0.27 -1.92 7.940e-04 2.95  1.56 
+       9  262144 2362369        1 11.0498 1.888e-01 4.189e-06 0.15 -2.74 1.343e-03 0.59 -0.76 
+      10 1048576 9443329        1 10.9872 1.870e-01 1.965e-04 0.02 -5.55 7.934e-03 0.17 -2.56 
