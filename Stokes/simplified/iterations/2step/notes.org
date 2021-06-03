@@ -1,0 +1,11 @@
+- CG with rel. accuracy 10^-8
+- standard V-cycle
+- 2 pre- and post-smoothing steps (reverse for post)
+
+assembled on simserv02:
+- *.tab missing for degree 7 since we ran out of memory
+
+* exact:
+  - local mesh_loop() used for assembly
+  - SVD of complete local block system with kernel size 1 
+  (if SVD computations fail one might rescale pressure coefficients to separate the spectrum of eigenvalues of the local block system)
