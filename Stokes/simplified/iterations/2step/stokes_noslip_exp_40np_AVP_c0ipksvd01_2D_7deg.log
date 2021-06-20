@@ -1,0 +1,204 @@
+
+  ////////////////////////////////////////   SIMPLIFIED STOKES        
+  Equation Data:                             divergence-free (no-slip exponential)        
+  IP pre-factor:                             1        
+  Assemble pressure mass matrix?             false    
+  Use mean value constraint?                 false    
+  Use Cuthill-McKee?                         false    
+  Local Solver:                              c0ip (ksvd)        
+  Selected KSVD tensors:                     [0, 1]        
+  Number of Lanczos iterations:              5        
+  Addition to min. eigenvalue:               0.025        
+  Skip A?                                    false    
+  Local Assembly:                            streamtensor        
+
+  Finite element:                            FESystem<2>[FE_RaviartThomas_new<2>(7)-FE_DGQLegendre<2>(7)]        
+  Number of run cycles:                      10        
+  Lower dof limit:                           5000        
+  Upper dof limit:                           5000000        
+  Using TBB:                                 false    
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    CG_GMG        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              200        
+  Preconditioner:                            GMG        
+  Solver control:                            relative tolerance        
+
+  Multigrid:                                 V-cycle        
+    /// Pre-smoother                                 
+  Number of smoothing steps:                 2        
+  Doubling of smoothing steps:               false    
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Additive Vertex Patch        
+  Damping factor                             0.25        
+  Number of active blocks                    2        
+  User-defined coloring                      true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  RAS - weights                              false    
+  RAS - boolean weights                      false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+    /// Post-smoother                                
+  Number of smoothing steps:                 2        
+  Doubling of smoothing steps:               false    
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Additive Vertex Patch        
+  Damping factor                             0.25        
+  Number of active blocks                    2        
+  User-defined coloring                      true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  RAS - weights                              false    
+  RAS - boolean weights                      false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+    /// Coarse grid solver                           
+  Coarse grid solver:                        Direct Solver        
+  Threshold (singular values):               1.000e-08    
+  Kernel size:                               1        
+
+  Starting cycle 1 of 10                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 2 of 10                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    64        
+
+  Projecting div-conf. zero boundary (velo)  ...        
+  Projecting div-conf. boundary (velo)       ...        
+  Number of degrees of freedom (velocity):   8320        
+  Number of degrees of freedom (pressure):   4096        
+  Number of degrees of freedom (total):      12416        
+
+  Average reduction (solver):                0.371798        
+  Number of iterations (solver):             18.6179        
+  Mean of pressure solution adjusted by:     -2.370e-14          
+
+  Velocity error in the L2 norm:             2.573e-13          
+  Pressure error in the L2 norm:             4.147e-10          
+  Velocity error in the H1 seminorm:         4.540e-11          
+  Memory used (VM Peak):                     3GB        
+
+  Starting cycle 3 of 10                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    256        
+
+  Projecting div-conf. zero boundary (velo)  ...        
+  Projecting div-conf. boundary (velo)       ...        
+  Number of degrees of freedom (velocity):   33024        
+  Number of degrees of freedom (pressure):   16384        
+  Number of degrees of freedom (total):      49408        
+
+  Average reduction (solver):                0.36285        
+  Number of iterations (solver):             18.1706        
+  Mean of pressure solution adjusted by:     -2.104e-14          
+
+  Velocity error in the L2 norm:             1.829e-14          
+  Pressure error in the L2 norm:             5.313e-10          
+  Velocity error in the H1 seminorm:         1.690e-12          
+  Memory used (VM Peak):                     3GB        
+
+  Starting cycle 4 of 10                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    1024        
+
+  Projecting div-conf. zero boundary (velo)  ...        
+  Projecting div-conf. boundary (velo)       ...        
+  Number of degrees of freedom (velocity):   131584        
+  Number of degrees of freedom (pressure):   65536        
+  Number of degrees of freedom (total):      197120        
+
+  Average reduction (solver):                0.355491        
+  Number of iterations (solver):             17.8106        
+  Mean of pressure solution adjusted by:     -2.039e-14          
+
+  Velocity error in the L2 norm:             9.296e-15          
+  Pressure error in the L2 norm:             6.790e-11          
+  Velocity error in the H1 seminorm:         5.537e-13          
+  Memory used (VM Peak):                     3GB        
+
+  Starting cycle 5 of 10                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    4096        
+
+  Projecting div-conf. zero boundary (velo)  ...        
+  Projecting div-conf. boundary (velo)       ...        
+  Number of degrees of freedom (velocity):   525312        
+  Number of degrees of freedom (pressure):   262144        
+  Number of degrees of freedom (total):      787456        
+
+  Average reduction (solver):                0.358665        
+  Number of iterations (solver):             17.965        
+  Mean of pressure solution adjusted by:     -2.040e-14          
+
+  Velocity error in the L2 norm:             3.134e-14          
+  Pressure error in the L2 norm:             5.407e-10          
+  Velocity error in the H1 seminorm:         1.559e-12          
+  Memory used (VM Peak):                     3GB        
+
+  Starting cycle 6 of 10                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16384        
+
+  Projecting div-conf. zero boundary (velo)  ...        
+  Projecting div-conf. boundary (velo)       ...        
+  Number of degrees of freedom (velocity):   2099200        
+  Number of degrees of freedom (pressure):   1048576        
+  Number of degrees of freedom (total):      3147776        
+
+  Average reduction (solver):                0.342726        
+  Number of iterations (solver):             17.2023        
+  Mean of pressure solution adjusted by:     -2.068e-14          
+
+  Velocity error in the L2 norm:             7.716e-14          
+  Pressure error in the L2 norm:             3.973e-10          
+  Velocity error in the H1 seminorm:         1.402e-12          
+  Memory used (VM Peak):                     5GB        
+
+  Starting cycle 7 of 10                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 8 of 10                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 9 of 10                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 10 of 10                    ...        
+  No mesh created                            ...        
+
+
+
+
+n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter  reduction      L2_error_u            L2_error_p         H1semi_error_u     
+       3      64   12416     8320     4096        1 18.6179 3.718e-01 2.573e-13     -     - 4.147e-10    -     - 4.540e-11     -     - 
+       4     256   49408    33024    16384        1 18.1706 3.629e-01 1.829e-14 14.07  3.84 5.313e-10 0.78 -0.36 1.690e-12 26.87  4.77 
+       5    1024  197120   131584    65536        1 17.8106 3.555e-01 9.296e-15  1.97  0.98 6.790e-11 7.82  2.97 5.537e-13  3.05  1.61 
+       6    4096  787456   525312   262144        1 17.9650 3.587e-01 3.134e-14  0.30 -1.76 5.407e-10 0.13 -2.99 1.559e-12  0.36 -1.50 
+       7   16384 3147776  2099200  1048576        1 17.2023 3.427e-01 7.716e-14  0.41 -1.30 3.973e-10 1.36  0.44 1.402e-12  1.11  0.15 
