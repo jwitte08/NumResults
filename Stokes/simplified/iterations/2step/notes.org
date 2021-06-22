@@ -9,3 +9,40 @@ assembled on simserv02:
   - local mesh_loop() used for assembly
   - SVD of complete local block system with kernel size 1 
   (if SVD computations fail one might rescale pressure coefficients to separate the spectrum of eigenvalues of the local block system)
+
+* c0ip:
+  - STREAM FUNCTION: 
+    + tensor-based assembly but no fast diagonalization possible
+    (tensor rank exceeds two)
+    + local C0IP solvers (SVD)
+  - PRESSURE:
+    + reconstruct pressure from stream function solution (two step process)
+    + local mesh_loop() used to compute residuals w.r.t. Hdiv-IP forms and
+      "orthogonal" velocity test functions / dual restrictions of rhs vectors
+    + pressure constants are computed via SVD considering mean value constraint
+    + post-processing that computes zero mean value
+
+* bila:
+  - STREAM FUNCTION: 
+    + tensor-based assembly
+    + inexact local C0IP solvers reduced to Laplace-Laplace (fast diagonalization)
+  - PRESSURE:
+    + reconstruct pressure from stream function solution (two step process)
+    + local mesh_loop() used to compute residuals w.r.t. Hdiv-IP forms and
+      "orthogonal" velocity test functions / dual restrictions of rhs vectors
+    + pressure constants are computed via SVD considering mean value constraint
+    + post-processing that computes zero mean value
+      
+* c0ipksvd01:
+  - STREAM FUNCTION: 
+    + tensor-based assembly
+    + inexact local C0IP solvers reduced by KSVD (fast diagonalization): here
+      the KSVD computes the best rank-2 approximation first and afterwards at a
+      scaling alpha ensure positive definiteness (see biharmonic results for
+      details)
+  - PRESSURE:
+    + reconstruct pressure from stream function solution (two step process)
+    + local mesh_loop() used to compute residuals w.r.t. Hdiv-IP forms and
+      "orthogonal" velocity test functions / dual restrictions of rhs vectors
+    + pressure constants are computed via SVD considering mean value constraint
+    + post-processing that computes zero mean value
