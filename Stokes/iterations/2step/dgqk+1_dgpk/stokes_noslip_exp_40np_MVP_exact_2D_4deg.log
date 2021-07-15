@@ -1,0 +1,194 @@
+
+  ////////////////////////////////////////   STOKES        
+  Equation Data:                             divergence-free (no-slip exponential)        
+  IP pre-factor:                             1        
+  Assemble pressure mass matrix?             false    
+  Use mean value constraint?                 false    
+  Use Cuthill-McKee?                         false    
+  Local Solver:                              exact        
+  Kernel size (local solver):                1        
+  Skip A?                                    false    
+  Local Assembly:                            lmw        
+
+  Finite element:                            FESystem<2>[FESystem<2>[FE_DGQ<2>(5)^2]-FE_DGP<2>(4)]        
+  Number of run cycles:                      11        
+  Lower dof limit:                           5000        
+  Upper dof limit:                           5000000        
+  Using TBB:                                 false    
+
+  Geometry:                                  Cube        
+  Number of refinements:                     1        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    CG_GMG        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              200        
+  Preconditioner:                            GMG        
+  Solver control:                            relative tolerance        
+
+  Multigrid:                                 V-cycle        
+    /// Pre-smoother                                 
+  Number of smoothing steps:                 2        
+  Doubling of smoothing steps:               false    
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Damping factor                             1        
+  User-defined coloring                      true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  RAS - weights                              false    
+  RAS - boolean weights                      false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+    /// Post-smoother                                
+  Number of smoothing steps:                 2        
+  Doubling of smoothing steps:               false    
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Damping factor                             1        
+  User-defined coloring                      true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  RAS - weights                              false    
+  RAS - boolean weights                      false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+    /// Coarse grid solver                           
+  Coarse grid solver:                        Direct Solver        
+  Threshold (singular values):               1.000e-08    
+  Kernel size:                               1        
+
+  Starting cycle 1 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 2 of 11                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    64        
+
+  Number of degrees of freedom (velocity):   4608        
+  Number of degrees of freedom (pressure):   960        
+  Number of degrees of freedom (total):      5568        
+
+  Average reduction (solver):                0.00490971        
+  Number of iterations (solver):             3.46479        
+  Mean of pressure solution adjusted by:     1.135e-04          
+
+  Velocity error in the L2 norm:             1.265e-07          
+  Pressure error in the L2 norm:             2.739e-05          
+  Velocity error in the H1 seminorm:         1.248e-05          
+  Memory used (VM Peak):                     2GB        
+
+  Starting cycle 3 of 11                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    256        
+
+  Number of degrees of freedom (velocity):   18432        
+  Number of degrees of freedom (pressure):   3840        
+  Number of degrees of freedom (total):      22272        
+
+  Average reduction (solver):                0.0104726        
+  Number of iterations (solver):             4.04051        
+  Mean of pressure solution adjusted by:     9.476e-05          
+
+  Velocity error in the L2 norm:             2.059e-09          
+  Pressure error in the L2 norm:             8.646e-07          
+  Velocity error in the H1 seminorm:         4.089e-07          
+  Memory used (VM Peak):                     2GB        
+
+  Starting cycle 4 of 11                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    1024        
+
+  Number of degrees of freedom (velocity):   73728        
+  Number of degrees of freedom (pressure):   15360        
+  Number of degrees of freedom (total):      89088        
+
+  Average reduction (solver):                0.0125793        
+  Number of iterations (solver):             4.20976        
+  Mean of pressure solution adjusted by:     8.824e-05          
+
+  Velocity error in the L2 norm:             3.270e-11          
+  Pressure error in the L2 norm:             2.706e-08          
+  Velocity error in the H1 seminorm:         1.302e-08          
+  Memory used (VM Peak):                     2GB        
+
+  Starting cycle 5 of 11                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    4096        
+
+  Number of degrees of freedom (velocity):   294912        
+  Number of degrees of freedom (pressure):   61440        
+  Number of degrees of freedom (total):      356352        
+
+  Average reduction (solver):                0.0144901        
+  Number of iterations (solver):             4.35036        
+  Mean of pressure solution adjusted by:     8.662e-05          
+
+  Velocity error in the L2 norm:             5.921e-13          
+  Pressure error in the L2 norm:             8.455e-10          
+  Velocity error in the H1 seminorm:         4.102e-10          
+  Memory used (VM Peak):                     2GB        
+
+  Starting cycle 6 of 11                     ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    16384        
+
+  Number of degrees of freedom (velocity):   1179648        
+  Number of degrees of freedom (pressure):   245760        
+  Number of degrees of freedom (total):      1425408        
+
+  Average reduction (solver):                0.0149013        
+  Number of iterations (solver):             4.3793        
+  Mean of pressure solution adjusted by:     8.625e-05          
+
+  Velocity error in the L2 norm:             3.142e-13          
+  Pressure error in the L2 norm:             2.805e-11          
+  Velocity error in the H1 seminorm:         1.398e-11          
+  Memory used (VM Peak):                     5GB        
+
+  Starting cycle 7 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 8 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 9 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 10 of 11                    ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 11 of 11                    ...        
+  No mesh created                            ...        
+
+
+
+
+n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter reduction      L2_error_u           L2_error_p         H1semi_error_u    
+       3      64    5568     4608      960        8 3.4648 4.910e-03 1.265e-07     -    - 2.739e-05     -    - 1.248e-05     -    - 
+       4     256   22272    18432     3840        8 4.0405 1.047e-02 2.059e-09 61.43 5.94 8.646e-07 31.68 4.99 4.089e-07 30.52 4.93 
+       5    1024   89088    73728    15360        8 4.2098 1.258e-02 3.270e-11 62.97 5.98 2.706e-08 31.96 5.00 1.302e-08 31.39 4.97 
+       6    4096  356352   294912    61440        8 4.3504 1.449e-02 5.921e-13 55.23 5.79 8.455e-10 32.00 5.00 4.102e-10 31.75 4.99 
+       7   16384 1425408  1179648   245760        8 4.3793 1.490e-02 3.142e-13  1.88 0.91 2.805e-11 30.15 4.91 1.398e-11 29.33 4.87 
