@@ -9,11 +9,18 @@ the same applies to (non-overlapping) block-Jacobi solvers
 * AVP
   AVP smoothing step = damped overlapping block-Jacobi solve
 
-  we only obtain an iterative solver if we compensate for the overlap. all interior cells belong to 2^dim vertex patches, thus, choosing a damping factor of 1 / 2^dim compensates the overlap... [see eigenvalues_...txt]
+  we only obtain an iterative solver if we compensate for the overlap. all
+  interior cells belong to 2^dim vertex patches, thus, choosing a damping factor
+  of 1 / 2^dim compensates the overlap... [see eigenvalues_...txt]
 
-  the spectrum of the so-obtained damped overlapping block-Jacobi error propagation matrix is not symmetric around zero as it was for the ACP smoother
+  the spectrum of the so-obtained damped overlapping block-Jacobi error
+  propagation matrix is not symmetric around zero as it was for the ACP smoother
 
-  we compute w_opt as given by (eq.1) which compensates for the overlap and symmetrizes the spectrum around zero. [see symmetrized_eigenvalues_...txt]
+  we compute w_opt as given by (eq.1) which compensates for the overlap and
+  symmetrizes the spectrum around zero. [see symmetrized_eigenvalues_...txt]
 
-  however a w_opt damped smoother is a good iterative solver but not a good smoother. once again we scale by 0.7 to obtain a good smoother, i.e. finally we have a (0.7w_opt) damped AVP smoother! [see optsmooth_eigenvalues...txt and corresponding poisson_...xdmp.txt]
+  however a w_opt damped smoother is a good iterative solver but not a good
+  smoother. once again we scale by 0.7 to obtain a good smoother, i.e. finally
+  we have a (0.7w_opt) damped AVP smoother! [see optsmooth_eigenvalues...txt and
+  corresponding poisson_...xdmp.txt]
 
