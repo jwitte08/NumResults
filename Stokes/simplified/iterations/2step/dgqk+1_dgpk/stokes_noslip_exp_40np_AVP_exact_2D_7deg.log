@@ -11,7 +11,7 @@
   Local Assembly:                            lmw        
 
   Finite element:                            FESystem<2>[FESystem<2>[FE_DGQ<2>(8)^2]-FE_DGP<2>(7)]        
-  Number of run cycles:                      10        
+  Number of run cycles:                      11        
   Lower dof limit:                           5000        
   Upper dof limit:                           5000000        
   Using TBB:                                 false    
@@ -65,11 +65,11 @@
   Threshold (singular values):               1.000e-08    
   Kernel size:                               1        
 
-  Starting cycle 1 of 10                     ...        
+  Starting cycle 1 of 11                     ...        
   No mesh created                            ...        
 
 
-  Starting cycle 2 of 10                     ...        
+  Starting cycle 2 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -86,9 +86,9 @@
   Velocity error in the L2 norm:             2.789e-11          
   Pressure error in the L2 norm:             4.589e-09          
   Velocity error in the H1 seminorm:         4.250e-09          
-  Memory used (VM Peak):                     2GB        
+  Memory used (VM Peak):                     3GB        
 
-  Starting cycle 3 of 10                     ...        
+  Starting cycle 3 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -105,9 +105,9 @@
   Velocity error in the L2 norm:             8.124e-14          
   Pressure error in the L2 norm:             2.105e-11          
   Velocity error in the H1 seminorm:         1.752e-11          
-  Memory used (VM Peak):                     2GB        
+  Memory used (VM Peak):                     3GB        
 
-  Starting cycle 4 of 10                     ...        
+  Starting cycle 4 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -121,12 +121,12 @@
   Number of iterations (solver):             12.9565        
   Mean of pressure solution adjusted by:     -2.008e-04          
 
-  Velocity error in the L2 norm:             3.092e-13          
+  Velocity error in the L2 norm:             3.090e-13          
   Pressure error in the L2 norm:             1.014e-10          
   Velocity error in the H1 seminorm:         8.814e-11        
-  Memory used (VM Peak):                     2GB        
+  Memory used (VM Peak):                     4GB        
 
-  Starting cycle 5 of 10                     ...        
+  Starting cycle 5 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -140,12 +140,12 @@
   Number of iterations (solver):             13.7503        
   Mean of pressure solution adjusted by:     -1.994e-04          
 
-  Velocity error in the L2 norm:             7.203e-13          
-  Pressure error in the L2 norm:             4.888e-11          
+  Velocity error in the L2 norm:             7.195e-13          
+  Pressure error in the L2 norm:             4.889e-11          
   Velocity error in the H1 seminorm:         3.035e-11          
-  Memory used (VM Peak):                     7GB        
+  Memory used (VM Peak):                     9GB        
 
-  Starting cycle 6 of 10                     ...        
+  Starting cycle 6 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -155,3 +155,40 @@
   Number of degrees of freedom (pressure):   589824        
   Number of degrees of freedom (total):      3244032        
 
+  Average reduction (solver):                0.237328        
+  Number of iterations (solver):             12.8071        
+  Mean of pressure solution adjusted by:     -1.990e-04          
+
+  Velocity error in the L2 norm:             1.724e-13          
+  Pressure error in the L2 norm:             1.717e-11          
+  Velocity error in the H1 seminorm:         1.496e-11          
+  Memory used (VM Peak):                     24GB        
+
+  Starting cycle 7 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 8 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 9 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 10 of 11                    ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 11 of 11                    ...        
+  No mesh created                            ...        
+
+
+
+
+n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter  reduction       L2_error_u             L2_error_p           H1semi_error_u     
+       3      64   12672    10368     2304        1 12.5193 2.296e-01 2.789e-11      -     - 4.589e-09      -     - 4.250e-09      -     - 
+       4     256   50688    41472     9216        1 12.9553 2.413e-01 8.124e-14 343.28  8.42 2.105e-11 218.01  7.77 1.752e-11 242.50  7.92 
+       5    1024  202752   165888    36864        1 12.9565 2.413e-01 3.090e-13   0.26 -1.93 1.014e-10   0.21 -2.27 8.814e-11   0.20 -2.33 
+       6    4096  811008   663552   147456        1 13.7503 2.619e-01 7.195e-13   0.43 -1.22 4.889e-11   2.07  1.05 3.035e-11   2.90  1.54 
+       7   16384 3244032  2654208   589824        1 12.8071 2.373e-01 1.724e-13   4.17  2.06 1.717e-11   2.85  1.51 1.496e-11   2.03  1.02 

@@ -86,7 +86,7 @@
   Velocity error in the L2 norm:             3.101e-11          
   Pressure error in the L2 norm:             4.600e-09         
   Velocity error in the H1 seminorm:         4.254e-09         
-  Memory used (VM Peak):                     2GB        
+  Memory used (VM Peak):                     4GB        
 
   Starting cycle 3 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -105,7 +105,7 @@
   Velocity error in the L2 norm:             6.812e-13          
   Pressure error in the L2 norm:             3.756e-11          
   Velocity error in the H1 seminorm:         2.134e-11          
-  Memory used (VM Peak):                     2GB        
+  Memory used (VM Peak):                     4GB        
 
   Starting cycle 4 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -121,10 +121,10 @@
   Number of iterations (solver):             4.424        
   Mean of pressure solution adjusted by:     8.255e-05          
 
-  Velocity error in the L2 norm:             8.598e-13          
+  Velocity error in the L2 norm:             8.596e-13          
   Pressure error in the L2 norm:             3.124e-11          
   Velocity error in the H1 seminorm:         1.466e-11          
-  Memory used (VM Peak):                     3GB        
+  Memory used (VM Peak):                     6GB        
 
   Starting cycle 5 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -140,10 +140,10 @@
   Number of iterations (solver):             4.48917        
   Mean of pressure solution adjusted by:     8.051e-05          
 
-  Velocity error in the L2 norm:             1.050e-12          
+  Velocity error in the L2 norm:             1.048e-12         
   Pressure error in the L2 norm:             2.924e-11          
-  Velocity error in the H1 seminorm:         1.689e-11          
-  Memory used (VM Peak):                     7GB        
+  Velocity error in the H1 seminorm:         1.688e-11          
+  Memory used (VM Peak):                     11GB        
 
   Starting cycle 6 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -155,3 +155,40 @@
   Number of degrees of freedom (pressure):   589824        
   Number of degrees of freedom (total):      3244032        
 
+  Average reduction (solver):                0.0170074        
+  Number of iterations (solver):             4.5214        
+  Mean of pressure solution adjusted by:     8.000e-05          
+
+  Velocity error in the L2 norm:             1.129e-12          
+  Pressure error in the L2 norm:             2.646e-11          
+  Velocity error in the H1 seminorm:         1.700e-11         
+  Memory used (VM Peak):                     28GB        
+
+  Starting cycle 7 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 8 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 9 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 10 of 11                    ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 11 of 11                    ...        
+  No mesh created                            ...        
+
+
+
+
+n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter reduction      L2_error_u            L2_error_p           H1semi_error_u     
+       3      64   12672    10368     2304        8 3.6718 6.626e-03 3.101e-11     -     - 4.600e-09      -    - 4.254e-09      -     - 
+       4     256   50688    41472     9216        8 4.2974 1.375e-02 6.812e-13 45.53  5.51 3.756e-11 122.47 6.94 2.134e-11 199.31  7.64 
+       5    1024  202752   165888    36864        8 4.4240 1.555e-02 8.596e-13  0.79 -0.34 3.124e-11   1.20 0.27 1.466e-11   1.46  0.54 
+       6    4096  811008   663552   147456        8 4.4892 1.652e-02 1.048e-12  0.82 -0.29 2.924e-11   1.07 0.10 1.688e-11   0.87 -0.20 
+       7   16384 3244032  2654208   589824        8 4.5214 1.701e-02 1.129e-12  0.93 -0.11 2.646e-11   1.11 0.14 1.700e-11   0.99 -0.01 

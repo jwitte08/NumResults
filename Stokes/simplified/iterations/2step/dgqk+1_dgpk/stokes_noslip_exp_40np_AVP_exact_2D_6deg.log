@@ -11,7 +11,7 @@
   Local Assembly:                            lmw        
 
   Finite element:                            FESystem<2>[FESystem<2>[FE_DGQ<2>(7)^2]-FE_DGP<2>(6)]        
-  Number of run cycles:                      10        
+  Number of run cycles:                      11        
   Lower dof limit:                           5000        
   Upper dof limit:                           5000000        
   Using TBB:                                 false    
@@ -65,11 +65,11 @@
   Threshold (singular values):               1.000e-08    
   Kernel size:                               1        
 
-  Starting cycle 1 of 10                     ...        
+  Starting cycle 1 of 11                     ...        
   No mesh created                            ...        
 
 
-  Starting cycle 2 of 10                     ...        
+  Starting cycle 2 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -86,9 +86,9 @@
   Velocity error in the L2 norm:             6.418e-10          
   Pressure error in the L2 norm:             9.557e-08          
   Velocity error in the H1 seminorm:         8.759e-08          
-  Memory used (VM Peak):                     2GB        
+  Memory used (VM Peak):                     6GB        
 
-  Starting cycle 3 of 10                     ...        
+  Starting cycle 3 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -105,9 +105,9 @@
   Velocity error in the L2 norm:             2.593e-12          
   Pressure error in the L2 norm:             7.542e-10          
   Velocity error in the H1 seminorm:         7.132e-10          
-  Memory used (VM Peak):                     2GB        
+  Memory used (VM Peak):                     6GB        
 
-  Starting cycle 4 of 10                     ...        
+  Starting cycle 4 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -124,9 +124,9 @@
   Velocity error in the L2 norm:             4.438e-13          
   Pressure error in the L2 norm:             9.612e-11         
   Velocity error in the H1 seminorm:         6.233e-11          
-  Memory used (VM Peak):                     2GB        
+  Memory used (VM Peak):                     6GB        
 
-  Starting cycle 5 of 10                     ...        
+  Starting cycle 5 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -136,16 +136,16 @@
   Number of degrees of freedom (pressure):   114688        
   Number of degrees of freedom (total):      638976        
 
-  Average reduction (solver):                0.240551        
+  Average reduction (solver):                0.240552        
   Number of iterations (solver):             12.9284        
   Mean of pressure solution adjusted by:     -2.518e-04         
 
   Velocity error in the L2 norm:             2.076e-14          
-  Pressure error in the L2 norm:             1.285e-11         
+  Pressure error in the L2 norm:             1.286e-11          
   Velocity error in the H1 seminorm:         6.890e-12          
-  Memory used (VM Peak):                     4GB        
+  Memory used (VM Peak):                     8GB        
 
-  Starting cycle 6 of 10                     ...        
+  Starting cycle 6 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
   Root mesh:                                 2 x 2        
   Number of root cells:                      4        
@@ -155,3 +155,40 @@
   Number of degrees of freedom (pressure):   458752        
   Number of degrees of freedom (total):      2555904        
 
+  Average reduction (solver):                0.219703        
+  Number of iterations (solver):             12.155        
+  Mean of pressure solution adjusted by:     -2.514e-04          
+
+  Velocity error in the L2 norm:             5.434e-14          
+  Pressure error in the L2 norm:             6.305e-12          
+  Velocity error in the H1 seminorm:         5.924e-12          
+  Memory used (VM Peak):                     18GB        
+
+  Starting cycle 7 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 8 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 9 of 11                     ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 10 of 11                    ...        
+  No mesh created                            ...        
+
+
+  Starting cycle 11 of 11                    ...        
+  No mesh created                            ...        
+
+
+
+
+n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter  reduction       L2_error_u            L2_error_p          H1semi_error_u     
+       3      64    9984     8192     1792        1 12.7723 2.364e-01 6.418e-10      -     - 9.557e-08      -    - 8.759e-08      -    - 
+       4     256   39936    32768     7168        1 13.0565 2.439e-01 2.593e-12 247.54  7.95 7.542e-10 126.71 6.99 7.132e-10 122.81 6.94 
+       5    1024  159744   131072    28672        1 12.8449 2.383e-01 4.438e-13   5.84  2.55 9.612e-11   7.85 2.97 6.233e-11  11.44 3.52 
+       6    4096  638976   524288   114688        1 12.9284 2.406e-01 2.076e-14  21.37  4.42 1.286e-11   7.48 2.90 6.890e-12   9.05 3.18 
+       7   16384 2555904  2097152   458752        1 12.1550 2.197e-01 5.434e-14   0.38 -1.39 6.305e-12   2.04 1.03 5.924e-12   1.16 0.22 
