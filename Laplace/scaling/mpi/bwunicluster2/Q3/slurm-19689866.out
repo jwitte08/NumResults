@@ -1,0 +1,25 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "mpi/openmpi/4.0"
+   Try: "module spider mpi/openmpi/4.0" to see how to load the module(s).
+
+
+
+starting on Di 3. Aug 21:23:45 CEST 2021 with ppn=40, nodes=4 at /home/hd/hd_hd/hd_mx444/Workspace/tpss/build/040821
+OMP_NUM_THREADS=1
+DEAL_II_NUM_THREADS=1
+exiting on Di 3. Aug 21:23:45 CEST 2021 with ppn=40, nodes=4 at /home/hd/hd_hd/hd_mx444/Workspace/tpss/build/040821
+
+============================= JOB FEEDBACK =============================
+
+NodeName=uc2n[161-164]
+Job ID: 19689866
+Cluster: uc2
+User/Group: hd_mx444/hd_hd
+State: COMPLETED (exit code 0)
+Nodes: 4
+Cores per node: 80
+CPU Utilized: 00:00:00
+CPU Efficiency: 0.00% of 01:46:40 core-walltime
+Job Wall-clock time: 00:00:20
+Memory Utilized: 1.99 MB
+Memory Efficiency: 0.00% of 351.56 GB
