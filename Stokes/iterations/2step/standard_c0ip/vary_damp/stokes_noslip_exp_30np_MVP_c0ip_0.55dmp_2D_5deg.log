@@ -34,7 +34,7 @@
   Doubling of smoothing steps:               false    
   Smoother:                                  Schwarz Smoother        
   Schwarz operator                           Multiplicative Vertex Patch        
-  Damping factor                             0.3        
+  Damping factor                             0.55        
   Number of active blocks                    2        
   User-defined coloring                      true     
   Symmetrized Schwarz operator               false    
@@ -50,7 +50,7 @@
   Doubling of smoothing steps:               false    
   Smoother:                                  Schwarz Smoother        
   Schwarz operator                           Multiplicative Vertex Patch        
-  Damping factor                             0.3        
+  Damping factor                             0.55        
   Number of active blocks                    2        
   User-defined coloring                      true     
   Symmetrized Schwarz operator               false    
@@ -82,9 +82,9 @@
   Number of degrees of freedom (pressure):   2304        
   Number of degrees of freedom (total):      7008        
 
-  Average reduction (solver):                0.0887941        
-  Number of iterations (solver):             7.60734        
-  Mean of pressure solution adjusted by:     -7.376e-15          
+  Average reduction (solver):                0.0161212        
+  Number of iterations (solver):             4.46279        
+  Mean of pressure solution adjusted by:     -6.731e-16          
 
   Velocity error in the L2 norm:             3.884e-10          
   Pressure error in the L2 norm:             6.887e-08          
@@ -103,12 +103,12 @@
   Number of degrees of freedom (pressure):   9216        
   Number of degrees of freedom (total):      27840        
 
-  Average reduction (solver):                0.094412        
-  Number of iterations (solver):             7.80508        
-  Mean of pressure solution adjusted by:     -6.044e-15          
+  Average reduction (solver):                0.0183002        
+  Number of iterations (solver):             4.6042        
+  Mean of pressure solution adjusted by:     2.776e-17          
 
   Velocity error in the L2 norm:             6.148e-12          
-  Pressure error in the L2 norm:             1.086e-09          
+  Pressure error in the L2 norm:             1.083e-09          
   Velocity error in the H1 seminorm:         1.514e-09          
   Memory used (VM Peak):                     3GB        
 
@@ -124,13 +124,13 @@
   Number of degrees of freedom (pressure):   36864        
   Number of degrees of freedom (total):      110976        
 
-  Average reduction (solver):                0.0850942        
-  Number of iterations (solver):             7.47594        
-  Mean of pressure solution adjusted by:     -5.603e-15          
+  Average reduction (solver):                0.018155        
+  Number of iterations (solver):             4.59505        
+  Mean of pressure solution adjusted by:     3.712e-16          
 
-  Velocity error in the L2 norm:             9.648e-14          
-  Pressure error in the L2 norm:             3.003e-11        
-  Velocity error in the H1 seminorm:         4.732e-11          
+  Velocity error in the L2 norm:             9.691e-14          
+  Pressure error in the L2 norm:             4.785e-11          
+  Velocity error in the H1 seminorm:         4.732e-11         
   Memory used (VM Peak):                     3GB        
 
   Starting cycle 5 of 11                     ...        
@@ -145,13 +145,13 @@
   Number of degrees of freedom (pressure):   147456        
   Number of degrees of freedom (total):      443136        
 
-  Average reduction (solver):                0.067969        
-  Number of iterations (solver):             6.85114        
-  Mean of pressure solution adjusted by:     -5.908e-15          
+  Average reduction (solver):                0.0173088        
+  Number of iterations (solver):             4.54099        
+  Mean of pressure solution adjusted by:     4.580e-16          
 
-  Velocity error in the L2 norm:             1.857e-14          
-  Pressure error in the L2 norm:             4.337e-11          
-  Velocity error in the H1 seminorm:         1.838e-12          
+  Velocity error in the L2 norm:             1.608e-14          
+  Pressure error in the L2 norm:             2.320e-11          
+  Velocity error in the H1 seminorm:         1.509e-12          
   Memory used (VM Peak):                     3GB        
 
   Starting cycle 6 of 11                     ...        
@@ -166,14 +166,14 @@
   Number of degrees of freedom (pressure):   589824        
   Number of degrees of freedom (total):      1771008        
 
-  Average reduction (solver):                0.0636964        
-  Number of iterations (solver):             6.68961        
-  Mean of pressure solution adjusted by:     -5.395e-15          
+  Average reduction (solver):                0.0171845        
+  Number of iterations (solver):             4.53293        
+  Mean of pressure solution adjusted by:     2.498e-16        
 
-  Velocity error in the L2 norm:             6.090e-14          
-  Pressure error in the L2 norm:             2.116e-11          
-  Velocity error in the H1 seminorm:         7.396e-13          
-  Memory used (VM Peak):                     5GB        
+  Velocity error in the L2 norm:             5.273e-14          
+  Pressure error in the L2 norm:             1.254e-11          
+  Velocity error in the H1 seminorm:         4.675e-13          
+  Memory used (VM Peak):                     4GB        
 
   Starting cycle 7 of 11                     ...        
   No mesh created                            ...        
@@ -197,9 +197,9 @@
 
 
 
-n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter reduction      L2_error_u            L2_error_p          H1semi_error_u    
-       3      64    7008     4704     2304        8 7.6073 8.879e-02 3.884e-10     -     - 6.887e-08     -     - 4.847e-08     -    - 
-       4     256   27840    18624     9216        8 7.8051 9.441e-02 6.148e-12 63.19  6.03 1.086e-09 63.42  5.99 1.514e-09 32.01 5.04 
-       5    1024  110976    74112    36864        8 7.4759 8.509e-02 9.648e-14 63.72  6.02 3.003e-11 36.16  5.18 4.732e-11 32.01 5.02 
-       6    4096  443136   295680   147456        8 6.8511 6.797e-02 1.857e-14  5.20  2.38 4.337e-11  0.69 -0.53 1.838e-12 25.74 4.69 
-       7   16384 1771008  1181184   589824        8 6.6896 6.370e-02 6.090e-14  0.30 -1.72 2.116e-11  2.05  1.04 7.396e-13  2.49 1.31 
+n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter reduction      L2_error_u            L2_error_p         H1semi_error_u    
+       3      64    7008     4704     2304        8 4.4628 1.612e-02 3.884e-10     -     - 6.887e-08     -    - 4.847e-08     -    - 
+       4     256   27840    18624     9216        8 4.6042 1.830e-02 6.148e-12 63.19  6.03 1.083e-09 63.61 5.99 1.514e-09 32.01 5.04 
+       5    1024  110976    74112    36864        8 4.5950 1.815e-02 9.691e-14 63.43  6.01 4.785e-11 22.63 4.50 4.732e-11 32.00 5.02 
+       6    4096  443136   295680   147456        8 4.5410 1.731e-02 1.608e-14  6.03  2.60 2.320e-11  2.06 1.04 1.509e-12 31.35 4.98 
+       7   16384 1771008  1181184   589824        8 4.5329 1.718e-02 5.273e-14  0.31 -1.71 1.254e-11  1.85 0.89 4.675e-13  3.23 1.69 

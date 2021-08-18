@@ -5,11 +5,14 @@
   Assemble pressure mass matrix?             false    
   Use mean value constraint?                 false    
   Use Cuthill-McKee?                         false    
-  Local Solver:                              c0ip (exact)        
+  Local Solver:                              c0ip (ksvd)        
+  Selected KSVD tensors:                     [0, 1]        
+  Number of Lanczos iterations:              5        
+  Addition to min. eigenvalue:               0.025        
   Skip A?                                    false    
   Local Assembly:                            streamtensor        
 
-  Finite element:                            FESystem<2>[FE_RaviartThomas_new<2>(5)-FE_DGQLegendre<2>(5)]        
+  Finite element:                            FESystem<2>[FE_RaviartThomas_new<2>(3)-FE_DGQLegendre<2>(3)]        
   Number of run cycles:                      11        
   Lower dof limit:                           5000        
   Upper dof limit:                           5000000        
@@ -34,7 +37,7 @@
   Doubling of smoothing steps:               false    
   Smoother:                                  Schwarz Smoother        
   Schwarz operator                           Multiplicative Vertex Patch        
-  Damping factor                             0.3        
+  Damping factor                             0.55        
   Number of active blocks                    2        
   User-defined coloring                      true     
   Symmetrized Schwarz operator               false    
@@ -50,7 +53,7 @@
   Doubling of smoothing steps:               false    
   Smoother:                                  Schwarz Smoother        
   Schwarz operator                           Multiplicative Vertex Patch        
-  Damping factor                             0.3        
+  Damping factor                             0.55        
   Number of active blocks                    2        
   User-defined coloring                      true     
   Symmetrized Schwarz operator               false    
@@ -71,25 +74,8 @@
 
 
   Starting cycle 2 of 11                     ...        
-  Domain:                                    (0, 1) x (0, 1)        
-  Root mesh:                                 2 x 2        
-  Number of root cells:                      4        
-  Number of active cells:                    64        
+  No mesh created                            ...        
 
-  Projecting div-conf. zero boundary (velo)  ...        
-  Projecting div-conf. boundary (velo)       ...        
-  Number of degrees of freedom (velocity):   4704        
-  Number of degrees of freedom (pressure):   2304        
-  Number of degrees of freedom (total):      7008        
-
-  Average reduction (solver):                0.0887941        
-  Number of iterations (solver):             7.60734        
-  Mean of pressure solution adjusted by:     -7.376e-15          
-
-  Velocity error in the L2 norm:             3.884e-10          
-  Pressure error in the L2 norm:             6.887e-08          
-  Velocity error in the H1 seminorm:         4.847e-08          
-  Memory used (VM Peak):                     3GB        
 
   Starting cycle 3 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -99,18 +85,18 @@
 
   Projecting div-conf. zero boundary (velo)  ...        
   Projecting div-conf. boundary (velo)       ...        
-  Number of degrees of freedom (velocity):   18624        
-  Number of degrees of freedom (pressure):   9216        
-  Number of degrees of freedom (total):      27840        
+  Number of degrees of freedom (velocity):   8320        
+  Number of degrees of freedom (pressure):   4096        
+  Number of degrees of freedom (total):      12416        
 
-  Average reduction (solver):                0.094412        
-  Number of iterations (solver):             7.80508        
-  Mean of pressure solution adjusted by:     -6.044e-15          
+  Average reduction (solver):                0.078989        
+  Number of iterations (solver):             7.25668        
+  Mean of pressure solution adjusted by:     -4.531e-15         
 
-  Velocity error in the L2 norm:             6.148e-12          
-  Pressure error in the L2 norm:             1.086e-09          
-  Velocity error in the H1 seminorm:         1.514e-09          
-  Memory used (VM Peak):                     3GB        
+  Velocity error in the L2 norm:             2.298e-08         
+  Pressure error in the L2 norm:             3.332e-06          
+  Velocity error in the H1 seminorm:         3.517e-06          
+  Memory used (VM Peak):                     4GB        
 
   Starting cycle 4 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -120,18 +106,18 @@
 
   Projecting div-conf. zero boundary (velo)  ...        
   Projecting div-conf. boundary (velo)       ...        
-  Number of degrees of freedom (velocity):   74112        
-  Number of degrees of freedom (pressure):   36864        
-  Number of degrees of freedom (total):      110976        
+  Number of degrees of freedom (velocity):   33024        
+  Number of degrees of freedom (pressure):   16384        
+  Number of degrees of freedom (total):      49408        
 
-  Average reduction (solver):                0.0850942        
-  Number of iterations (solver):             7.47594        
-  Mean of pressure solution adjusted by:     -5.603e-15          
+  Average reduction (solver):                0.0731421        
+  Number of iterations (solver):             7.04329        
+  Mean of pressure solution adjusted by:     -4.299e-15          
 
-  Velocity error in the L2 norm:             9.648e-14          
-  Pressure error in the L2 norm:             3.003e-11        
-  Velocity error in the H1 seminorm:         4.732e-11          
-  Memory used (VM Peak):                     3GB        
+  Velocity error in the L2 norm:             1.443e-09          
+  Pressure error in the L2 norm:             2.085e-07          
+  Velocity error in the H1 seminorm:         4.395e-07        
+  Memory used (VM Peak):                     4GB        
 
   Starting cycle 5 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -141,18 +127,18 @@
 
   Projecting div-conf. zero boundary (velo)  ...        
   Projecting div-conf. boundary (velo)       ...        
-  Number of degrees of freedom (velocity):   295680        
-  Number of degrees of freedom (pressure):   147456        
-  Number of degrees of freedom (total):      443136        
+  Number of degrees of freedom (velocity):   131584        
+  Number of degrees of freedom (pressure):   65536        
+  Number of degrees of freedom (total):      197120        
 
-  Average reduction (solver):                0.067969        
-  Number of iterations (solver):             6.85114        
-  Mean of pressure solution adjusted by:     -5.908e-15          
+  Average reduction (solver):                0.0669352        
+  Number of iterations (solver):             6.8123        
+  Mean of pressure solution adjusted by:     -4.045e-15          
 
-  Velocity error in the L2 norm:             1.857e-14          
-  Pressure error in the L2 norm:             4.337e-11          
-  Velocity error in the H1 seminorm:         1.838e-12          
-  Memory used (VM Peak):                     3GB        
+  Velocity error in the L2 norm:             9.037e-11          
+  Pressure error in the L2 norm:             1.314e-08          
+  Velocity error in the H1 seminorm:         5.493e-08          
+  Memory used (VM Peak):                     4GB        
 
   Starting cycle 6 of 11                     ...        
   Domain:                                    (0, 1) x (0, 1)        
@@ -162,22 +148,39 @@
 
   Projecting div-conf. zero boundary (velo)  ...        
   Projecting div-conf. boundary (velo)       ...        
-  Number of degrees of freedom (velocity):   1181184        
-  Number of degrees of freedom (pressure):   589824        
-  Number of degrees of freedom (total):      1771008        
+  Number of degrees of freedom (velocity):   525312        
+  Number of degrees of freedom (pressure):   262144        
+  Number of degrees of freedom (total):      787456        
 
-  Average reduction (solver):                0.0636964        
-  Number of iterations (solver):             6.68961        
-  Mean of pressure solution adjusted by:     -5.395e-15          
+  Average reduction (solver):                0.0669904        
+  Number of iterations (solver):             6.81438        
+  Mean of pressure solution adjusted by:     -3.615e-15          
 
-  Velocity error in the L2 norm:             6.090e-14          
-  Pressure error in the L2 norm:             2.116e-11          
-  Velocity error in the H1 seminorm:         7.396e-13          
-  Memory used (VM Peak):                     5GB        
+  Velocity error in the L2 norm:             5.735e-12          
+  Pressure error in the L2 norm:             1.583e-09          
+  Velocity error in the H1 seminorm:         6.866e-09          
+  Memory used (VM Peak):                     4GB        
 
   Starting cycle 7 of 11                     ...        
-  No mesh created                            ...        
+  Domain:                                    (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2        
+  Number of root cells:                      4        
+  Number of active cells:                    65536        
 
+  Projecting div-conf. zero boundary (velo)  ...        
+  Projecting div-conf. boundary (velo)       ...        
+  Number of degrees of freedom (velocity):   2099200        
+  Number of degrees of freedom (pressure):   1048576        
+  Number of degrees of freedom (total):      3147776        
+
+  Average reduction (solver):                0.066064        
+  Number of iterations (solver):             6.77946        
+  Mean of pressure solution adjusted by:     -3.782e-15         
+
+  Velocity error in the L2 norm:             9.812e-13          
+  Pressure error in the L2 norm:             1.222e-09          
+  Velocity error in the H1 seminorm:         8.589e-10          
+  Memory used (VM Peak):                     4GB        
 
   Starting cycle 8 of 11                     ...        
   No mesh created                            ...        
@@ -197,9 +200,9 @@
 
 
 
-n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter reduction      L2_error_u            L2_error_p          H1semi_error_u    
-       3      64    7008     4704     2304        8 7.6073 8.879e-02 3.884e-10     -     - 6.887e-08     -     - 4.847e-08     -    - 
-       4     256   27840    18624     9216        8 7.8051 9.441e-02 6.148e-12 63.19  6.03 1.086e-09 63.42  5.99 1.514e-09 32.01 5.04 
-       5    1024  110976    74112    36864        8 7.4759 8.509e-02 9.648e-14 63.72  6.02 3.003e-11 36.16  5.18 4.732e-11 32.01 5.02 
-       6    4096  443136   295680   147456        8 6.8511 6.797e-02 1.857e-14  5.20  2.38 4.337e-11  0.69 -0.53 1.838e-12 25.74 4.69 
-       7   16384 1771008  1181184   589824        8 6.6896 6.370e-02 6.090e-14  0.30 -1.72 2.116e-11  2.05  1.04 7.396e-13  2.49 1.31 
+n_levels n_cells n_dofs  n_dofs_u n_dofs_p n_colors n_iter reduction      L2_error_u           L2_error_p        H1semi_error_u    
+       4     256   12416     8320     4096        8 7.2567 7.899e-02 2.298e-08     -    - 3.332e-06     -    - 3.517e-06    -    - 
+       5    1024   49408    33024    16384        8 7.0433 7.314e-02 1.443e-09 15.92 4.01 2.085e-07 15.98 4.00 4.395e-07 8.00 3.02 
+       6    4096  197120   131584    65536        8 6.8123 6.694e-02 9.037e-11 15.97 4.01 1.314e-08 15.86 3.99 5.493e-08 8.00 3.01 
+       7   16384  787456   525312   262144        8 6.8144 6.699e-02 5.735e-12 15.76 3.98 1.583e-09  8.30 3.05 6.866e-09 8.00 3.00 
+       8   65536 3147776  2099200  1048576        8 6.7795 6.606e-02 9.812e-13  5.84 2.55 1.222e-09  1.30 0.37 8.589e-10 7.99 3.00 
