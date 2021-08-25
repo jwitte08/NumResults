@@ -1,0 +1,1214 @@
+Lmod has detected the following error: These module(s) or extension(s) exist
+but cannot be loaded as requested: "mpi/openmpi/4.0"
+   Try: "module spider mpi/openmpi/4.0" to see how to load the module(s).
+
+
+
+starting on Do 19. Aug 14:40:16 CEST 2021 with ppn=40, nodes=4 at /home/hd/hd_hd/hd_mx444/Workspace/tpss/build/DGQ15mvp
+OMP_NUM_THREADS=1
+DEAL_II_NUM_THREADS=1
+ Data for JOB [28172,1] offset 0 Total slots allocated 160
+
+ Mapper requested: NULL  Last mapper: round_robin  Mapping policy: BYCORE:NOOVERSUBSCRIBE  Ranking policy: CORE
+ Binding policy: CORE  Cpu set: NULL  PPR: NULL  Cpus-per-rank: 0
+ 	Num new daemons: 0	New daemon starting vpid INVALID
+ 	Num nodes: 4
+
+ Data for node: uc2n084	State: 3	Flags: 11
+ 	Daemon: [[28172,0],0]	Daemon launched: True
+ 	Num slots: 40	Slots in use: 40	Oversubscribed: FALSE
+ 	Num slots allocated: 40	Max slots: 0
+ 	Num procs: 40	Next node_rank: 40
+ 	Data for proc: [[28172,1],0]
+ 		Pid: 0	Local rank: 0	Node rank: 0	App rank: 0
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],1]
+ 		Pid: 0	Local rank: 1	Node rank: 1	App rank: 1
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],2]
+ 		Pid: 0	Local rank: 2	Node rank: 2	App rank: 2
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],3]
+ 		Pid: 0	Local rank: 3	Node rank: 3	App rank: 3
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],4]
+ 		Pid: 0	Local rank: 4	Node rank: 4	App rank: 4
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],5]
+ 		Pid: 0	Local rank: 5	Node rank: 5	App rank: 5
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],6]
+ 		Pid: 0	Local rank: 6	Node rank: 6	App rank: 6
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],7]
+ 		Pid: 0	Local rank: 7	Node rank: 7	App rank: 7
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],8]
+ 		Pid: 0	Local rank: 8	Node rank: 8	App rank: 8
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],9]
+ 		Pid: 0	Local rank: 9	Node rank: 9	App rank: 9
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],10]
+ 		Pid: 0	Local rank: 10	Node rank: 10	App rank: 10
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],11]
+ 		Pid: 0	Local rank: 11	Node rank: 11	App rank: 11
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],12]
+ 		Pid: 0	Local rank: 12	Node rank: 12	App rank: 12
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],13]
+ 		Pid: 0	Local rank: 13	Node rank: 13	App rank: 13
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],14]
+ 		Pid: 0	Local rank: 14	Node rank: 14	App rank: 14
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],15]
+ 		Pid: 0	Local rank: 15	Node rank: 15	App rank: 15
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],16]
+ 		Pid: 0	Local rank: 16	Node rank: 16	App rank: 16
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],17]
+ 		Pid: 0	Local rank: 17	Node rank: 17	App rank: 17
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],18]
+ 		Pid: 0	Local rank: 18	Node rank: 18	App rank: 18
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],19]
+ 		Pid: 0	Local rank: 19	Node rank: 19	App rank: 19
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],20]
+ 		Pid: 0	Local rank: 20	Node rank: 20	App rank: 20
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],21]
+ 		Pid: 0	Local rank: 21	Node rank: 21	App rank: 21
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],22]
+ 		Pid: 0	Local rank: 22	Node rank: 22	App rank: 22
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],23]
+ 		Pid: 0	Local rank: 23	Node rank: 23	App rank: 23
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],24]
+ 		Pid: 0	Local rank: 24	Node rank: 24	App rank: 24
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],25]
+ 		Pid: 0	Local rank: 25	Node rank: 25	App rank: 25
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],26]
+ 		Pid: 0	Local rank: 26	Node rank: 26	App rank: 26
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],27]
+ 		Pid: 0	Local rank: 27	Node rank: 27	App rank: 27
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],28]
+ 		Pid: 0	Local rank: 28	Node rank: 28	App rank: 28
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+ 	Data for proc: [[28172,1],29]
+ 		Pid: 0	Local rank: 29	Node rank: 29	App rank: 29
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+ 	Data for proc: [[28172,1],30]
+ 		Pid: 0	Local rank: 30	Node rank: 30	App rank: 30
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+ 	Data for proc: [[28172,1],31]
+ 		Pid: 0	Local rank: 31	Node rank: 31	App rank: 31
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+ 	Data for proc: [[28172,1],32]
+ 		Pid: 0	Local rank: 32	Node rank: 32	App rank: 32
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+ 	Data for proc: [[28172,1],33]
+ 		Pid: 0	Local rank: 33	Node rank: 33	App rank: 33
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+ 	Data for proc: [[28172,1],34]
+ 		Pid: 0	Local rank: 34	Node rank: 34	App rank: 34
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+ 	Data for proc: [[28172,1],35]
+ 		Pid: 0	Local rank: 35	Node rank: 35	App rank: 35
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+ 	Data for proc: [[28172,1],36]
+ 		Pid: 0	Local rank: 36	Node rank: 36	App rank: 36
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+ 	Data for proc: [[28172,1],37]
+ 		Pid: 0	Local rank: 37	Node rank: 37	App rank: 37
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+ 	Data for proc: [[28172,1],38]
+ 		Pid: 0	Local rank: 38	Node rank: 38	App rank: 38
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+ 	Data for proc: [[28172,1],39]
+ 		Pid: 0	Local rank: 39	Node rank: 39	App rank: 39
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+ 		Binding: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+
+ Data for node: uc2n091	State: 3	Flags: 11
+ 	Daemon: [[28172,0],1]	Daemon launched: True
+ 	Num slots: 40	Slots in use: 40	Oversubscribed: FALSE
+ 	Num slots allocated: 40	Max slots: 0
+ 	Num procs: 40	Next node_rank: 40
+ 	Data for proc: [[28172,1],40]
+ 		Pid: 0	Local rank: 0	Node rank: 0	App rank: 40
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],41]
+ 		Pid: 0	Local rank: 1	Node rank: 1	App rank: 41
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],42]
+ 		Pid: 0	Local rank: 2	Node rank: 2	App rank: 42
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],43]
+ 		Pid: 0	Local rank: 3	Node rank: 3	App rank: 43
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],44]
+ 		Pid: 0	Local rank: 4	Node rank: 4	App rank: 44
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],45]
+ 		Pid: 0	Local rank: 5	Node rank: 5	App rank: 45
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],46]
+ 		Pid: 0	Local rank: 6	Node rank: 6	App rank: 46
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],47]
+ 		Pid: 0	Local rank: 7	Node rank: 7	App rank: 47
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],48]
+ 		Pid: 0	Local rank: 8	Node rank: 8	App rank: 48
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],49]
+ 		Pid: 0	Local rank: 9	Node rank: 9	App rank: 49
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],50]
+ 		Pid: 0	Local rank: 10	Node rank: 10	App rank: 50
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],51]
+ 		Pid: 0	Local rank: 11	Node rank: 11	App rank: 51
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],52]
+ 		Pid: 0	Local rank: 12	Node rank: 12	App rank: 52
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],53]
+ 		Pid: 0	Local rank: 13	Node rank: 13	App rank: 53
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],54]
+ 		Pid: 0	Local rank: 14	Node rank: 14	App rank: 54
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],55]
+ 		Pid: 0	Local rank: 15	Node rank: 15	App rank: 55
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],56]
+ 		Pid: 0	Local rank: 16	Node rank: 16	App rank: 56
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],57]
+ 		Pid: 0	Local rank: 17	Node rank: 17	App rank: 57
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],58]
+ 		Pid: 0	Local rank: 18	Node rank: 18	App rank: 58
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],59]
+ 		Pid: 0	Local rank: 19	Node rank: 19	App rank: 59
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],60]
+ 		Pid: 0	Local rank: 20	Node rank: 20	App rank: 60
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],61]
+ 		Pid: 0	Local rank: 21	Node rank: 21	App rank: 61
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],62]
+ 		Pid: 0	Local rank: 22	Node rank: 22	App rank: 62
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],63]
+ 		Pid: 0	Local rank: 23	Node rank: 23	App rank: 63
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],64]
+ 		Pid: 0	Local rank: 24	Node rank: 24	App rank: 64
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],65]
+ 		Pid: 0	Local rank: 25	Node rank: 25	App rank: 65
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],66]
+ 		Pid: 0	Local rank: 26	Node rank: 26	App rank: 66
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],67]
+ 		Pid: 0	Local rank: 27	Node rank: 27	App rank: 67
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],68]
+ 		Pid: 0	Local rank: 28	Node rank: 28	App rank: 68
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],69]
+ 		Pid: 0	Local rank: 29	Node rank: 29	App rank: 69
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],70]
+ 		Pid: 0	Local rank: 30	Node rank: 30	App rank: 70
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],71]
+ 		Pid: 0	Local rank: 31	Node rank: 31	App rank: 71
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],72]
+ 		Pid: 0	Local rank: 32	Node rank: 32	App rank: 72
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],73]
+ 		Pid: 0	Local rank: 33	Node rank: 33	App rank: 73
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],74]
+ 		Pid: 0	Local rank: 34	Node rank: 34	App rank: 74
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],75]
+ 		Pid: 0	Local rank: 35	Node rank: 35	App rank: 75
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],76]
+ 		Pid: 0	Local rank: 36	Node rank: 36	App rank: 76
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],77]
+ 		Pid: 0	Local rank: 37	Node rank: 37	App rank: 77
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],78]
+ 		Pid: 0	Local rank: 38	Node rank: 38	App rank: 78
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],79]
+ 		Pid: 0	Local rank: 39	Node rank: 39	App rank: 79
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+ 		Binding: UNBOUND
+
+ Data for node: uc2n098	State: 3	Flags: 11
+ 	Daemon: [[28172,0],2]	Daemon launched: True
+ 	Num slots: 40	Slots in use: 40	Oversubscribed: FALSE
+ 	Num slots allocated: 40	Max slots: 0
+ 	Num procs: 40	Next node_rank: 40
+ 	Data for proc: [[28172,1],80]
+ 		Pid: 0	Local rank: 0	Node rank: 0	App rank: 80
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],81]
+ 		Pid: 0	Local rank: 1	Node rank: 1	App rank: 81
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],82]
+ 		Pid: 0	Local rank: 2	Node rank: 2	App rank: 82
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],83]
+ 		Pid: 0	Local rank: 3	Node rank: 3	App rank: 83
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],84]
+ 		Pid: 0	Local rank: 4	Node rank: 4	App rank: 84
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],85]
+ 		Pid: 0	Local rank: 5	Node rank: 5	App rank: 85
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],86]
+ 		Pid: 0	Local rank: 6	Node rank: 6	App rank: 86
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],87]
+ 		Pid: 0	Local rank: 7	Node rank: 7	App rank: 87
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],88]
+ 		Pid: 0	Local rank: 8	Node rank: 8	App rank: 88
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],89]
+ 		Pid: 0	Local rank: 9	Node rank: 9	App rank: 89
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],90]
+ 		Pid: 0	Local rank: 10	Node rank: 10	App rank: 90
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],91]
+ 		Pid: 0	Local rank: 11	Node rank: 11	App rank: 91
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],92]
+ 		Pid: 0	Local rank: 12	Node rank: 12	App rank: 92
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],93]
+ 		Pid: 0	Local rank: 13	Node rank: 13	App rank: 93
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],94]
+ 		Pid: 0	Local rank: 14	Node rank: 14	App rank: 94
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],95]
+ 		Pid: 0	Local rank: 15	Node rank: 15	App rank: 95
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],96]
+ 		Pid: 0	Local rank: 16	Node rank: 16	App rank: 96
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],97]
+ 		Pid: 0	Local rank: 17	Node rank: 17	App rank: 97
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],98]
+ 		Pid: 0	Local rank: 18	Node rank: 18	App rank: 98
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],99]
+ 		Pid: 0	Local rank: 19	Node rank: 19	App rank: 99
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],100]
+ 		Pid: 0	Local rank: 20	Node rank: 20	App rank: 100
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],101]
+ 		Pid: 0	Local rank: 21	Node rank: 21	App rank: 101
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],102]
+ 		Pid: 0	Local rank: 22	Node rank: 22	App rank: 102
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],103]
+ 		Pid: 0	Local rank: 23	Node rank: 23	App rank: 103
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],104]
+ 		Pid: 0	Local rank: 24	Node rank: 24	App rank: 104
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],105]
+ 		Pid: 0	Local rank: 25	Node rank: 25	App rank: 105
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],106]
+ 		Pid: 0	Local rank: 26	Node rank: 26	App rank: 106
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],107]
+ 		Pid: 0	Local rank: 27	Node rank: 27	App rank: 107
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],108]
+ 		Pid: 0	Local rank: 28	Node rank: 28	App rank: 108
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],109]
+ 		Pid: 0	Local rank: 29	Node rank: 29	App rank: 109
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],110]
+ 		Pid: 0	Local rank: 30	Node rank: 30	App rank: 110
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],111]
+ 		Pid: 0	Local rank: 31	Node rank: 31	App rank: 111
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],112]
+ 		Pid: 0	Local rank: 32	Node rank: 32	App rank: 112
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],113]
+ 		Pid: 0	Local rank: 33	Node rank: 33	App rank: 113
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],114]
+ 		Pid: 0	Local rank: 34	Node rank: 34	App rank: 114
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],115]
+ 		Pid: 0	Local rank: 35	Node rank: 35	App rank: 115
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],116]
+ 		Pid: 0	Local rank: 36	Node rank: 36	App rank: 116
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],117]
+ 		Pid: 0	Local rank: 37	Node rank: 37	App rank: 117
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],118]
+ 		Pid: 0	Local rank: 38	Node rank: 38	App rank: 118
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],119]
+ 		Pid: 0	Local rank: 39	Node rank: 39	App rank: 119
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+ 		Binding: UNBOUND
+
+ Data for node: uc2n110	State: 3	Flags: 11
+ 	Daemon: [[28172,0],3]	Daemon launched: True
+ 	Num slots: 40	Slots in use: 40	Oversubscribed: FALSE
+ 	Num slots allocated: 40	Max slots: 0
+ 	Num procs: 40	Next node_rank: 40
+ 	Data for proc: [[28172,1],120]
+ 		Pid: 0	Local rank: 0	Node rank: 0	App rank: 120
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],121]
+ 		Pid: 0	Local rank: 1	Node rank: 1	App rank: 121
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],122]
+ 		Pid: 0	Local rank: 2	Node rank: 2	App rank: 122
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],123]
+ 		Pid: 0	Local rank: 3	Node rank: 3	App rank: 123
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],124]
+ 		Pid: 0	Local rank: 4	Node rank: 4	App rank: 124
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],125]
+ 		Pid: 0	Local rank: 5	Node rank: 5	App rank: 125
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],126]
+ 		Pid: 0	Local rank: 6	Node rank: 6	App rank: 126
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],127]
+ 		Pid: 0	Local rank: 7	Node rank: 7	App rank: 127
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],128]
+ 		Pid: 0	Local rank: 8	Node rank: 8	App rank: 128
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],129]
+ 		Pid: 0	Local rank: 9	Node rank: 9	App rank: 129
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],130]
+ 		Pid: 0	Local rank: 10	Node rank: 10	App rank: 130
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],131]
+ 		Pid: 0	Local rank: 11	Node rank: 11	App rank: 131
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],132]
+ 		Pid: 0	Local rank: 12	Node rank: 12	App rank: 132
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],133]
+ 		Pid: 0	Local rank: 13	Node rank: 13	App rank: 133
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],134]
+ 		Pid: 0	Local rank: 14	Node rank: 14	App rank: 134
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],135]
+ 		Pid: 0	Local rank: 15	Node rank: 15	App rank: 135
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],136]
+ 		Pid: 0	Local rank: 16	Node rank: 16	App rank: 136
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],137]
+ 		Pid: 0	Local rank: 17	Node rank: 17	App rank: 137
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],138]
+ 		Pid: 0	Local rank: 18	Node rank: 18	App rank: 138
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],139]
+ 		Pid: 0	Local rank: 19	Node rank: 19	App rank: 139
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],140]
+ 		Pid: 0	Local rank: 20	Node rank: 20	App rank: 140
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],141]
+ 		Pid: 0	Local rank: 21	Node rank: 21	App rank: 141
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],142]
+ 		Pid: 0	Local rank: 22	Node rank: 22	App rank: 142
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],143]
+ 		Pid: 0	Local rank: 23	Node rank: 23	App rank: 143
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],144]
+ 		Pid: 0	Local rank: 24	Node rank: 24	App rank: 144
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],145]
+ 		Pid: 0	Local rank: 25	Node rank: 25	App rank: 145
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],146]
+ 		Pid: 0	Local rank: 26	Node rank: 26	App rank: 146
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],147]
+ 		Pid: 0	Local rank: 27	Node rank: 27	App rank: 147
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],148]
+ 		Pid: 0	Local rank: 28	Node rank: 28	App rank: 148
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],149]
+ 		Pid: 0	Local rank: 29	Node rank: 29	App rank: 149
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],150]
+ 		Pid: 0	Local rank: 30	Node rank: 30	App rank: 150
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],151]
+ 		Pid: 0	Local rank: 31	Node rank: 31	App rank: 151
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],152]
+ 		Pid: 0	Local rank: 32	Node rank: 32	App rank: 152
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],153]
+ 		Pid: 0	Local rank: 33	Node rank: 33	App rank: 153
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],154]
+ 		Pid: 0	Local rank: 34	Node rank: 34	App rank: 154
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],155]
+ 		Pid: 0	Local rank: 35	Node rank: 35	App rank: 155
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],156]
+ 		Pid: 0	Local rank: 36	Node rank: 36	App rank: 156
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],157]
+ 		Pid: 0	Local rank: 37	Node rank: 37	App rank: 157
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],158]
+ 		Pid: 0	Local rank: 38	Node rank: 38	App rank: 158
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+ 		Binding: UNBOUND
+ 	Data for proc: [[28172,1],159]
+ 		Pid: 0	Local rank: 39	Node rank: 39	App rank: 159
+ 		State: INITIALIZED	App_context: 0
+ 		Locale:  [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+ 		Binding: UNBOUND
+[uc2n084.localdomain:50255] MCW rank 0 bound to socket 0[core 0[hwt 0-1]]: [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 1 bound to socket 0[core 1[hwt 0-1]]: [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 2 bound to socket 0[core 2[hwt 0-1]]: [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 3 bound to socket 0[core 3[hwt 0-1]]: [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 80 bound to socket 0[core 0[hwt 0-1]]: [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 81 bound to socket 0[core 1[hwt 0-1]]: [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 82 bound to socket 0[core 2[hwt 0-1]]: [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 83 bound to socket 0[core 3[hwt 0-1]]: [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 87 bound to socket 0[core 7[hwt 0-1]]: [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 4 bound to socket 0[core 4[hwt 0-1]]: [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 5 bound to socket 0[core 5[hwt 0-1]]: [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 85 bound to socket 0[core 5[hwt 0-1]]: [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 6 bound to socket 0[core 6[hwt 0-1]]: [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 86 bound to socket 0[core 6[hwt 0-1]]: [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 84 bound to socket 0[core 4[hwt 0-1]]: [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 7 bound to socket 0[core 7[hwt 0-1]]: [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 91 bound to socket 0[core 11[hwt 0-1]]: [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 8 bound to socket 0[core 8[hwt 0-1]]: [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 9 bound to socket 0[core 9[hwt 0-1]]: [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 89 bound to socket 0[core 9[hwt 0-1]]: [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 10 bound to socket 0[core 10[hwt 0-1]]: [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 90 bound to socket 0[core 10[hwt 0-1]]: [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 88 bound to socket 0[core 8[hwt 0-1]]: [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 95 bound to socket 0[core 15[hwt 0-1]]: [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 11 bound to socket 0[core 11[hwt 0-1]]: [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 13 bound to socket 0[core 13[hwt 0-1]]: [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 93 bound to socket 0[core 13[hwt 0-1]]: [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 94 bound to socket 0[core 14[hwt 0-1]]: [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 12 bound to socket 0[core 12[hwt 0-1]]: [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 14 bound to socket 0[core 14[hwt 0-1]]: [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 92 bound to socket 0[core 12[hwt 0-1]]: [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 99 bound to socket 0[core 19[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 15 bound to socket 0[core 15[hwt 0-1]]: [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 17 bound to socket 0[core 17[hwt 0-1]]: [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 97 bound to socket 0[core 17[hwt 0-1]]: [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 98 bound to socket 0[core 18[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 16 bound to socket 0[core 16[hwt 0-1]]: [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 96 bound to socket 0[core 16[hwt 0-1]]: [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 18 bound to socket 0[core 18[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 19 bound to socket 0[core 19[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 101 bound to socket 1[core 21[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 103 bound to socket 1[core 23[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 21 bound to socket 1[core 21[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 102 bound to socket 1[core 22[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 22 bound to socket 1[core 22[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 100 bound to socket 1[core 20[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 20 bound to socket 1[core 20[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 107 bound to socket 1[core 27[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 23 bound to socket 1[core 23[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 105 bound to socket 1[core 25[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 104 bound to socket 1[core 24[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 25 bound to socket 1[core 25[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 26 bound to socket 1[core 26[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 106 bound to socket 1[core 26[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 24 bound to socket 1[core 24[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 111 bound to socket 1[core 31[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 27 bound to socket 1[core 27[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 109 bound to socket 1[core 29[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 29 bound to socket 1[core 29[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 108 bound to socket 1[core 28[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 110 bound to socket 1[core 30[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 30 bound to socket 1[core 30[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 28 bound to socket 1[core 28[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 115 bound to socket 1[core 35[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+[uc2n110.localdomain:46301] MCW rank 120 bound to socket 0[core 0[hwt 0-1]]: [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 121 bound to socket 0[core 1[hwt 0-1]]: [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 112 bound to socket 1[core 32[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 31 bound to socket 1[core 31[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 33 bound to socket 1[core 33[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 122 bound to socket 0[core 2[hwt 0-1]]: [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 113 bound to socket 1[core 33[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 123 bound to socket 0[core 3[hwt 0-1]]: [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 114 bound to socket 1[core 34[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+[uc2n110.localdomain:46301] MCW rank 124 bound to socket 0[core 4[hwt 0-1]]: [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 125 bound to socket 0[core 5[hwt 0-1]]: [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 126 bound to socket 0[core 6[hwt 0-1]]: [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 34 bound to socket 1[core 34[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+[uc2n110.localdomain:46301] MCW rank 127 bound to socket 0[core 7[hwt 0-1]]: [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 119 bound to socket 1[core 39[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+[uc2n084.localdomain:50255] MCW rank 32 bound to socket 1[core 32[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 128 bound to socket 0[core 8[hwt 0-1]]: [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 116 bound to socket 1[core 36[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+[uc2n110.localdomain:46301] MCW rank 129 bound to socket 0[core 9[hwt 0-1]]: [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 35 bound to socket 1[core 35[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+[uc2n084.localdomain:50255] MCW rank 37 bound to socket 1[core 37[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+[uc2n110.localdomain:46301] MCW rank 130 bound to socket 0[core 10[hwt 0-1]]: [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 41 bound to socket 0[core 1[hwt 0-1]]: [../BB/../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 117 bound to socket 1[core 37[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+[uc2n084.localdomain:50255] MCW rank 38 bound to socket 1[core 38[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+[uc2n110.localdomain:46301] MCW rank 131 bound to socket 0[core 11[hwt 0-1]]: [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 42 bound to socket 0[core 2[hwt 0-1]]: [../../BB/../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n098.localdomain:46303] MCW rank 118 bound to socket 1[core 38[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+[uc2n084.localdomain:50255] MCW rank 36 bound to socket 1[core 36[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+[uc2n110.localdomain:46301] MCW rank 132 bound to socket 0[core 12[hwt 0-1]]: [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 43 bound to socket 0[core 3[hwt 0-1]]: [../../../BB/../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 133 bound to socket 0[core 13[hwt 0-1]]: [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 44 bound to socket 0[core 4[hwt 0-1]]: [../../../../BB/../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 134 bound to socket 0[core 14[hwt 0-1]]: [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 45 bound to socket 0[core 5[hwt 0-1]]: [../../../../../BB/../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n084.localdomain:50255] MCW rank 39 bound to socket 1[core 39[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+[uc2n110.localdomain:46301] MCW rank 135 bound to socket 0[core 15[hwt 0-1]]: [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 46 bound to socket 0[core 6[hwt 0-1]]: [../../../../../../BB/../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 136 bound to socket 0[core 16[hwt 0-1]]: [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 47 bound to socket 0[core 7[hwt 0-1]]: [../../../../../../../BB/../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 138 bound to socket 0[core 18[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 48 bound to socket 0[core 8[hwt 0-1]]: [../../../../../../../../BB/../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 139 bound to socket 0[core 19[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 49 bound to socket 0[core 9[hwt 0-1]]: [../../../../../../../../../BB/../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 140 bound to socket 1[core 20[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 50 bound to socket 0[core 10[hwt 0-1]]: [../../../../../../../../../../BB/../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 142 bound to socket 1[core 22[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 51 bound to socket 0[core 11[hwt 0-1]]: [../../../../../../../../../../../BB/../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 143 bound to socket 1[core 23[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 52 bound to socket 0[core 12[hwt 0-1]]: [../../../../../../../../../../../../BB/../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 144 bound to socket 1[core 24[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 53 bound to socket 0[core 13[hwt 0-1]]: [../../../../../../../../../../../../../BB/../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 146 bound to socket 1[core 26[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 54 bound to socket 0[core 14[hwt 0-1]]: [../../../../../../../../../../../../../../BB/../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 147 bound to socket 1[core 27[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 55 bound to socket 0[core 15[hwt 0-1]]: [../../../../../../../../../../../../../../../BB/../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 148 bound to socket 1[core 28[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 56 bound to socket 0[core 16[hwt 0-1]]: [../../../../../../../../../../../../../../../../BB/../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 150 bound to socket 1[core 30[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 57 bound to socket 0[core 17[hwt 0-1]]: [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 151 bound to socket 1[core 31[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 58 bound to socket 0[core 18[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../BB/..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 155 bound to socket 1[core 35[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+[uc2n091.localdomain:47543] MCW rank 59 bound to socket 0[core 19[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../BB][../../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 137 bound to socket 0[core 17[hwt 0-1]]: [../../../../../../../../../../../../../../../../../BB/../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 60 bound to socket 1[core 20[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][BB/../../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 154 bound to socket 1[core 34[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+[uc2n091.localdomain:47543] MCW rank 61 bound to socket 1[core 21[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 152 bound to socket 1[core 32[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 62 bound to socket 1[core 22[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../BB/../../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 141 bound to socket 1[core 21[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../BB/../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 63 bound to socket 1[core 23[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../BB/../../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 159 bound to socket 1[core 39[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+[uc2n091.localdomain:47543] MCW rank 64 bound to socket 1[core 24[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../BB/../../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 158 bound to socket 1[core 38[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+[uc2n091.localdomain:47543] MCW rank 65 bound to socket 1[core 25[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 156 bound to socket 1[core 36[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+[uc2n091.localdomain:47543] MCW rank 66 bound to socket 1[core 26[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../BB/../../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 145 bound to socket 1[core 25[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../BB/../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 67 bound to socket 1[core 27[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../BB/../../../../../../../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 149 bound to socket 1[core 29[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 68 bound to socket 1[core 28[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../BB/../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 71 bound to socket 1[core 31[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../BB/../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 72 bound to socket 1[core 32[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../BB/../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 40 bound to socket 0[core 0[hwt 0-1]]: [BB/../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 69 bound to socket 1[core 29[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../BB/../../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 70 bound to socket 1[core 30[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../BB/../../../../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 73 bound to socket 1[core 33[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+[uc2n091.localdomain:47543] MCW rank 75 bound to socket 1[core 35[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../BB/../../../..]
+[uc2n091.localdomain:47543] MCW rank 76 bound to socket 1[core 36[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../BB/../../..]
+[uc2n091.localdomain:47543] MCW rank 74 bound to socket 1[core 34[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../BB/../../../../..]
+[uc2n091.localdomain:47543] MCW rank 79 bound to socket 1[core 39[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../../BB]
+[uc2n091.localdomain:47543] MCW rank 77 bound to socket 1[core 37[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+[uc2n091.localdomain:47543] MCW rank 78 bound to socket 1[core 38[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../../BB/..]
+[uc2n110.localdomain:46301] MCW rank 153 bound to socket 1[core 33[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../BB/../../../../../..]
+[uc2n110.localdomain:46301] MCW rank 157 bound to socket 1[core 37[hwt 0-1]]: [../../../../../../../../../../../../../../../../../../../..][../../../../../../../../../../../../../../../../../BB/../..]
+  Git - deal.II version:                     2328c7be3d        
+  Git - deal.II branch:                      rt_matrixfree        
+  Git - TPSS version:                        e9d342e        
+  Git - TPSS branch:                         stokes_mpi        
+  Date:                                      2021/8/19        
+  Number of MPI processes:                   160        
+  Number of threads per MPI proc:            1        
+  Vectorization level:                       AVX512        
+  Size of global_dof_index (bits):           64        
+
+  n_samples:                                 20        
+  n_subsamples_vmult:                        100        
+  n_subsamples_smooth:                       20        
+  n_subsamples_mg:                           10        
+  cg solver reduction:                       1.000e-08    
+
+
+  Equation Data:                             Dirichlet (Gaussian bells)        
+  IP pre-factor:                             1        
+  Dirichlet boundary ids:                    [0]        
+  Neumann boundary ids:                      []        
+
+  Finite element:                            FE_DGQ<3>(15)        
+  Number of run cycles:                      1        
+  Using TBB:                                 false    
+
+  Geometry:                                  Cube        
+  Number of refinements:                     5        
+  Number of repetitions:                     2        
+  Subdivisions per direction:                []        
+  Distortion factor:                         -1.000e+00
+
+  Solver:                                    cg        
+  Absolute tolerance:                        1.000e-14    
+  Relative tolerance:                        1.000e-08    
+  Number of maximal iterations:              100        
+  Preconditioner:                            GMG        
+  Solver control:                            relative tolerance        
+
+  Multigrid:                                 V-cycle        
+    /// Pre-smoother                                 
+  Number of smoothing steps:                 1        
+  Doubling of smoothing steps:               false    
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Damping factor                             1        
+  User-defined coloring                      true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  false    
+  RAS - weights                              false    
+  RAS - boolean weights                      false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+    /// Post-smoother                                
+  Number of smoothing steps:                 1        
+  Doubling of smoothing steps:               false    
+  Smoother:                                  Schwarz Smoother        
+  Schwarz operator                           Multiplicative Vertex Patch        
+  Damping factor                             1        
+  User-defined coloring                      true     
+  Symmetrized Schwarz operator               false    
+  Reversed Schwarz operator                  true     
+  RAS - weights                              false    
+  RAS - boolean weights                      false    
+  Number of quad points (surrogate)          5        
+  Normalize surrogate patches                false    
+  Compute arc length (surrogate)             true     
+  Caching strategy                           cached        
+    /// Coarse grid solver                           
+  Coarse grid solver:                        Accurate Iterative Solver        
+  Iterative solver:                          cg        
+  Accuracy:                                  1.000e-12    
+  Coarse grid preconditioner:                None        
+
+  Domain:                                    (0, 1) x (0, 1) x (0, 1)        
+  Root mesh:                                 2 x 2 x 2        
+  Number of root cells:                      8        
+  Number of active cells:                    262144        
+  Testing vmult()                                    
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2211728             1134840             1064980             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1043032             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039548             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039596             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039624             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039664             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039700             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039728             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039764             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039812             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039848             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039880             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039912             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039936             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1039968             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1040004             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1040028             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1040060             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1040096             tag=vmult        
+VmPeak              VmSize              VmHWM               VmRSS        
+2281932             2185508             1134840             1040124             tag=vmult        
+842.361 wall, max @55, min=842.329 @42, avg=842.346
+
+  Testing smooth()                                   
+VmPeak              VmSize              VmHWM               VmRSS        
+3717828             3507480             2490440             2280092             tag=smooth        
+  [SchwarzPrecond] Update residuals:         125.682        
+  [SchwarzPrecond] Apply inverses:           134.915        
+  [SchwarzPrecond] Compute inverses:         1.74128        
+  [SchwarzPrecond] Copy Locally Owned:       36.6994        
+  [SchwarzPrecond] Step:                     248.754        
+  Vertex patch gathering                     0.0119231        
+  Vertex patch coloring (user)               0.0165732        
+  Submit vertex patches                      9.756e-04          
+VmPeak              VmSize              VmHWM               VmRSS        
+3898152             3767712             2602000             2479688             tag=smooth        
+  [SchwarzPrecond] Update residuals:         140.336        
+  [SchwarzPrecond] Apply inverses:           152.85        
+  [SchwarzPrecond] Compute inverses:         1.6763        
+  [SchwarzPrecond] Copy Locally Owned:       37.3934        
+  [SchwarzPrecond] Step:                     267.368        
+  Vertex patch gathering                     0.0123397        
+  Vertex patch coloring (user)               0.0170239        
+  Submit vertex patches                      8.212e-04          
+VmPeak              VmSize              VmHWM               VmRSS        
+3898152             3533556             2602000             2362668             tag=smooth        
+  [SchwarzPrecond] Update residuals:         126.043        
+  [SchwarzPrecond] Apply inverses:           135.136        
+  [SchwarzPrecond] Compute inverses:         1.66187        
+  [SchwarzPrecond] Copy Locally Owned:       36.8658        
+  [SchwarzPrecond] Step:                     249.261        
+  Vertex patch gathering                     0.0122109        
+  Vertex patch coloring (user)               0.0170654        
+  Submit vertex patches                      0.0328588        
+VmPeak              VmSize              VmHWM               VmRSS        
+3898152             3559748             2602000             2358008             tag=smooth        
+  [SchwarzPrecond] Update residuals:         125.812        
+  [SchwarzPrecond] Apply inverses:           133.202        
+  [SchwarzPrecond] Compute inverses:         1.68742        
+  [SchwarzPrecond] Copy Locally Owned:       36.7181        
+  [SchwarzPrecond] Step:                     249.738        
+  Vertex patch gathering                     0.0121174        
+  Vertex patch coloring (user)               0.0160357        
+  Submit vertex patches                      8.879e-04          
+VmPeak              VmSize              VmHWM               VmRSS        
+3898152             3672392             2602000             2470676             tag=smooth        
+  [SchwarzPrecond] Update residuals:         125.561        
+  [SchwarzPrecond] Apply inverses:           134.037        
+  [SchwarzPrecond] Compute inverses:         1.67835        
+  [SchwarzPrecond] Copy Locally Owned:       36.6619        
+  [SchwarzPrecond] Step:                     249.89        
+  Vertex patch gathering                     0.0119027        
+  Vertex patch coloring (user)               0.0168323        
+  Submit vertex patches                      9.081e-04          
+VmPeak              VmSize              VmHWM               VmRSS        
+3898152             3574084             2602000             2372400             tag=smooth        
+  [SchwarzPrecond] Update residuals:         125.365        
+  [SchwarzPrecond] Apply inverses:           134.878        
+  [SchwarzPrecond] Compute inverses:         1.72401        
+  [SchwarzPrecond] Copy Locally Owned:       36.7915        
+  [SchwarzPrecond] Step:                     249.566        
+  Vertex patch gathering                     0.0144011        
+  Vertex patch coloring (user)               0.015956        
+  Submit vertex patches                      8.574e-04          
+VmPeak              VmSize              VmHWM               VmRSS        
+3898152             3600168             2602000             2378164             tag=smooth        
+  [SchwarzPrecond] Update residuals:         125.744        
+  [SchwarzPrecond] Apply inverses:           133.62        
+  [SchwarzPrecond] Compute inverses:         1.69232        
+  [SchwarzPrecond] Copy Locally Owned:       36.7168        
+  [SchwarzPrecond] Step:                     249.484        
+  Vertex patch gathering                     0.0122044        
+  Vertex patch coloring (user)               0.0168729        
+  Submit vertex patches                      8.721e-04          
+VmPeak              VmSize              VmHWM               VmRSS        
+3898152             3574084             2602000             2372472             tag=smooth        
+  [SchwarzPrecond] Update residuals:         125.132        
+  [SchwarzPrecond] Apply inverses:           134.489        
+  [SchwarzPrecond] Compute inverses:         1.68906        
+  [SchwarzPrecond] Copy Locally Owned:       36.8001        
+  [SchwarzPrecond] Step:                     249.179        
+  Vertex patch gathering                     0.0119278        
+  Vertex patch coloring (user)               0.0164239        
+  Submit vertex patches                      8.780e-04          
+VmPeak              VmSize              VmHWM               VmRSS        
+3898152             3511580             2602000             2337636             tag=smooth        
+  [SchwarzPrecond] Update residuals:         125.521        
+  [SchwarzPrecond] Apply inverses:           135.506        
+  [SchwarzPrecond] Compute inverses:         1.6777        
+  [SchwarzPrecond] Copy Locally Owned:       36.654        
+  [SchwarzPrecond] Step:                     249.29        
+  Vertex patch gathering                     0.0119493        
+  Vertex patch coloring (user)               0.0165186        
+  Submit vertex patches                      8.980e-04          
+slurmstepd: error: *** JOB 19736328 ON uc2n084 CANCELLED AT 2021-08-19T15:40:01 DUE TO TIME LIMIT ***
