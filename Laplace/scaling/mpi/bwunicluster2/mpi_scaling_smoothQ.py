@@ -55,8 +55,10 @@ def parse_args():
 
 
 def plot_strong_scaling(str_method, str_section, str_fem, str_color='black', do_perf=True, do_inline_labels=True):
-    eligible_names = ['2MDoFs', '16MDoFs', '134MDoFs', '1GDoFs', '8GDoFs'] # DGQ3
-    # eligible_names = ['912kDoFs', '7MDoFs', '57MDoFs', '454MDoFs', '3GDoFs'] #, '29GDoFs'] # Q3
+    # eligible_names = ['2MDoFs', '16MDoFs', '134MDoFs', '1GDoFs', '8GDoFs'] # DGQ3
+    eligible_names = ['912kDoFs', '7MDoFs', '57MDoFs', '454MDoFs', '3GDoFs'] #, '29GDoFs'] # Q3
+    eligible_names = ['11MDoFs', '90MDoFs', '721MDoFs', '5GDoFs'] # Q7
+    eligible_names = ['13MDoFs', '111MDoFs', '887MDoFs', '7GDoFs', '56GDoFs'] # Q15
     linestyles = ['solid', 'dotted', 'dashed', 'dashdot', 'loosely dashed', 'dashdotdotted']
     test_to_linestyle = {
             name: style for name, style in zip(eligible_names, linestyles)
@@ -213,21 +215,19 @@ def main():
     section = r'smooth'
 
     plt.subplot(222, sharex=ax11)
-    plt.title("ACS: $S_{ad}(x_\ell,b_\ell)$")
-    xydata_smooth = plot_strong_scaling(str_method='ACP', str_section=section, str_fem=fem)
+    plt.title("AVS: $S_{ad}(x_\ell,b_\ell)$")
+    xydata_smooth = plot_strong_scaling(str_method='AVP', str_section=section, str_fem=fem)
 
-    method = 'MCP'
     plt.subplot(223, sharex=ax11)
-    plt.title("MCS: $S_{mu}(x_\ell,b_\ell)$")
-    xydata_smooth = plot_strong_scaling(str_method='MCP', str_section=section, str_fem=fem)
+    plt.title("MVS: $S_{mu}(x_\ell,b_\ell)$")
+    xydata_smooth = plot_strong_scaling(str_method='MVP', str_section=section, str_fem=fem)
     plt.ylabel("Wall time [s]")
     plt.xlabel("Number of cores")
 
-    method = 'MVP'
-    plt.subplot(224, sharex=ax11)
-    plt.title("MVS: $S_{mu}(x_\ell,b_\ell)$")
-    xydata_smooth = plot_strong_scaling(str_method='MVP', str_section=section, str_fem=fem)
-    plt.xlabel("Number of cores")
+    # plt.subplot(224, sharex=ax11)
+    # plt.title("MVS: $S_{mu}(x_\ell,b_\ell)$")
+    # xydata_smooth = plot_strong_scaling(str_method='MVP', str_section=section, str_fem=fem)
+    # plt.xlabel("Number of cores")
 
     set_xticks(xydata)
     # plt.suptitle("Strong Scaling ({})".format(method))
