@@ -220,7 +220,7 @@ def main():
     elif method is 'MVP' or 'MCP':
         subscr_smooth = r'mu'
     plt.title("$S_{"+subscr_smooth+"}(x_\ell,b_\ell)$")
-    xydata_smooth = plot_strong_scaling(str_method=method, str_section=section, str_fem=fem)
+    xydata_smooth = plot_strong_scaling(str_method=method, str_section=r'vmult', str_fem=fem)
     plt.xlabel("Number of cores")
 
     x, y = zip(*xydata[0])

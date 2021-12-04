@@ -180,16 +180,18 @@ def plot_strong_scaling(str_method, str_section, str_fem, str_color='black', do_
     return xydata  # todo
 
 
-def set_xticks(xydata):
+def set_xticks(xydata,ax=None):
     xticks = set()
     for xy in xydata:
         x, y = zip(*xy)
         xticks = xticks.union(set(x))
     xticks = sorted(xticks)
     xticklabels = [str(value) for value in xticks]
+    if not ax:
+        plt.tick_params(axis='x', which='minor', bottom=False)
+    else:
+        ax.tick_params(axis='x', which='minor', bottom=False)
     plt.xticks(ticks=xticks, labels=xticklabels)
-    plt.tick_params(axis='x', which='minor', bottom=False)
-
 
 def main():
     options = parse_args()
@@ -198,7 +200,7 @@ def main():
     fig = plt.figure()
 
     ax11 = plt.subplot(221)
-    plt.title("$A_\ell x_\ell$ and $b_\ell - A_\ell x_\ell$ (blue)")
+    plt.title("$A_L x_L$ (residual in blue)")
     section = r'residual'
     xydata_smooth = plot_strong_scaling(str_method=method,
                                         str_section=section,
@@ -213,23 +215,25 @@ def main():
     section = r'smooth'
 
     plt.subplot(222, sharex=ax11)
-    plt.title("ACS: $S_{ad}(x_\ell,b_\ell)$")
+    plt.title("ACS: $S_{ad}(x_L,b_L)$")
     xydata_smooth = plot_strong_scaling(str_method='ACP', str_section=section, str_fem=fem)
 
     method = 'MCP'
     plt.subplot(223, sharex=ax11)
-    plt.title("MCS: $S_{mu}(x_\ell,b_\ell)$")
+    plt.title("MCS: $S_{mu}(x_L,b_L)$")
     xydata_smooth = plot_strong_scaling(str_method='MCP', str_section=section, str_fem=fem)
     plt.ylabel("Wall time [s]")
     plt.xlabel("Number of cores")
 
     method = 'MVP'
-    plt.subplot(224, sharex=ax11)
-    plt.title("MVS: $S_{mu}(x_\ell,b_\ell)$")
+    ax22 = plt.subplot(224, sharex=ax11)
+    plt.title("MVS: $S_{mu}(x_L,b_L)$")
     xydata_smooth = plot_strong_scaling(str_method='MVP', str_section=section, str_fem=fem)
     plt.xlabel("Number of cores")
 
     set_xticks(xydata)
+    set_xticks(xydata,ax22)
+
     # plt.suptitle("Strong Scaling ({})".format(method))
     handles, labels = ax11.get_legend_handles_labels()
     n_labels = len(labels)

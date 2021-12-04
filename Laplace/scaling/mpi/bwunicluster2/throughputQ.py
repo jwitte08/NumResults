@@ -17,8 +17,9 @@ import re
 from find_files_per_regex import find_files
 from orgmode_to_csv import org_to_csv
 from orgmode_to_csv import csv_to_nparray
+from itertools import compress
 
-plt.rcParams["figure.figsize"] = (8,8.4)
+plt.rcParams["figure.figsize"] = (4.0, 4.2) # in inches
 
 def parse_args():
     def path_type(name):
@@ -27,66 +28,74 @@ def parse_args():
         return path
 
     parser = argparse.ArgumentParser(
-            description='''Plot strong scaling results''',
+            description='''Plot throughput [DoFs / s] against DoFs per node.''',
             formatter_class=RawTextHelpFormatter
             )
     parser.add_argument(
             '-dir', '--root_dir',
             type=path_type,
             default='.',
-            help='The directory containing the strong scaling results'
+            help='The directory containing the folders with time measurements'
             )
     parser.add_argument(
-            '-mth', '--method',
-            type=str,
-            default='MVP',
-            choices=['ACP', 'MCP', 'AVP', 'MVP'],
-            help='The smoothing variant'
-            )
-    parser.add_argument(
-            '-fem', '--element',
-            type=str,
-            default='DGQ',
-            choices=['DGQ', 'Q'],
-            help='The finite element method'
+            '-deg', '--degree',
+            type=int,
+            default=3,
+            choices=[3, 7, 15],
+            help='The polynomial degree'
             )
     args = parser.parse_args()
     return args
 
 
-def plot_strong_scaling(str_method, str_section, str_fem, str_color='black', do_perf=True, do_inline_labels=True):
-    eligible_names = ['912kDoFs', '7MDoFs', '57MDoFs', '454MDoFs', '3GDoFs'] #, '29GDoFs'] # Q3
-    eligible_names = ['11MDoFs', '90MDoFs', '721MDoFs', '5GDoFs'] # Q7
-    eligible_names = ['13MDoFs', '111MDoFs', '887MDoFs', '7GDoFs', '56GDoFs'] # Q15
-    linestyles = ['solid', 'dotted', 'dashed', 'dashdot', 'loosely dashed', 'dashdotdotted']
-    test_to_linestyle = {
-            name: style for name, style in zip(eligible_names, linestyles)
-            }
-    markerstyles = ['.', '^', 'x', 'd', 's', 'v']
-    test_to_marker = {
-            name: style for name, style in zip(eligible_names, markerstyles)
-            }
-    marker_size = 8
-    line_width = 1.5
+LINE_STYLES = ['solid', 'dotted', 'dashed', 'dashdot', 'loosely dashed', 'dashdotdotted']
+LINE_WIDTH = 1.5
+MARKER_SIZE = 8
+MARKER_STYLES = ['.', '^', 'x', 'd', 's', 'v']
+RANKS_PER_NODE = int(40) # bwunicluster2
 
-    options = parse_args()
-    root_dir = options.root_dir
-    str_xlabel = r'(\d+)prcs'
+
+def plot_throughput(root_dir,
+                        str_section,
+                        str_color='black',
+                        do_inline_labels=False,
+                        skip_plotting=False):
+    eligible_testnames = ['ACP','MCP','AVP','MVP']
+
+    eligible_names = ['AVS','MVS','ACS_DG','MCS_DG','AVS_DG','MVS_DG']
+
+    test_to_linestyle = {
+        name: style for name, style in zip(eligible_names, LINE_STYLES)
+    }
+    test_to_marker = {
+        name: style for name, style in zip(eligible_names, MARKER_STYLES)
+    }
+
+    pattern = r'(Q|DGQ)(\d+)'
+    match = re.search(pattern, str(root_dir))
+    str_fem = match.group(1)
+    n_degree = int(match.group(2))
+    
+    str_xlabel = r'\d+[kMG]DoFs'
+
     str_ylabel = r'apply (max)'
-    str_tests = r'\d+[kMG]DoFs'
+
+    str_tests = r'[AM][CV]P'
+
+    str_subtests = r'(2560)prcs'
+
     pattern_file = r'{}_{}_{}_{}_3D_\d+deg_{}\.0019\.time\Z'.format(
-            str_section,
-        str_xlabel,
+        str_section,
+        str_subtests,
         str_fem,
-            str_method,
-            str_tests
-            )
+        str_tests,
+        str_xlabel)
 
     orgfiles = [
-            os.path.join(root_dir, basename)
-            for basename in find_files(root_dir, pattern_file)
-            ]
-    print(pattern_file,orgfiles)
+        os.path.join(root_dir, basename)
+        for basename in find_files(root_dir, pattern_file)
+    ]
+    # print(pattern_file,str_ylabel,orgfiles,sep='\n')
     
     def yield_testnames():
         pattern = str_tests
@@ -101,11 +110,14 @@ def plot_strong_scaling(str_method, str_section, str_fem, str_color='black', do_
         assert match, "No valid prefix: {}".format(name)
         value = float(match.group(1)) * prefix_to_number[match.group(2)]
         return value
+    
+    def convert_method_prefix(name):
+        return name
 
     testnames = set(yield_testnames())
     print('Testnames found: {}'.format(testnames))
-    testnames = testnames.intersection(eligible_names)
-    testnames = sorted(testnames, key=convert_metric_prefix, reverse=False)
+    testnames = testnames.intersection(eligible_testnames)
+    testnames = sorted(testnames, key=convert_method_prefix, reverse=False)
     print('Testnames used: {}'.format(testnames))
 
     fieldnames = [str_ylabel]
@@ -127,8 +139,12 @@ def plot_strong_scaling(str_method, str_section, str_fem, str_color='black', do_
             def yield_xy():
                 for file in orgfiles:
                     match = re.search(str_xlabel, str(file))
-                    n_procs = int(match.group(1))
-
+                    submatch = re.search(str_subtests, str(file))
+                    
+                    n_dofs = convert_metric_prefix(match.group(0))
+                    n_ranks = int(submatch.group(1))
+                    n_nodes = n_ranks // RANKS_PER_NODE
+                    
                     fname_csv = org_to_csv(file, fieldnames)
                     data = csv_to_nparray(fname_csv,
                                           dtype=np.double,
@@ -137,47 +153,53 @@ def plot_strong_scaling(str_method, str_section, str_fem, str_color='black', do_
                                           )
                     os.remove(fname_csv)
                     median = np.median(data, axis=0)
-                    print("extracted (x, y) = ({}, {})".format(n_procs, median.tolist()))
-                    yield n_procs, median.tolist()
+                    t_wall = median.tolist() # median of wall-time
+                    
+                    n_million_dofs = n_dofs / 1e6
+                    x = n_dofs / n_nodes
+                    y = n_million_dofs / t_wall
+
+                    print("extracted (x, y) = ({}, {})".format(x, y))
+                    yield x, y
 
             xy = list(yield_xy())
-            xy.sort(key=operator.itemgetter(0))
+            xy.sort(key=operator.itemgetter(0)) # sort by x-value
             yield xy
 
+    xydata = list(yield_xydata())
+
     #: Create (sub)plot
-    plt.loglog()
+    plt.semilogx() # plt.loglog()
     plt.grid(True)
 
     #: Insert data
-    xydata = list(yield_xydata())
-    for xy, name in zip(xydata, testnames):
+    for xy, testname in zip(xydata, testnames):
         x, y = zip(*xy)
 
-        def yield_perfect():
-            first, *rest = y
-            n = len(x)
-            for i in range(n):
-                yield first * (0.5**i)
-        y_perf = list(yield_perfect())
-        plt.plot(x, y,
+        def convert_smoother_notation(testname):
+            old_to_new = {'AVP': 'AVS', 'ACP': 'ACS', 'MCP': 'MCS', 'MVP': 'MVS'}
+            return old_to_new[testname]
+
+        name = convert_smoother_notation(testname)
+        if str_fem == 'DGQ':
+            name = name + r'_DG'
+        
+        plt.plot(x,
+                 y,
                  label=name,
                  color=str_color,
                  marker=test_to_marker[name],
-                 markersize=marker_size,
-                 linewidth=line_width
-                 )
-        # linestyle=test_to_linestyle[name],
+                 markersize=MARKER_SIZE,
+                 linewidth=LINE_WIDTH)
+
         if do_inline_labels:
             if len(x) is 1: # inline labels
                 plt.text(0.5*x[0], y[0], str(name), fontsize='small')
             else:
                 plt.text(1.25*x[0], y[0], str(name), fontsize='small')
-
-        if do_perf:
-            plt.plot(x, y_perf, color='grey', linestyle='dotted', linewidth='0.8')
-
+                
     #: Legend
-    # plt.legend()
+    plt.legend()
     return xydata  # todo
 
 
@@ -194,42 +216,34 @@ def set_xticks(xydata):
 
 def main():
     options = parse_args()
-    method = options.method
-    fem = options.element
+    degree = options.degree
     fig = plt.figure()
 
-    ax11 = plt.subplot(221)
-    plt.title("$A_L x_L$ (residual in blue)")
-    section = r'residual'
-    xydata_smooth = plot_strong_scaling(str_method=method,
-                                        str_section=section,
-                                        str_fem=fem,
-                                        str_color='deepskyblue',
-                                        do_perf=False,
-                                        do_inline_labels=False)
-    section = r'vmult'
-    xydata = plot_strong_scaling(str_method=method, str_section=section, str_fem=fem)
-    plt.ylabel("Wall time [s]")
+    root_dir = options.root_dir
 
-    section = r'smooth'
+    # def make_folder_name(str_fem, str_degree, str_section=None):
+    #     name = r'{}{}'.format(str_fem, str_degree)
+    #     if str_section:
+    #         name = name + r'_' + str_section
+    #     return name
 
-    plt.subplot(222, sharex=ax11)
-    plt.title("AVS: $S_{ad}(x_L,b_L)$")
-    xydata_smooth = plot_strong_scaling(str_method='AVP', str_section=section, str_fem=fem)
-    plt.xlabel("Number of cores")
+    ## Plot results for k = 3
+    Qk_solve_dir = os.path.join(root_dir, f'Q{degree}_solve')
+    DGQk_solve_dir = os.path.join(root_dir, f'DGQ{degree}_solve')
+    
+    ax11 = plt.subplot(111)
+    # plt.title("AVS")
+    plt.xlabel("DoFs per node")
+    plt.ylabel("Throughput [million DoFs / s]")
+    section = r'solve'
 
-    plt.subplot(223, sharex=ax11)
-    plt.title("MVS: $S_{mu}(x_L,b_L)$")
-    xydata_smooth = plot_strong_scaling(str_method='MVP', str_section=section, str_fem=fem)
-    plt.ylabel("Wall time [s]")
-    plt.xlabel("Number of cores")
+    xydata = plot_throughput(Qk_solve_dir,
+                             str_section=section)
+    xydata = plot_throughput(DGQk_solve_dir,
+                             str_color='limegreen',
+                             str_section=section)
 
-    # plt.subplot(224, sharex=ax11)
-    # plt.title("MVS: $S_{mu}(x_L,b_L)$")
-    # xydata_smooth = plot_strong_scaling(str_method='MVP', str_section=section, str_fem=fem)
-    # plt.xlabel("Number of cores")
-
-    set_xticks(xydata)
+    # set_xticks(xydata)
     # plt.suptitle("Strong Scaling ({})".format(method))
     handles, labels = ax11.get_legend_handles_labels()
     n_labels = len(labels)
